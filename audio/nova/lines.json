@@ -1,0 +1,389 @@
+{
+  "note": "Nova voice lines (ElevenLabs, voice \"Nova V3\", eleven_v3). Keyed by the exact on-screen text. Take a/b chosen in the tuning panel. Missing files are skipped silently.",
+  "lines": {
+    "The lantern has gone dark. Drag the sundrops into the lantern to light it up!": {
+      "a": "audio/nova/a/nova-lantern-01-the-lantern-has-gone-dark-drag-the-sundr.mp3",
+      "b": "audio/nova/b/nova-lantern-01-the-lantern-has-gone-dark-drag-the-sundr.mp3"
+    },
+    "It's glowing!": {
+      "a": "audio/nova/a/nova-lantern-02-it-s-glowing.mp3",
+      "b": "audio/nova/b/nova-lantern-02-it-s-glowing.mp3"
+    },
+    "Brighter and brighter!": {
+      "a": "audio/nova/a/nova-lantern-03-brighter-and-brighter.mp3",
+      "b": "audio/nova/b/nova-lantern-03-brighter-and-brighter.mp3"
+    },
+    "Almost there!": {
+      "a": "audio/nova/a/nova-lantern-04-almost-there.mp3",
+      "b": "audio/nova/b/nova-lantern-04-almost-there.mp3"
+    },
+    "Try dropping it right into the lantern.": {
+      "a": "audio/nova/a/nova-lantern-05-try-dropping-it-right-into-the-lantern.mp3",
+      "b": "audio/nova/b/nova-lantern-05-try-dropping-it-right-into-the-lantern.mp3"
+    },
+    "You lit the lantern! Look how bright the sky is now.": {
+      "a": "audio/nova/a/nova-lantern-06-you-lit-the-lantern-look-how-bright-the-.mp3",
+      "b": "audio/nova/b/nova-lantern-06-you-lit-the-lantern-look-how-bright-the-.mp3"
+    },
+    "Drag the sundrop to light the lantern.": {
+      "a": "audio/nova/a/nova-lantern-07-drag-the-sundrop-to-light-the-lantern.mp3",
+      "b": "audio/nova/b/nova-lantern-07-drag-the-sundrop-to-light-the-lantern.mp3"
+    },
+    "The lantern is shining again!": {
+      "a": "audio/nova/a/nova-lantern-08-the-lantern-is-shining-again.mp3",
+      "b": "audio/nova/b/nova-lantern-08-the-lantern-is-shining-again.mp3"
+    },
+    "Each sundrop lights another lantern on the tower. Light them all!": {
+      "a": "audio/nova/a/nova-tower-01-each-sundrop-lights-another-lantern-on-t.mp3",
+      "b": "audio/nova/b/nova-tower-01-each-sundrop-lights-another-lantern-on-t.mp3"
+    },
+    "Another lantern!": {
+      "a": "audio/nova/a/nova-tower-02-another-lantern.mp3",
+      "b": "audio/nova/b/nova-tower-02-another-lantern.mp3"
+    },
+    "It's getting brighter!": {
+      "a": "audio/nova/a/nova-tower-03-it-s-getting-brighter.mp3",
+      "b": "audio/nova/b/nova-tower-03-it-s-getting-brighter.mp3"
+    },
+    "Keep going!": {
+      "a": "audio/nova/a/nova-tower-04-keep-going.mp3",
+      "b": "audio/nova/b/nova-tower-04-keep-going.mp3"
+    },
+    "So bright!": {
+      "a": "audio/nova/a/nova-tower-05-so-bright.mp3",
+      "b": "audio/nova/b/nova-tower-05-so-bright.mp3"
+    },
+    "One more!": {
+      "a": "audio/nova/a/nova-tower-06-one-more.mp3",
+      "b": "audio/nova/b/nova-tower-06-one-more.mp3"
+    },
+    "Drop the sundrop onto the tower.": {
+      "a": "audio/nova/a/nova-tower-07-drop-the-sundrop-onto-the-tower.mp3",
+      "b": "audio/nova/b/nova-tower-07-drop-the-sundrop-onto-the-tower.mp3"
+    },
+    "The whole tower is glowing!": {
+      "a": "audio/nova/a/nova-tower-08-the-whole-tower-is-glowing.mp3",
+      "b": "audio/nova/b/nova-tower-08-the-whole-tower-is-glowing.mp3"
+    },
+    "The force field is off! Drag the power core into the machine to turn it back on.": {
+      "a": "audio/nova/a/nova-power-01-the-force-field-is-off-drag-the-power-co.mp3",
+      "b": "audio/nova/b/nova-power-01-the-force-field-is-off-drag-the-power-co.mp3"
+    },
+    "The power core goes in the machine's ring.": {
+      "a": "audio/nova/a/nova-power-02-the-power-core-goes-in-the-machine-s-rin.mp3",
+      "b": "audio/nova/b/nova-power-02-the-power-core-goes-in-the-machine-s-rin.mp3"
+    },
+    "The force field is back on. The island is safe!": {
+      "a": "audio/nova/a/nova-power-03-the-force-field-is-back-on-the-island-is.mp3",
+      "b": "audio/nova/b/nova-power-03-the-force-field-is-back-on-the-island-is.mp3"
+    },
+    "Bring the power core to the machine to restore the force field around the island.": {
+      "a": "audio/nova/a/nova-power-04-bring-the-power-core-to-the-machine-to-r.mp3",
+      "b": "audio/nova/b/nova-power-04-bring-the-power-core-to-the-machine-to-r.mp3"
+    },
+    "Ziya is sitting by herself. Drag the Empathy Gem to Ziya to understand how she feels.": {
+      "a": "audio/nova/a/nova-empathy-01-ziya-is-sitting-by-herself-drag-the-empa.mp3",
+      "b": "audio/nova/b/nova-empathy-01-ziya-is-sitting-by-herself-drag-the-empa.mp3"
+    },
+    "Luma and Brio are playing together. Let's check on Ziya. She's sitting by herself.": {
+      "a": "audio/nova/a/nova-empathy-02-luma-and-brio-are-playing-together-let-s.mp3",
+      "b": "audio/nova/b/nova-empathy-02-luma-and-brio-are-playing-together-let-s.mp3"
+    },
+    "Empathy helped us understand how she feels.": {
+      "a": "audio/nova/a/nova-empathy-03-empathy-helped-us-understand-how-she-fee.mp3",
+      "b": "audio/nova/b/nova-empathy-03-empathy-helped-us-understand-how-she-fee.mp3"
+    },
+    "Read what happened to Brio, then drag the face that shows how he feels.": {
+      "a": "audio/nova/a/nova-feelings-01-read-what-happened-to-brio-then-drag-the.mp3",
+      "b": "audio/nova/b/nova-feelings-01-read-what-happened-to-brio-then-drag-the.mp3"
+    },
+    "Brio's team just won the big soccer game!": {
+      "a": "audio/nova/a/nova-feelings-02-brio-s-team-just-won-the-big-soccer-game.mp3",
+      "b": "audio/nova/b/nova-feelings-02-brio-s-team-just-won-the-big-soccer-game.mp3"
+    },
+    "Brio feels excited!": {
+      "a": "audio/nova/a/nova-feelings-03-brio-feels-excited.mp3",
+      "b": "audio/nova/b/nova-feelings-03-brio-feels-excited.mp3"
+    },
+    "Look at Brio's eyes and beak. Which face looks like a big win?": {
+      "a": "audio/nova/a/nova-feelings-04-look-at-brio-s-eyes-and-beak-which-face-.mp3",
+      "b": "audio/nova/b/nova-feelings-04-look-at-brio-s-eyes-and-beak-which-face-.mp3"
+    },
+    "Brio's balloon floated away into the sky.": {
+      "a": "audio/nova/a/nova-feelings-05-brio-s-balloon-floated-away-into-the-sky.mp3",
+      "b": "audio/nova/b/nova-feelings-05-brio-s-balloon-floated-away-into-the-sky.mp3"
+    },
+    "Brio feels sad.": {
+      "a": "audio/nova/a/nova-feelings-06-brio-feels-sad.mp3",
+      "b": "audio/nova/b/nova-feelings-06-brio-feels-sad.mp3"
+    },
+    "How would you feel if your balloon floated away?": {
+      "a": "audio/nova/a/nova-feelings-07-how-would-you-feel-if-your-balloon-float.mp3",
+      "b": "audio/nova/b/nova-feelings-07-how-would-you-feel-if-your-balloon-float.mp3"
+    },
+    "A big boom of thunder wakes Brio up at night.": {
+      "a": "audio/nova/a/nova-feelings-08-a-big-boom-of-thunder-wakes-brio-up-at-n.mp3",
+      "b": "audio/nova/b/nova-feelings-08-a-big-boom-of-thunder-wakes-brio-up-at-n.mp3"
+    },
+    "Brio feels scared.": {
+      "a": "audio/nova/a/nova-feelings-09-brio-feels-scared.mp3",
+      "b": "audio/nova/b/nova-feelings-09-brio-feels-scared.mp3"
+    },
+    "Thunder can be really loud. Which face looks surprised and scared?": {
+      "a": "audio/nova/a/nova-feelings-10-thunder-can-be-really-loud-which-face-lo.mp3",
+      "b": "audio/nova/b/nova-feelings-10-thunder-can-be-really-loud-which-face-lo.mp3"
+    },
+    "Luma says her kite can fly all the way to the moon.": {
+      "a": "audio/nova/a/nova-feelings-11-luma-says-her-kite-can-fly-all-the-way-t.mp3",
+      "b": "audio/nova/b/nova-feelings-11-luma-says-her-kite-can-fly-all-the-way-t.mp3"
+    },
+    "Brio isn't so sure about that!": {
+      "a": "audio/nova/a/nova-feelings-12-brio-isn-t-so-sure-about-that.mp3",
+      "b": "audio/nova/b/nova-feelings-12-brio-isn-t-so-sure-about-that.mp3"
+    },
+    "Does Brio believe it? Look for the face that's not so sure.": {
+      "a": "audio/nova/a/nova-feelings-13-does-brio-believe-it-look-for-the-face-t.mp3",
+      "b": "audio/nova/b/nova-feelings-13-does-brio-believe-it-look-for-the-face-t.mp3"
+    },
+    "You figured out all of Brio's feelings!": {
+      "a": "audio/nova/a/nova-feelings-14-you-figured-out-all-of-brio-s-feelings.mp3",
+      "b": "audio/nova/b/nova-feelings-14-you-figured-out-all-of-brio-s-feelings.mp3"
+    },
+    "Luma and Ziya each want something different. Drag the Consideration Chime between them so they can listen to each other.": {
+      "a": "audio/nova/a/nova-chime-01-luma-and-ziya-each-want-something-differ.mp3",
+      "b": "audio/nova/b/nova-chime-01-luma-and-ziya-each-want-something-differ.mp3"
+    },
+    "Bring the chime to the space between them.": {
+      "a": "audio/nova/a/nova-chime-02-bring-the-chime-to-the-space-between-the.mp3",
+      "b": "audio/nova/b/nova-chime-02-bring-the-chime-to-the-space-between-the.mp3"
+    },
+    "When they listened to each other, they found a plan that works for both!": {
+      "a": "audio/nova/a/nova-chime-03-when-they-listened-to-each-other-they-fo.mp3",
+      "b": "audio/nova/b/nova-chime-03-when-they-listened-to-each-other-they-fo.mp3"
+    },
+    "The bridge is broken! Drag the planks into the gaps so Luma can cross.": {
+      "a": "audio/nova/a/nova-bridge-01-the-bridge-is-broken-drag-the-planks-int.mp3",
+      "b": "audio/nova/b/nova-bridge-01-the-bridge-is-broken-drag-the-planks-int.mp3"
+    },
+    "Clunk! That fits.": {
+      "a": "audio/nova/a/nova-bridge-02-clunk-that-fits.mp3",
+      "b": "audio/nova/b/nova-bridge-02-clunk-that-fits.mp3"
+    },
+    "One step closer!": {
+      "a": "audio/nova/a/nova-bridge-03-one-step-closer.mp3",
+      "b": "audio/nova/b/nova-bridge-03-one-step-closer.mp3"
+    },
+    "Sturdy!": {
+      "a": "audio/nova/a/nova-bridge-04-sturdy.mp3",
+      "b": "audio/nova/b/nova-bridge-04-sturdy.mp3"
+    },
+    "Planks go across the gaps in the path.": {
+      "a": "audio/nova/a/nova-bridge-05-planks-go-across-the-gaps-in-the-path.mp3",
+      "b": "audio/nova/b/nova-bridge-05-planks-go-across-the-gaps-in-the-path.mp3"
+    },
+    "The path is fixed! Luma made it across.": {
+      "a": "audio/nova/a/nova-bridge-06-the-path-is-fixed-luma-made-it-across.mp3",
+      "b": "audio/nova/b/nova-bridge-06-the-path-is-fixed-luma-made-it-across.mp3"
+    },
+    "Drag and drop to fix the bridge.": {
+      "a": "audio/nova/a/nova-bridge-07-drag-and-drop-to-fix-the-bridge.mp3",
+      "b": "audio/nova/b/nova-bridge-07-drag-and-drop-to-fix-the-bridge.mp3"
+    },
+    "Each nest shows the shape of its egg. Drag every egg to the nest that matches!": {
+      "a": "audio/nova/a/nova-nests-01-each-nest-shows-the-shape-of-its-egg-dra.mp3",
+      "b": "audio/nova/b/nova-nests-01-each-nest-shows-the-shape-of-its-egg-dra.mp3"
+    },
+    "A perfect match!": {
+      "a": "audio/nova/a/nova-nests-02-a-perfect-match.mp3",
+      "b": "audio/nova/b/nova-nests-02-a-perfect-match.mp3"
+    },
+    "Snug as can be!": {
+      "a": "audio/nova/a/nova-nests-03-snug-as-can-be.mp3",
+      "b": "audio/nova/b/nova-nests-03-snug-as-can-be.mp3"
+    },
+    "That's the one!": {
+      "a": "audio/nova/a/nova-nests-04-that-s-the-one.mp3",
+      "b": "audio/nova/b/nova-nests-04-that-s-the-one.mp3"
+    },
+    "Look at the pattern in the nest. Which egg matches it?": {
+      "a": "audio/nova/a/nova-nests-05-look-at-the-pattern-in-the-nest-which-eg.mp3",
+      "b": "audio/nova/b/nova-nests-05-look-at-the-pattern-in-the-nest-which-eg.mp3"
+    },
+    "Every egg is home safe!": {
+      "a": "audio/nova/a/nova-nests-06-every-egg-is-home-safe.mp3",
+      "b": "audio/nova/b/nova-nests-06-every-egg-is-home-safe.mp3"
+    },
+    "Luma loves playing outside. Ziya loves quiet making time. Drag each toy to the basket of the NPC who'd enjoy it!": {
+      "a": "audio/nova/a/nova-sort-01-luma-loves-playing-outside-ziya-loves-qu.mp3",
+      "b": "audio/nova/b/nova-sort-01-luma-loves-playing-outside-ziya-loves-qu.mp3"
+    },
+    "Good thinking!": {
+      "a": "audio/nova/a/nova-sort-02-good-thinking.mp3",
+      "b": "audio/nova/b/nova-sort-02-good-thinking.mp3"
+    },
+    "They'll love that!": {
+      "a": "audio/nova/a/nova-sort-03-they-ll-love-that.mp3",
+      "b": "audio/nova/b/nova-sort-03-they-ll-love-that.mp3"
+    },
+    "Nice sorting!": {
+      "a": "audio/nova/a/nova-sort-04-nice-sorting.mp3",
+      "b": "audio/nova/b/nova-sort-04-nice-sorting.mp3"
+    },
+    "Luma loves playing outside. Try Luma's basket!": {
+      "a": "audio/nova/a/nova-sort-05-luma-loves-playing-outside-try-luma-s-ba.mp3",
+      "b": "audio/nova/b/nova-sort-05-luma-loves-playing-outside-try-luma-s-ba.mp3"
+    },
+    "Ziya loves quiet making time. Try Ziya's basket!": {
+      "a": "audio/nova/a/nova-sort-06-ziya-loves-quiet-making-time-try-ziya-s-.mp3",
+      "b": "audio/nova/b/nova-sort-06-ziya-loves-quiet-making-time-try-ziya-s-.mp3"
+    },
+    "Everyone has something they enjoy!": {
+      "a": "audio/nova/a/nova-sort-07-everyone-has-something-they-enjoy.mp3",
+      "b": "audio/nova/b/nova-sort-07-everyone-has-something-they-enjoy.mp3"
+    },
+    "The garden is messy! Drag everything into the basket and watch what grows.": {
+      "a": "audio/nova/a/nova-cleanup-01-the-garden-is-messy-drag-everything-into.mp3",
+      "b": "audio/nova/b/nova-cleanup-01-the-garden-is-messy-drag-everything-into.mp3"
+    },
+    "Poof!": {
+      "a": "audio/nova/a/nova-cleanup-02-poof.mp3",
+      "b": "audio/nova/b/nova-cleanup-02-poof.mp3"
+    },
+    "So tidy!": {
+      "a": "audio/nova/a/nova-cleanup-03-so-tidy.mp3",
+      "b": "audio/nova/b/nova-cleanup-03-so-tidy.mp3"
+    },
+    "Something's growing!": {
+      "a": "audio/nova/a/nova-cleanup-04-something-s-growing.mp3",
+      "b": "audio/nova/b/nova-cleanup-04-something-s-growing.mp3"
+    },
+    "All tidy! Look at all those flowers.": {
+      "a": "audio/nova/a/nova-cleanup-05-all-tidy-look-at-all-those-flowers.mp3",
+      "b": "audio/nova/b/nova-cleanup-05-all-tidy-look-at-all-those-flowers.mp3"
+    },
+    "What goes in the hole to grow a plant? Drag your choice into the hole.": {
+      "a": "audio/nova/a/nova-seed-01-what-goes-in-the-hole-to-grow-a-plant-dr.mp3",
+      "b": "audio/nova/b/nova-seed-01-what-goes-in-the-hole-to-grow-a-plant-dr.mp3"
+    },
+    "Hmm, that won't grow. What could?": {
+      "a": "audio/nova/a/nova-seed-02-hmm-that-won-t-grow-what-could.mp3",
+      "b": "audio/nova/b/nova-seed-02-hmm-that-won-t-grow-what-could.mp3"
+    },
+    "Rocks are great for paths, but they can't grow. What could grow into a plant?": {
+      "a": "audio/nova/a/nova-seed-03-rocks-are-great-for-paths-but-they-can-t.mp3",
+      "b": "audio/nova/b/nova-seed-03-rocks-are-great-for-paths-but-they-can-t.mp3"
+    },
+    "Leaves grow on plants. What does a plant start from?": {
+      "a": "audio/nova/a/nova-seed-04-leaves-grow-on-plants-what-does-a-plant-.mp3",
+      "b": "audio/nova/b/nova-seed-04-leaves-grow-on-plants-what-does-a-plant-.mp3"
+    },
+    "A seed! Look, it's starting to grow.": {
+      "a": "audio/nova/a/nova-seed-05-a-seed-look-it-s-starting-to-grow.mp3",
+      "b": "audio/nova/b/nova-seed-05-a-seed-look-it-s-starting-to-grow.mp3"
+    },
+    "Obselda is heading up the trail. Drag everything she needs into her backpack!": {
+      "a": "audio/nova/a/nova-backpack-01-obselda-is-heading-up-the-trail-drag-eve.mp3",
+      "b": "audio/nova/b/nova-backpack-01-obselda-is-heading-up-the-trail-drag-eve.mp3"
+    },
+    "Drop it right into the backpack.": {
+      "a": "audio/nova/a/nova-backpack-02-drop-it-right-into-the-backpack.mp3",
+      "b": "audio/nova/b/nova-backpack-02-drop-it-right-into-the-backpack.mp3"
+    },
+    "All packed! Obselda is ready for the trail.": {
+      "a": "audio/nova/a/nova-backpack-03-all-packed-obselda-is-ready-for-the-trai.mp3",
+      "b": "audio/nova/b/nova-backpack-03-all-packed-obselda-is-ready-for-the-trai.mp3"
+    },
+    "Rope, packed!": {
+      "a": "audio/nova/a/nova-backpack-04-rope-packed.mp3",
+      "b": "audio/nova/b/nova-backpack-04-rope-packed.mp3"
+    },
+    "Lunch, packed!": {
+      "a": "audio/nova/a/nova-backpack-05-lunch-packed.mp3",
+      "b": "audio/nova/b/nova-backpack-05-lunch-packed.mp3"
+    },
+    "Headlamp, packed!": {
+      "a": "audio/nova/a/nova-backpack-06-headlamp-packed.mp3",
+      "b": "audio/nova/b/nova-backpack-06-headlamp-packed.mp3"
+    },
+    "Tent, packed!": {
+      "a": "audio/nova/a/nova-backpack-07-tent-packed.mp3",
+      "b": "audio/nova/b/nova-backpack-07-tent-packed.mp3"
+    },
+    "Boots, packed!": {
+      "a": "audio/nova/a/nova-backpack-08-boots-packed.mp3",
+      "b": "audio/nova/b/nova-backpack-08-boots-packed.mp3"
+    },
+    "Map, packed!": {
+      "a": "audio/nova/a/nova-backpack-09-map-packed.mp3",
+      "b": "audio/nova/b/nova-backpack-09-map-packed.mp3"
+    },
+    "Voltis's helper bots are sleepy. Drag a power core to each bot to wake it up!": {
+      "a": "audio/nova/a/nova-bots-01-voltis-s-helper-bots-are-sleepy-drag-a-p.mp3",
+      "b": "audio/nova/b/nova-bots-01-voltis-s-helper-bots-are-sleepy-drag-a-p.mp3"
+    },
+    "Beep boop! Awake!": {
+      "a": "audio/nova/a/nova-bots-02-beep-boop-awake.mp3",
+      "b": "audio/nova/b/nova-bots-02-beep-boop-awake.mp3"
+    },
+    "That one's up!": {
+      "a": "audio/nova/a/nova-bots-03-that-one-s-up.mp3",
+      "b": "audio/nova/b/nova-bots-03-that-one-s-up.mp3"
+    },
+    "One more to go!": {
+      "a": "audio/nova/a/nova-bots-04-one-more-to-go.mp3",
+      "b": "audio/nova/b/nova-bots-04-one-more-to-go.mp3"
+    },
+    "Bring the core to a sleepy bot.": {
+      "a": "audio/nova/a/nova-bots-05-bring-the-core-to-a-sleepy-bot.mp3",
+      "b": "audio/nova/b/nova-bots-05-bring-the-core-to-a-sleepy-bot.mp3"
+    },
+    "Every bot is awake and ready to help!": {
+      "a": "audio/nova/a/nova-bots-06-every-bot-is-awake-and-ready-to-help.mp3",
+      "b": "audio/nova/b/nova-bots-06-every-bot-is-awake-and-ready-to-help.mp3"
+    },
+    "They each want something different. Watch what happens when they share how they feel and really listen to each other": {
+      "a": "audio/nova/a/nova-comic-skyrian-01.mp3",
+      "b": "audio/nova/b/nova-comic-skyrian-01.mp3"
+    },
+    "Drag the Consideration Chime between them so they can listen to each other.": {
+      "a": "audio/nova/a/nova-comic-skyrian-02.mp3",
+      "b": "audio/nova/b/nova-comic-skyrian-02.mp3"
+    },
+    "That's brainstorming! It means we put all our ideas on the table before we pick one. It’s like a “menu” of choices. We pick the one that works for both of us!": {
+      "a": "audio/nova/a/nova-comic-skyrian-03.mp3",
+      "b": "audio/nova/b/nova-comic-skyrian-03.mp3"
+    },
+    "They shared what they wanted, listened to each other, and came up with ideas together!": {
+      "a": "audio/nova/a/nova-comic-nova-01.mp3",
+      "b": "audio/nova/b/nova-comic-nova-01.mp3"
+    },
+    "luma|Thanks for the help! It makes such a difference when someone truly sees you.": {
+      "a": "audio/nova/a/nova-comic-luma-l1-01.mp3",
+      "b": "audio/nova/b/nova-comic-luma-l1-01.mp3"
+    },
+    "ziya|Wow, it's beautiful!": {
+      "a": "audio/nova/a/nova-comic-ziya-l1-01.mp3",
+      "b": "audio/nova/b/nova-comic-ziya-l1-01.mp3"
+    },
+    "skyrian|Now it's time to use the Sun Drops to light the first lantern.": {
+      "a": "audio/nova/a/nova-comic-skyrian-l1-01.mp3",
+      "b": "audio/nova/b/nova-comic-skyrian-l1-01.mp3"
+    },
+    "skyrian|Drag the sundrop to light the lantern.": {
+      "a": "audio/nova/a/nova-comic-skyrian-l1-02.mp3",
+      "b": "audio/nova/b/nova-comic-skyrian-l1-02.mp3"
+    },
+    "skyrian|Understanding how others feel is where it all begins. Five more lanterns to go! Let's keep learning!": {
+      "a": "audio/nova/a/nova-comic-skyrian-l1-03.mp3",
+      "b": "audio/nova/b/nova-comic-skyrian-l1-03.mp3"
+    },
+    "nova|I learned so much! Like that everyone has their own thoughts and feelings that can be different from one another.": {
+      "a": "audio/nova/a/nova-comic-nova-l1-01.mp3",
+      "b": "audio/nova/b/nova-comic-nova-l1-01.mp3"
+    },
+    "brio|I never thought about how much our faces and bodies show how we feel!": {
+      "a": "audio/nova/a/nova-comic-brio-l1-01.mp3",
+      "b": "audio/nova/b/nova-comic-brio-l1-01.mp3"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "id": "w1_r3_p1_l3_lesson",
+  "world": 1,
+  "template": "state_change",
+  "gameType": "drag_drop",
+  "title": "L3 Lesson: The Empathy Gem",
+  "scene": "empathy",
+  "background": {
+    "img": "img:bg_classroom",
+    "x": 0,
+    "y": 0,
+    "w": 1162,
+    "color": "#D5E8EF"
+  },
+  "edgeColor": "#D5E8EF",
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=4112-50247",
+  "successSound": false,
+  "guide": {
+    "intro": "Ziya is sitting by herself. Drag the Empathy Gem to Ziya to understand how she feels.",
+    "success": "Empathy helped us understand how she feels."
+  },
+  "actors": [
+    {
+      "id": "luma",
+      "npc": "luma",
+      "x": 200,
+      "y": 416,
+      "size": 430,
+      "mood": "happy",
+      "facing": 1,
+      "moods": {
+        "happy": "img:luma_armsup",
+        "neutral": "img:luma_laugh",
+        "soft": "img:luma_default"
+      }
+    },
+    {
+      "id": "brio",
+      "npc": "brio",
+      "x": 430,
+      "y": 416,
+      "size": 430,
+      "mood": "happy",
+      "facing": 1,
+      "moods": {
+        "happy": "img:brio_celebrate",
+        "neutral": "img:brio_default"
+      }
+    },
+    {
+      "id": "ziya",
+      "npc": "ziya",
+      "x": 840,
+      "y": 425,
+      "size": 430,
+      "mood": "down",
+      "facing": -1,
+      "moods": {
+        "down": "img:ziya_sit_sad",
+        "soft": "img:ziya_sit_default",
+        "happy": "img:ziya_sit_happy"
+      }
+    }
+  ],
+  "zones": [
+    {
+      "id": "ziya_heart",
+      "actor": "ziya",
+      "x": 840,
+      "y": 545,
+      "size": 200,
+      "hitRadius": 130,
+      "accepts": [
+        "empathy_gem"
+      ],
+      "mode": "absorb",
+      "landSound": "gem",
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -20,
+          "scale": 0.5
+        }
+      ]
+    },
+    {
+      "id": "luma_group",
+      "actor": "luma",
+      "x": 200,
+      "y": 566,
+      "size": 200,
+      "hitRadius": 150,
+      "hitDx": 95,
+      "accepts": [],
+      "wrongHint": "Luma and Brio are playing together. Let's check on Ziya. She's sitting by herself."
+    }
+  ],
+  "items": [
+    {
+      "id": "empathy_gem",
+      "art": "empathy_gem",
+      "x": 620,
+      "y": 250,
+      "size": 108,
+      "float": true,
+      "noShadow": true,
+      "glow": "#FF8FC8"
+    }
+  ]
+}

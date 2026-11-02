@@ -1,0 +1,91 @@
+{
+  "id": "simple_lantern",
+  "world": 1,
+  "template": "simple",
+  "gameType": "drag_drop",
+  "title": "Light the Lantern",
+  "scene": "lantern",
+  "background": {
+    "img": "img:bg_night_sky",
+    "x": -295,
+    "y": -7,
+    "w": 1755,
+    "color": "#22357F"
+  },
+  "edgeColor": "#22357F",
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=3993-93359",
+  "guide": {
+    "intro": "The lantern has gone dark. Drag the sundrops into the lantern to light it up!",
+    "success": "You lit the lantern! Look how bright the sky is now.",
+    "cheers": [
+      "It's glowing!",
+      "Brighter and brighter!",
+      "Almost there!"
+    ],
+    "wrong": "Try dropping it right into the lantern."
+  },
+  "items": [
+    {
+      "id": "sundrop_a",
+      "art": "img:sundrop_yellow",
+      "x": 230,
+      "y": 330,
+      "size": 120,
+      "tags": [
+        "sundrop"
+      ],
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE45C"
+    },
+    {
+      "id": "sundrop_b",
+      "art": "img:sundrop_orange",
+      "x": 900,
+      "y": 200,
+      "size": 120,
+      "tags": [
+        "sundrop"
+      ],
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE45C"
+    },
+    {
+      "id": "sundrop_c",
+      "art": "img:sundrop_pink",
+      "x": 1000,
+      "y": 430,
+      "size": 120,
+      "tags": [
+        "sundrop"
+      ],
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE45C"
+    }
+  ],
+  "zones": [
+    {
+      "id": "lantern",
+      "art": "dim:img:lantern",
+      "x": 578,
+      "y": 619,
+      "size": 346,
+      "accepts": [
+        "sundrop"
+      ],
+      "capacity": 3,
+      "mode": "absorb",
+      "hitRadius": 150,
+      "hitDy": 10,
+      "slots": [
+        {
+          "dx": 0,
+          "dy": 40,
+          "scale": 0.4
+        }
+      ]
+    }
+  ]
+}

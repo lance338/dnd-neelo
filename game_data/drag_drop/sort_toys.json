@@ -1,0 +1,196 @@
+{
+  "id": "sort_toys",
+  "world": 1,
+  "template": "sort",
+  "gameType": "drag_drop",
+  "title": "Sort the Toys",
+  "scene": "sort",
+  "background": {
+    "img": "img:bg_schoolyard",
+    "x": 0,
+    "y": 0,
+    "w": 1162,
+    "color": "#72A142",
+    "top": "#A0D1F7",
+    "splitY": 330
+  },
+  "edgeColor": "#72A142",
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=3898-89744",
+  "guide": {
+    "intro": "Luma loves playing outside. Ziya loves quiet making time. Drag each toy to the basket of the NPC who'd enjoy it!",
+    "success": "Everyone has something they enjoy!",
+    "cheers": [
+      "Good thinking!",
+      "They'll love that!",
+      "Nice sorting!"
+    ]
+  },
+  "actors": [
+    {
+      "id": "luma",
+      "npc": "luma",
+      "x": 300,
+      "y": 257,
+      "size": 368,
+      "mood": "neutral",
+      "facing": 1,
+      "moods": {
+        "neutral": "img:luma_default",
+        "soft": "img:luma_default",
+        "happy": "img:luma_laugh",
+        "cheer": "img:luma_armsup"
+      }
+    },
+    {
+      "id": "ziya",
+      "npc": "ziya",
+      "x": 862,
+      "y": 259,
+      "size": 368,
+      "mood": "neutral",
+      "facing": -1,
+      "moods": {
+        "neutral": "img:ziya_default",
+        "soft": "img:ziya_default",
+        "happy": "img:ziya_happy",
+        "cheer": "img:ziya_armsup"
+      }
+    }
+  ],
+  "zones": [
+    {
+      "id": "basket_luma",
+      "art": "basket_pink",
+      "x": 300,
+      "y": 520,
+      "size": 210,
+      "accepts": [
+        "outside"
+      ],
+      "capacity": 3,
+      "icon": "ball",
+      "iconDy": 26,
+      "hitRadius": 118,
+      "slots": [
+        {
+          "dx": -52,
+          "dy": -44,
+          "scale": 0.62,
+          "rot": -0.15
+        },
+        {
+          "dx": 0,
+          "dy": -56,
+          "scale": 0.62
+        },
+        {
+          "dx": 52,
+          "dy": -44,
+          "scale": 0.62,
+          "rot": 0.15
+        }
+      ]
+    },
+    {
+      "id": "basket_ziya",
+      "art": "basket_gold",
+      "x": 862,
+      "y": 520,
+      "size": 210,
+      "accepts": [
+        "quiet"
+      ],
+      "capacity": 3,
+      "icon": "book",
+      "iconDy": 26,
+      "hitRadius": 118,
+      "slots": [
+        {
+          "dx": -52,
+          "dy": -44,
+          "scale": 0.62,
+          "rot": -0.15
+        },
+        {
+          "dx": 0,
+          "dy": -56,
+          "scale": 0.62
+        },
+        {
+          "dx": 52,
+          "dy": -44,
+          "scale": 0.62,
+          "rot": 0.15
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "kite",
+      "art": "kite",
+      "x": 255,
+      "y": 698,
+      "size": 86,
+      "tags": [
+        "outside"
+      ],
+      "hint": "Luma loves playing outside. Try Luma's basket!"
+    },
+    {
+      "id": "book",
+      "art": "book",
+      "x": 385,
+      "y": 698,
+      "size": 86,
+      "tags": [
+        "quiet"
+      ],
+      "hint": "Ziya loves quiet making time. Try Ziya's basket!"
+    },
+    {
+      "id": "ball",
+      "art": "ball",
+      "x": 515,
+      "y": 698,
+      "size": 86,
+      "tags": [
+        "outside"
+      ],
+      "hint": "Luma loves playing outside. Try Luma's basket!"
+    },
+    {
+      "id": "palette",
+      "art": "palette",
+      "x": 645,
+      "y": 698,
+      "size": 86,
+      "tags": [
+        "quiet"
+      ],
+      "hint": "Ziya loves quiet making time. Try Ziya's basket!"
+    },
+    {
+      "id": "jump_rope",
+      "art": "jump_rope",
+      "x": 775,
+      "y": 698,
+      "size": 86,
+      "tags": [
+        "outside"
+      ],
+      "hint": "Luma loves playing outside. Try Luma's basket!"
+    },
+    {
+      "id": "crayons",
+      "art": "crayons",
+      "x": 905,
+      "y": 698,
+      "size": 86,
+      "tags": [
+        "quiet"
+      ],
+      "hint": "Ziya loves quiet making time. Try Ziya's basket!"
+    }
+  ]
+}

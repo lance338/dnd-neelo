@@ -1,0 +1,111 @@
+{
+  "id": "cleanup_garden",
+  "world": 1,
+  "template": "clean_up",
+  "gameType": "drag_drop",
+  "title": "Tidy the Garden",
+  "scene": "cleanup",
+  "background": "garden",
+  "edgeColor": "#A5DDF6",
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=3947-83524",
+  "guide": {
+    "intro": "The garden is messy! Drag everything into the basket and watch what grows.",
+    "success": "All tidy! Look at all those flowers.",
+    "cheers": [
+      "Poof!",
+      "So tidy!",
+      "Something's growing!"
+    ]
+  },
+  "zones": [
+    {
+      "id": "basket",
+      "art": "basket_gold",
+      "x": 1012,
+      "y": 612,
+      "size": 230,
+      "accepts": [
+        "litter"
+      ],
+      "capacity": 6,
+      "mode": "absorb",
+      "hitRadius": 124,
+      "landSound": "poof",
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -44,
+          "scale": 0.55
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "leaves_a",
+      "art": "leaves_0",
+      "x": 268,
+      "y": 616,
+      "size": 92,
+      "tags": [
+        "litter"
+      ],
+      "rot": -0.15
+    },
+    {
+      "id": "twig_a",
+      "art": "twig",
+      "x": 470,
+      "y": 540,
+      "size": 92,
+      "tags": [
+        "litter"
+      ],
+      "rot": 0.2
+    },
+    {
+      "id": "paper_a",
+      "art": "paper",
+      "x": 430,
+      "y": 708,
+      "size": 92,
+      "tags": [
+        "litter"
+      ],
+      "rot": -0.15
+    },
+    {
+      "id": "leaves_b",
+      "art": "leaves_1",
+      "x": 690,
+      "y": 640,
+      "size": 92,
+      "tags": [
+        "litter"
+      ],
+      "rot": 0.2
+    },
+    {
+      "id": "leaves_c",
+      "art": "leaves_2",
+      "x": 830,
+      "y": 520,
+      "size": 92,
+      "tags": [
+        "litter"
+      ],
+      "rot": -0.15
+    },
+    {
+      "id": "twig_b",
+      "art": "twig",
+      "x": 610,
+      "y": 470,
+      "size": 92,
+      "tags": [
+        "litter"
+      ],
+      "rot": 0.2
+    }
+  ]
+}

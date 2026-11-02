@@ -1,0 +1,132 @@
+{
+  "id": "w1_r3_p1_l1_outro",
+  "world": 1,
+  "template": "simple",
+  "gameType": "drag_drop",
+  "title": "L1 Outro: Light the Lantern Tower",
+  "scene": "tower",
+  "background": {
+    "img": "img:bg_night_sky",
+    "x": -295,
+    "y": -7,
+    "w": 1755,
+    "color": "#22357F"
+  },
+  "edgeColor": "#22357F",
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=4565-749683",
+  "guide": {
+    "intro": "Each sundrop lights another lantern on the tower. Light them all!",
+    "success": "The whole tower is glowing!",
+    "cheers": [
+      "Another lantern!",
+      "It's getting brighter!",
+      "Keep going!",
+      "So bright!",
+      "One more!"
+    ],
+    "wrong": "Drop the sundrop onto the tower."
+  },
+  "zones": [
+    {
+      "id": "tower",
+      "art": "img:lantern_tower_1",
+      "x": 581,
+      "y": 470,
+      "size": 330,
+      "accepts": [
+        "sundrop"
+      ],
+      "capacity": 6,
+      "mode": "absorb",
+      "hitRadius": 190,
+      "hitDy": -40,
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -60,
+          "scale": 0.45
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "sundrop_yellow",
+      "art": "img:sundrop_yellow",
+      "x": 170,
+      "y": 300,
+      "size": 105,
+      "tags": [
+        "sundrop"
+      ],
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE45C"
+    },
+    {
+      "id": "sundrop_orange",
+      "art": "img:sundrop_orange",
+      "x": 250,
+      "y": 500,
+      "size": 105,
+      "tags": [
+        "sundrop"
+      ],
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE45C"
+    },
+    {
+      "id": "sundrop_pink",
+      "art": "img:sundrop_pink",
+      "x": 150,
+      "y": 680,
+      "size": 105,
+      "tags": [
+        "sundrop"
+      ],
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE45C"
+    },
+    {
+      "id": "sundrop_teal",
+      "art": "img:sundrop_teal",
+      "x": 990,
+      "y": 300,
+      "size": 105,
+      "tags": [
+        "sundrop"
+      ],
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE45C"
+    },
+    {
+      "id": "sundrop_purple",
+      "art": "img:sundrop_purple",
+      "x": 910,
+      "y": 500,
+      "size": 105,
+      "tags": [
+        "sundrop"
+      ],
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE45C"
+    },
+    {
+      "id": "sundrop_blue",
+      "art": "img:sundrop_blue",
+      "x": 1010,
+      "y": 680,
+      "size": 105,
+      "tags": [
+        "sundrop"
+      ],
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE45C"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "w2_r1_p1_backpack",
+  "world": 2,
+  "template": "simple",
+  "gameType": "drag_drop",
+  "title": "Pack for the Trail",
+  "scene": "backpack",
+  "background": {
+    "img": "img:bg_cragspire",
+    "x": -319,
+    "y": -28,
+    "w": 1800,
+    "color": "#AEE1EE"
+  },
+  "edgeColor": "#AEE1EE",
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=4565-748965",
+  "guide": {
+    "intro": "Obselda is heading up the trail. Drag everything she needs into her backpack!",
+    "success": "All packed! Obselda is ready for the trail.",
+    "wrong": "Drop it right into the backpack."
+  },
+  "actors": [
+    {
+      "id": "obselda",
+      "npc": "obselda",
+      "x": 165,
+      "y": 430,
+      "size": 350,
+      "mood": "neutral",
+      "facing": 1,
+      "moods": {
+        "neutral": "img:obselda"
+      }
+    }
+  ],
+  "zones": [
+    {
+      "id": "backpack",
+      "art": "img:backpack_open",
+      "x": 650,
+      "y": 509,
+      "size": 200,
+      "accepts": [
+        "gear"
+      ],
+      "capacity": 6,
+      "mode": "absorb",
+      "hitRadius": 150,
+      "hitDy": -20,
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -90,
+          "scale": 0.55
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "rope",
+      "art": "img:cfo_item1",
+      "x": 330,
+      "y": 410,
+      "size": 112,
+      "tags": [
+        "gear"
+      ],
+      "float": true
+    },
+    {
+      "id": "lunchbox",
+      "art": "img:cfo_item2",
+      "x": 440,
+      "y": 245,
+      "size": 112,
+      "tags": [
+        "gear"
+      ],
+      "float": true
+    },
+    {
+      "id": "helmet",
+      "art": "img:cfo_item3",
+      "x": 600,
+      "y": 175,
+      "size": 112,
+      "tags": [
+        "gear"
+      ],
+      "float": true
+    },
+    {
+      "id": "tent",
+      "art": "img:cfo_item4",
+      "x": 775,
+      "y": 185,
+      "size": 112,
+      "tags": [
+        "gear"
+      ],
+      "float": true
+    },
+    {
+      "id": "boots",
+      "art": "img:cfo_item5",
+      "x": 925,
+      "y": 275,
+      "size": 112,
+      "tags": [
+        "gear"
+      ],
+      "float": true
+    },
+    {
+      "id": "map",
+      "art": "img:cfo_item6",
+      "x": 1030,
+      "y": 440,
+      "size": 112,
+      "tags": [
+        "gear"
+      ],
+      "float": true
+    }
+  ]
+}

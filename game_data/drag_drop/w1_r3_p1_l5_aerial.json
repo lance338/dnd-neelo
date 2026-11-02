@@ -1,0 +1,133 @@
+{
+  "id": "w1_r3_p1_l5_aerial",
+  "world": 1,
+  "template": "puzzle",
+  "gameType": "drag_drop",
+  "title": "L5 Aerial: Fix the Bridge",
+  "scene": "bridge",
+  "background": "islands",
+  "edgeColor": "#33449A",
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=4112-541484",
+  "guide": {
+    "intro": "Drag and drop to fix the bridge.",
+    "success": "The path is fixed! Luma made it across.",
+    "cheers": [
+      "Clunk! That fits.",
+      "One step closer!",
+      "Sturdy!"
+    ],
+    "wrong": "Planks go across the gaps in the path."
+  },
+  "actors": [
+    {
+      "id": "luma",
+      "npc": "luma",
+      "x": 105,
+      "y": 306,
+      "size": 197,
+      "mood": "neutral",
+      "facing": 1,
+      "moods": {
+        "neutral": "img:luma_default",
+        "happy": "img:luma_laugh"
+      }
+    }
+  ],
+  "zones": [
+    {
+      "id": "gap_1",
+      "x": 320,
+      "y": 474,
+      "size": 200,
+      "accepts": [
+        "plank"
+      ],
+      "ghost": "img:plank",
+      "ghostSize": 200,
+      "hitRadius": 96,
+      "snapSound": "plank",
+      "slots": [
+        {
+          "dx": 0,
+          "dy": 0,
+          "scale": 1.1111111111111112
+        }
+      ]
+    },
+    {
+      "id": "gap_2",
+      "x": 623,
+      "y": 474,
+      "size": 200,
+      "accepts": [
+        "plank"
+      ],
+      "ghost": "img:plank",
+      "ghostSize": 200,
+      "hitRadius": 96,
+      "snapSound": "plank",
+      "slots": [
+        {
+          "dx": 0,
+          "dy": 0,
+          "scale": 1.1111111111111112
+        }
+      ]
+    },
+    {
+      "id": "gap_3",
+      "x": 927,
+      "y": 474,
+      "size": 200,
+      "accepts": [
+        "plank"
+      ],
+      "ghost": "img:plank",
+      "ghostSize": 200,
+      "hitRadius": 96,
+      "snapSound": "plank",
+      "slots": [
+        {
+          "dx": 0,
+          "dy": 0,
+          "scale": 1.1111111111111112
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "plank_1",
+      "art": "img:plank",
+      "x": 420,
+      "y": 690,
+      "size": 180,
+      "rot": -0.08,
+      "tags": [
+        "plank"
+      ]
+    },
+    {
+      "id": "plank_2",
+      "art": "img:plank",
+      "x": 640,
+      "y": 690,
+      "size": 180,
+      "rot": 0.05,
+      "tags": [
+        "plank"
+      ]
+    },
+    {
+      "id": "plank_3",
+      "art": "img:plank",
+      "x": 860,
+      "y": 690,
+      "size": 180,
+      "rot": -0.04,
+      "tags": [
+        "plank"
+      ]
+    }
+  ]
+}

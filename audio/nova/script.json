@@ -1,0 +1,590 @@
+[
+ {
+  "group": "lantern",
+  "lines": [
+   {
+    "tone": "intro",
+    "text": "The lantern has gone dark. Drag the sundrops into the lantern to light it up!",
+    "file": "nova-lantern-01-the-lantern-has-gone-dark-drag-the-sundr.mp3",
+    "tagged": "[softly] [curious] The lantern has gone dark. [excited] [playful] Drag the sundrops into the lantern to light it up!"
+   },
+   {
+    "tone": "cheer",
+    "text": "It's glowing!",
+    "file": "nova-lantern-02-it-s-glowing.mp3",
+    "tagged": "[gasps] [excited] It's glowing!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Brighter and brighter!",
+    "file": "nova-lantern-03-brighter-and-brighter.mp3",
+    "tagged": "[delighted] Brighter and brighter!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Almost there!",
+    "file": "nova-lantern-04-almost-there.mp3",
+    "tagged": "[eager] Almost there!"
+   },
+   {
+    "tone": "hint",
+    "text": "Try dropping it right into the lantern.",
+    "file": "nova-lantern-05-try-dropping-it-right-into-the-lantern.mp3",
+    "tagged": "[gently] [encouraging] Try dropping it right into the lantern."
+   },
+   {
+    "tone": "success",
+    "text": "You lit the lantern! Look how bright the sky is now.",
+    "file": "nova-lantern-06-you-lit-the-lantern-look-how-bright-the-.mp3",
+    "tagged": "[cheering] You lit the lantern! [amazed] Look how bright the sky is now."
+   },
+   {
+    "tone": "intro",
+    "text": "Drag the sundrop to light the lantern.",
+    "file": "nova-lantern-07-drag-the-sundrop-to-light-the-lantern.mp3",
+    "tagged": "[warmly] [playful] Drag the sundrop to light the lantern."
+   },
+   {
+    "tone": "success",
+    "text": "The lantern is shining again!",
+    "file": "nova-lantern-08-the-lantern-is-shining-again.mp3",
+    "tagged": "[happy] [excited] The lantern is shining again!"
+   }
+  ],
+  "prompt": "[softly] [curious] The lantern has gone dark. [excited] [playful] Drag the sundrops into the lantern to light it up! [long pause] [gasps] [excited] It's glowing! [long pause] [delighted] Brighter and brighter! [long pause] [eager] Almost there! [long pause] [gently] [encouraging] Try dropping it right into the lantern. [long pause] [cheering] You lit the lantern! [amazed] Look how bright the sky is now. [long pause] [warmly] [playful] Drag the sundrop to light the lantern. [long pause] [happy] [excited] The lantern is shining again!"
+ },
+ {
+  "group": "tower",
+  "lines": [
+   {
+    "tone": "intro",
+    "text": "Each sundrop lights another lantern on the tower. Light them all!",
+    "file": "nova-tower-01-each-sundrop-lights-another-lantern-on-t.mp3",
+    "tagged": "[warmly] Each sundrop lights another lantern on the tower. [excited] [playful] Light them all!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Another lantern!",
+    "file": "nova-tower-02-another-lantern.mp3",
+    "tagged": "[excited] Another lantern!"
+   },
+   {
+    "tone": "cheer",
+    "text": "It's getting brighter!",
+    "file": "nova-tower-03-it-s-getting-brighter.mp3",
+    "tagged": "[delighted] It's getting brighter!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Keep going!",
+    "file": "nova-tower-04-keep-going.mp3",
+    "tagged": "[encouraging] Keep going!"
+   },
+   {
+    "tone": "cheer",
+    "text": "So bright!",
+    "file": "nova-tower-05-so-bright.mp3",
+    "tagged": "[amazed] So bright!"
+   },
+   {
+    "tone": "cheer",
+    "text": "One more!",
+    "file": "nova-tower-06-one-more.mp3",
+    "tagged": "[eager] One more!"
+   },
+   {
+    "tone": "hint",
+    "text": "Drop the sundrop onto the tower.",
+    "file": "nova-tower-07-drop-the-sundrop-onto-the-tower.mp3",
+    "tagged": "[gently] [encouraging] Drop the sundrop onto the tower."
+   },
+   {
+    "tone": "success",
+    "text": "The whole tower is glowing!",
+    "file": "nova-tower-08-the-whole-tower-is-glowing.mp3",
+    "tagged": "[gasps] [cheering] The whole tower is glowing!"
+   }
+  ],
+  "prompt": "[warmly] Each sundrop lights another lantern on the tower. [excited] [playful] Light them all! [long pause] [excited] Another lantern! [long pause] [delighted] It's getting brighter! [long pause] [encouraging] Keep going! [long pause] [amazed] So bright! [long pause] [eager] One more! [long pause] [gently] [encouraging] Drop the sundrop onto the tower. [long pause] [gasps] [cheering] The whole tower is glowing!"
+ },
+ {
+  "group": "power",
+  "lines": [
+   {
+    "tone": "intro",
+    "text": "The force field is off! Drag the power core into the machine to turn it back on.",
+    "file": "nova-power-01-the-force-field-is-off-drag-the-power-co.mp3",
+    "tagged": "[surprised] The force field is off! [playful] [encouraging] Drag the power core into the machine to turn it back on."
+   },
+   {
+    "tone": "hint",
+    "text": "The power core goes in the machine's ring.",
+    "file": "nova-power-02-the-power-core-goes-in-the-machine-s-rin.mp3",
+    "tagged": "[gently] [helpful] The power core goes in the machine's ring."
+   },
+   {
+    "tone": "success",
+    "text": "The force field is back on. The island is safe!",
+    "file": "nova-power-03-the-force-field-is-back-on-the-island-is.mp3",
+    "tagged": "[cheering] The force field is back on. [relieved] [happy] The island is safe!"
+   },
+   {
+    "tone": "intro",
+    "text": "Bring the power core to the machine to restore the force field around the island.",
+    "file": "nova-power-04-bring-the-power-core-to-the-machine-to-r.mp3",
+    "tagged": "[warmly] [determined] Bring the power core to the machine to restore the force field around the island."
+   }
+  ],
+  "prompt": "[surprised] The force field is off! [playful] [encouraging] Drag the power core into the machine to turn it back on. [long pause] [gently] [helpful] The power core goes in the machine's ring. [long pause] [cheering] The force field is back on. [relieved] [happy] The island is safe! [long pause] [warmly] [determined] Bring the power core to the machine to restore the force field around the island."
+ },
+ {
+  "group": "empathy",
+  "lines": [
+   {
+    "tone": "intro",
+    "text": "Ziya is sitting by herself. Drag the Empathy Gem to Ziya to understand how she feels.",
+    "file": "nova-empathy-01-ziya-is-sitting-by-herself-drag-the-empa.mp3",
+    "tagged": "[softly] [concerned] Ziya is sitting by herself. [warmly] [encouraging] Drag the Empathy Gem to Ziya to understand how she feels."
+   },
+   {
+    "tone": "hint",
+    "text": "Luma and Brio are playing together. Let's check on Ziya. She's sitting by herself.",
+    "file": "nova-empathy-02-luma-and-brio-are-playing-together-let-s.mp3",
+    "tagged": "[gently] Luma and Brio are playing together. [softly] Let's check on Ziya. She's sitting by herself."
+   },
+   {
+    "tone": "success",
+    "text": "Empathy helped us understand how she feels.",
+    "file": "nova-empathy-03-empathy-helped-us-understand-how-she-fee.mp3",
+    "tagged": "[warmly] [proud] Empathy helped us understand how she feels."
+   }
+  ],
+  "prompt": "[softly] [concerned] Ziya is sitting by herself. [warmly] [encouraging] Drag the Empathy Gem to Ziya to understand how she feels. [long pause] [gently] Luma and Brio are playing together. [softly] Let's check on Ziya. She's sitting by herself. [long pause] [warmly] [proud] Empathy helped us understand how she feels."
+ },
+ {
+  "group": "feelings",
+  "lines": [
+   {
+    "tone": "intro",
+    "text": "Read what happened to Brio, then drag the face that shows how he feels.",
+    "file": "nova-feelings-01-read-what-happened-to-brio-then-drag-the.mp3",
+    "tagged": "[warmly] [playful] Read what happened to Brio, then drag the face that shows how he feels."
+   },
+   {
+    "tone": "story",
+    "text": "Brio's team just won the big soccer game!",
+    "file": "nova-feelings-02-brio-s-team-just-won-the-big-soccer-game.mp3",
+    "tagged": "[excited] Brio's team just won the big soccer game!"
+   },
+   {
+    "tone": "reveal",
+    "text": "Brio feels excited!",
+    "file": "nova-feelings-03-brio-feels-excited.mp3",
+    "tagged": "[happy] Brio feels excited!"
+   },
+   {
+    "tone": "hint",
+    "text": "Look at Brio's eyes and beak. Which face looks like a big win?",
+    "file": "nova-feelings-04-look-at-brio-s-eyes-and-beak-which-face-.mp3",
+    "tagged": "[gently] [encouraging] Look at Brio's eyes and beak. [curious] Which face looks like a big win?"
+   },
+   {
+    "tone": "story",
+    "text": "Brio's balloon floated away into the sky.",
+    "file": "nova-feelings-05-brio-s-balloon-floated-away-into-the-sky.mp3",
+    "tagged": "[softly] [sad] Brio's balloon floated away into the sky."
+   },
+   {
+    "tone": "reveal",
+    "text": "Brio feels sad.",
+    "file": "nova-feelings-06-brio-feels-sad.mp3",
+    "tagged": "[gently] [sympathetic] Brio feels sad."
+   },
+   {
+    "tone": "hint",
+    "text": "How would you feel if your balloon floated away?",
+    "file": "nova-feelings-07-how-would-you-feel-if-your-balloon-float.mp3",
+    "tagged": "[softly] [curious] How would you feel if your balloon floated away?"
+   },
+   {
+    "tone": "story",
+    "text": "A big boom of thunder wakes Brio up at night.",
+    "file": "nova-feelings-08-a-big-boom-of-thunder-wakes-brio-up-at-n.mp3",
+    "tagged": "[dramatically] A big boom of thunder wakes Brio up at night."
+   },
+   {
+    "tone": "reveal",
+    "text": "Brio feels scared.",
+    "file": "nova-feelings-09-brio-feels-scared.mp3",
+    "tagged": "[softly] [nervous] Brio feels scared."
+   },
+   {
+    "tone": "hint",
+    "text": "Thunder can be really loud. Which face looks surprised and scared?",
+    "file": "nova-feelings-10-thunder-can-be-really-loud-which-face-lo.mp3",
+    "tagged": "[gently] Thunder can be really loud. [curious] Which face looks surprised and scared?"
+   },
+   {
+    "tone": "story",
+    "text": "Luma says her kite can fly all the way to the moon.",
+    "file": "nova-feelings-11-luma-says-her-kite-can-fly-all-the-way-t.mp3",
+    "tagged": "[mischievously] Luma says her kite can fly all the way to the moon."
+   },
+   {
+    "tone": "reveal",
+    "text": "Brio isn't so sure about that!",
+    "file": "nova-feelings-12-brio-isn-t-so-sure-about-that.mp3",
+    "tagged": "[chuckles] [playful] Brio isn't so sure about that!"
+   },
+   {
+    "tone": "hint",
+    "text": "Does Brio believe it? Look for the face that's not so sure.",
+    "file": "nova-feelings-13-does-brio-believe-it-look-for-the-face-t.mp3",
+    "tagged": "[curious] Does Brio believe it? [encouraging] Look for the face that's not so sure."
+   },
+   {
+    "tone": "success",
+    "text": "You figured out all of Brio's feelings!",
+    "file": "nova-feelings-14-you-figured-out-all-of-brio-s-feelings.mp3",
+    "tagged": "[cheering] You figured out all of Brio's feelings!"
+   }
+  ],
+  "prompt": "[warmly] [playful] Read what happened to Brio, then drag the face that shows how he feels. [long pause] [excited] Brio's team just won the big soccer game! [long pause] [happy] Brio feels excited! [long pause] [gently] [encouraging] Look at Brio's eyes and beak. [curious] Which face looks like a big win? [long pause] [softly] [sad] Brio's balloon floated away into the sky. [long pause] [gently] [sympathetic] Brio feels sad. [long pause] [softly] [curious] How would you feel if your balloon floated away? [long pause] [dramatically] A big boom of thunder wakes Brio up at night. [long pause] [softly] [nervous] Brio feels scared. [long pause] [gently] Thunder can be really loud. [curious] Which face looks surprised and scared? [long pause] [mischievously] Luma says her kite can fly all the way to the moon. [long pause] [chuckles] [playful] Brio isn't so sure about that! [long pause] [curious] Does Brio believe it? [encouraging] Look for the face that's not so sure. [long pause] [cheering] You figured out all of Brio's feelings!"
+ },
+ {
+  "group": "chime",
+  "lines": [
+   {
+    "tone": "intro",
+    "text": "Luma and Ziya each want something different. Drag the Consideration Chime between them so they can listen to each other.",
+    "file": "nova-chime-01-luma-and-ziya-each-want-something-differ.mp3",
+    "tagged": "[warmly] Luma and Ziya each want something different. [encouraging] Drag the Consideration Chime between them so they can listen to each other."
+   },
+   {
+    "tone": "hint",
+    "text": "Bring the chime to the space between them.",
+    "file": "nova-chime-02-bring-the-chime-to-the-space-between-the.mp3",
+    "tagged": "[gently] [encouraging] Bring the chime to the space between them."
+   },
+   {
+    "tone": "success",
+    "text": "When they listened to each other, they found a plan that works for both!",
+    "file": "nova-chime-03-when-they-listened-to-each-other-they-fo.mp3",
+    "tagged": "[warmly] [happy] When they listened to each other, they found a plan that works for both!"
+   }
+  ],
+  "prompt": "[warmly] Luma and Ziya each want something different. [encouraging] Drag the Consideration Chime between them so they can listen to each other. [long pause] [gently] [encouraging] Bring the chime to the space between them. [long pause] [warmly] [happy] When they listened to each other, they found a plan that works for both!"
+ },
+ {
+  "group": "bridge",
+  "lines": [
+   {
+    "tone": "intro",
+    "text": "The bridge is broken! Drag the planks into the gaps so Luma can cross.",
+    "file": "nova-bridge-01-the-bridge-is-broken-drag-the-planks-int.mp3",
+    "tagged": "[surprised] The bridge is broken! [playful] [encouraging] Drag the planks into the gaps so Luma can cross."
+   },
+   {
+    "tone": "cheer",
+    "text": "Clunk! That fits.",
+    "file": "nova-bridge-02-clunk-that-fits.mp3",
+    "tagged": "[playful] Clunk! [happy] That fits."
+   },
+   {
+    "tone": "cheer",
+    "text": "One step closer!",
+    "file": "nova-bridge-03-one-step-closer.mp3",
+    "tagged": "[excited] One step closer!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Sturdy!",
+    "file": "nova-bridge-04-sturdy.mp3",
+    "tagged": "[impressed] Sturdy!"
+   },
+   {
+    "tone": "hint",
+    "text": "Planks go across the gaps in the path.",
+    "file": "nova-bridge-05-planks-go-across-the-gaps-in-the-path.mp3",
+    "tagged": "[gently] [encouraging] Planks go across the gaps in the path."
+   },
+   {
+    "tone": "success",
+    "text": "The path is fixed! Luma made it across.",
+    "file": "nova-bridge-06-the-path-is-fixed-luma-made-it-across.mp3",
+    "tagged": "[cheering] The path is fixed! [happy] Luma made it across."
+   },
+   {
+    "tone": "intro",
+    "text": "Drag and drop to fix the bridge.",
+    "file": "nova-bridge-07-drag-and-drop-to-fix-the-bridge.mp3",
+    "tagged": "[warmly] [playful] Drag and drop to fix the bridge."
+   }
+  ],
+  "prompt": "[surprised] The bridge is broken! [playful] [encouraging] Drag the planks into the gaps so Luma can cross. [long pause] [playful] Clunk! [happy] That fits. [long pause] [excited] One step closer! [long pause] [impressed] Sturdy! [long pause] [gently] [encouraging] Planks go across the gaps in the path. [long pause] [cheering] The path is fixed! [happy] Luma made it across. [long pause] [warmly] [playful] Drag and drop to fix the bridge."
+ },
+ {
+  "group": "nests",
+  "lines": [
+   {
+    "tone": "intro",
+    "text": "Each nest shows the shape of its egg. Drag every egg to the nest that matches!",
+    "file": "nova-nests-01-each-nest-shows-the-shape-of-its-egg-dra.mp3",
+    "tagged": "[curious] Each nest shows the shape of its egg. [playful] [encouraging] Drag every egg to the nest that matches!"
+   },
+   {
+    "tone": "cheer",
+    "text": "A perfect match!",
+    "file": "nova-nests-02-a-perfect-match.mp3",
+    "tagged": "[delighted] A perfect match!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Snug as can be!",
+    "file": "nova-nests-03-snug-as-can-be.mp3",
+    "tagged": "[warmly] Snug as can be!"
+   },
+   {
+    "tone": "cheer",
+    "text": "That's the one!",
+    "file": "nova-nests-04-that-s-the-one.mp3",
+    "tagged": "[excited] That's the one!"
+   },
+   {
+    "tone": "hint",
+    "text": "Look at the pattern in the nest. Which egg matches it?",
+    "file": "nova-nests-05-look-at-the-pattern-in-the-nest-which-eg.mp3",
+    "tagged": "[gently] [encouraging] Look at the pattern in the nest. [curious] Which egg matches it?"
+   },
+   {
+    "tone": "success",
+    "text": "Every egg is home safe!",
+    "file": "nova-nests-06-every-egg-is-home-safe.mp3",
+    "tagged": "[happy] [relieved] Every egg is home safe!"
+   }
+  ],
+  "prompt": "[curious] Each nest shows the shape of its egg. [playful] [encouraging] Drag every egg to the nest that matches! [long pause] [delighted] A perfect match! [long pause] [warmly] Snug as can be! [long pause] [excited] That's the one! [long pause] [gently] [encouraging] Look at the pattern in the nest. [curious] Which egg matches it? [long pause] [happy] [relieved] Every egg is home safe!"
+ },
+ {
+  "group": "sort",
+  "lines": [
+   {
+    "tone": "intro",
+    "text": "Luma loves playing outside. Ziya loves quiet making time. Drag each toy to the basket of the NPC who'd enjoy it!",
+    "file": "nova-sort-01-luma-loves-playing-outside-ziya-loves-qu.mp3",
+    "tagged": "[warmly] Luma loves playing outside. Ziya loves quiet making time. [playful] [encouraging] Drag each toy to the basket of the NPC who'd enjoy it!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Good thinking!",
+    "file": "nova-sort-02-good-thinking.mp3",
+    "tagged": "[impressed] Good thinking!"
+   },
+   {
+    "tone": "cheer",
+    "text": "They'll love that!",
+    "file": "nova-sort-03-they-ll-love-that.mp3",
+    "tagged": "[delighted] They'll love that!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Nice sorting!",
+    "file": "nova-sort-04-nice-sorting.mp3",
+    "tagged": "[happy] Nice sorting!"
+   },
+   {
+    "tone": "hint",
+    "text": "Luma loves playing outside. Try Luma's basket!",
+    "file": "nova-sort-05-luma-loves-playing-outside-try-luma-s-ba.mp3",
+    "tagged": "[gently] [helpful] Luma loves playing outside. [encouraging] Try Luma's basket!"
+   },
+   {
+    "tone": "hint",
+    "text": "Ziya loves quiet making time. Try Ziya's basket!",
+    "file": "nova-sort-06-ziya-loves-quiet-making-time-try-ziya-s-.mp3",
+    "tagged": "[gently] [helpful] Ziya loves quiet making time. [encouraging] Try Ziya's basket!"
+   },
+   {
+    "tone": "success",
+    "text": "Everyone has something they enjoy!",
+    "file": "nova-sort-07-everyone-has-something-they-enjoy.mp3",
+    "tagged": "[warmly] [happy] Everyone has something they enjoy!"
+   }
+  ],
+  "prompt": "[warmly] Luma loves playing outside. Ziya loves quiet making time. [playful] [encouraging] Drag each toy to the basket of the NPC who'd enjoy it! [long pause] [impressed] Good thinking! [long pause] [delighted] They'll love that! [long pause] [happy] Nice sorting! [long pause] [gently] [helpful] Luma loves playing outside. [encouraging] Try Luma's basket! [long pause] [gently] [helpful] Ziya loves quiet making time. [encouraging] Try Ziya's basket! [long pause] [warmly] [happy] Everyone has something they enjoy!"
+ },
+ {
+  "group": "cleanup",
+  "lines": [
+   {
+    "tone": "intro",
+    "text": "The garden is messy! Drag everything into the basket and watch what grows.",
+    "file": "nova-cleanup-01-the-garden-is-messy-drag-everything-into.mp3",
+    "tagged": "[playful] [surprised] The garden is messy! [excited] Drag everything into the basket and watch what grows."
+   },
+   {
+    "tone": "cheer",
+    "text": "Poof!",
+    "file": "nova-cleanup-02-poof.mp3",
+    "tagged": "[giggles] Poof!"
+   },
+   {
+    "tone": "cheer",
+    "text": "So tidy!",
+    "file": "nova-cleanup-03-so-tidy.mp3",
+    "tagged": "[happy] So tidy!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Something's growing!",
+    "file": "nova-cleanup-04-something-s-growing.mp3",
+    "tagged": "[gasps] [amazed] Something's growing!"
+   },
+   {
+    "tone": "success",
+    "text": "All tidy! Look at all those flowers.",
+    "file": "nova-cleanup-05-all-tidy-look-at-all-those-flowers.mp3",
+    "tagged": "[cheering] All tidy! [amazed] Look at all those flowers."
+   }
+  ],
+  "prompt": "[playful] [surprised] The garden is messy! [excited] Drag everything into the basket and watch what grows. [long pause] [giggles] Poof! [long pause] [happy] So tidy! [long pause] [gasps] [amazed] Something's growing! [long pause] [cheering] All tidy! [amazed] Look at all those flowers."
+ },
+ {
+  "group": "seed",
+  "lines": [
+   {
+    "tone": "intro",
+    "text": "What goes in the hole to grow a plant? Drag your choice into the hole.",
+    "file": "nova-seed-01-what-goes-in-the-hole-to-grow-a-plant-dr.mp3",
+    "tagged": "[curious] What goes in the hole to grow a plant? [playful] [encouraging] Drag your choice into the hole."
+   },
+   {
+    "tone": "hint",
+    "text": "Hmm, that won't grow. What could?",
+    "file": "nova-seed-02-hmm-that-won-t-grow-what-could.mp3",
+    "tagged": "[thoughtful] Hmm, that won't grow. [curious] What could?"
+   },
+   {
+    "tone": "hint",
+    "text": "Rocks are great for paths, but they can't grow. What could grow into a plant?",
+    "file": "nova-seed-03-rocks-are-great-for-paths-but-they-can-t.mp3",
+    "tagged": "[gently] Rocks are great for paths, but they can't grow. [curious] What could grow into a plant?"
+   },
+   {
+    "tone": "hint",
+    "text": "Leaves grow on plants. What does a plant start from?",
+    "file": "nova-seed-04-leaves-grow-on-plants-what-does-a-plant-.mp3",
+    "tagged": "[gently] Leaves grow on plants. [curious] What does a plant start from?"
+   },
+   {
+    "tone": "success",
+    "text": "A seed! Look, it's starting to grow.",
+    "file": "nova-seed-05-a-seed-look-it-s-starting-to-grow.mp3",
+    "tagged": "[excited] A seed! [amazed] Look, it's starting to grow."
+   }
+  ],
+  "prompt": "[curious] What goes in the hole to grow a plant? [playful] [encouraging] Drag your choice into the hole. [long pause] [thoughtful] Hmm, that won't grow. [curious] What could? [long pause] [gently] Rocks are great for paths, but they can't grow. [curious] What could grow into a plant? [long pause] [gently] Leaves grow on plants. [curious] What does a plant start from? [long pause] [excited] A seed! [amazed] Look, it's starting to grow."
+ },
+ {
+  "group": "backpack",
+  "lines": [
+   {
+    "tone": "intro",
+    "text": "Obselda is heading up the trail. Drag everything she needs into her backpack!",
+    "file": "nova-backpack-01-obselda-is-heading-up-the-trail-drag-eve.mp3",
+    "tagged": "[warmly] Obselda is heading up the trail. [excited] [playful] Drag everything she needs into her backpack!"
+   },
+   {
+    "tone": "hint",
+    "text": "Drop it right into the backpack.",
+    "file": "nova-backpack-02-drop-it-right-into-the-backpack.mp3",
+    "tagged": "[gently] [encouraging] Drop it right into the backpack."
+   },
+   {
+    "tone": "success",
+    "text": "All packed! Obselda is ready for the trail.",
+    "file": "nova-backpack-03-all-packed-obselda-is-ready-for-the-trai.mp3",
+    "tagged": "[cheering] All packed! [happy] Obselda is ready for the trail."
+   },
+   {
+    "tone": "cheer",
+    "text": "Rope, packed!",
+    "file": "nova-backpack-04-rope-packed.mp3",
+    "tagged": "[cheerful] Rope, packed!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Lunch, packed!",
+    "file": "nova-backpack-05-lunch-packed.mp3",
+    "tagged": "[playful] Lunch, packed!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Headlamp, packed!",
+    "file": "nova-backpack-06-headlamp-packed.mp3",
+    "tagged": "[excited] Headlamp, packed!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Tent, packed!",
+    "file": "nova-backpack-07-tent-packed.mp3",
+    "tagged": "[cheerful] Tent, packed!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Boots, packed!",
+    "file": "nova-backpack-08-boots-packed.mp3",
+    "tagged": "[playful] Boots, packed!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Map, packed!",
+    "file": "nova-backpack-09-map-packed.mp3",
+    "tagged": "[happy] Map, packed!"
+   }
+  ],
+  "prompt": "[warmly] Obselda is heading up the trail. [excited] [playful] Drag everything she needs into her backpack! [long pause] [gently] [encouraging] Drop it right into the backpack. [long pause] [cheering] All packed! [happy] Obselda is ready for the trail. [long pause] [cheerful] Rope, packed! [long pause] [playful] Lunch, packed! [long pause] [excited] Headlamp, packed! [long pause] [cheerful] Tent, packed! [long pause] [playful] Boots, packed! [long pause] [happy] Map, packed!"
+ },
+ {
+  "group": "bots",
+  "lines": [
+   {
+    "tone": "intro",
+    "text": "Voltis's helper bots are sleepy. Drag a power core to each bot to wake it up!",
+    "file": "nova-bots-01-voltis-s-helper-bots-are-sleepy-drag-a-p.mp3",
+    "tagged": "[softly] [playful] Voltis's helper bots are sleepy. [excited] Drag a power core to each bot to wake it up!"
+   },
+   {
+    "tone": "cheer",
+    "text": "Beep boop! Awake!",
+    "file": "nova-bots-02-beep-boop-awake.mp3",
+    "tagged": "[playful] [robotic voice] Beep boop! [excited] Awake!"
+   },
+   {
+    "tone": "cheer",
+    "text": "That one's up!",
+    "file": "nova-bots-03-that-one-s-up.mp3",
+    "tagged": "[delighted] That one's up!"
+   },
+   {
+    "tone": "cheer",
+    "text": "One more to go!",
+    "file": "nova-bots-04-one-more-to-go.mp3",
+    "tagged": "[encouraging] One more to go!"
+   },
+   {
+    "tone": "hint",
+    "text": "Bring the core to a sleepy bot.",
+    "file": "nova-bots-05-bring-the-core-to-a-sleepy-bot.mp3",
+    "tagged": "[gently] [encouraging] Bring the core to a sleepy bot."
+   },
+   {
+    "tone": "success",
+    "text": "Every bot is awake and ready to help!",
+    "file": "nova-bots-06-every-bot-is-awake-and-ready-to-help.mp3",
+    "tagged": "[cheering] Every bot is awake and ready to help!"
+   }
+  ],
+  "prompt": "[softly] [playful] Voltis's helper bots are sleepy. [excited] Drag a power core to each bot to wake it up! [long pause] [playful] [robotic voice] Beep boop! [excited] Awake! [long pause] [delighted] That one's up! [long pause] [encouraging] One more to go! [long pause] [gently] [encouraging] Bring the core to a sleepy bot. [long pause] [cheering] Every bot is awake and ready to help!"
+ }
+]

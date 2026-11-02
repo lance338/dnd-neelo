@@ -1,0 +1,169 @@
+{
+ "voice": "Nova V3 (nLRXVuIXwgReSGURqkJV)",
+ "flow": "https://elevenlabs.io/app/flows/SBFwGiEF7j8zWpyA0NDf",
+ "model": "eleven_v4",
+ "voice_settings": {
+  "stability": 0.32,
+  "similarity": 0.75
+ },
+ "output_format": "mp3_44100_128",
+ "tags": "per sentence, written into script.json (v4 field); words unchanged",
+ "takes": [
+  {
+   "group": "lantern",
+   "take": "a",
+   "session_id": "lpVOf0qVvwq3fizCUSZd",
+   "seconds": 22.83
+  },
+  {
+   "group": "lantern",
+   "take": "b",
+   "session_id": "Kra2XPYVeMlfrlvlUTRk",
+   "seconds": 22.99
+  },
+  {
+   "group": "tower",
+   "take": "a",
+   "session_id": "tW6NeIUpi8AP6SW81ZWL",
+   "seconds": 22.13
+  },
+  {
+   "group": "tower",
+   "take": "b",
+   "session_id": "bYdyfPrBupMVQmNTpoND",
+   "seconds": 22.36
+  },
+  {
+   "group": "power",
+   "take": "a",
+   "session_id": "9Tcj8c62Ts43FDs9XTrr",
+   "seconds": 17.87
+  },
+  {
+   "group": "power",
+   "take": "b",
+   "session_id": "nX1Jqdlo63CA5eLjZPD7",
+   "seconds": 18.13
+  },
+  {
+   "group": "empathy",
+   "take": "a",
+   "session_id": "plXRmzkX3TNPHbJ9Nsqz",
+   "seconds": 15.31
+  },
+  {
+   "group": "empathy",
+   "take": "b",
+   "session_id": "F58kirLmq2MuY0SqJzT3",
+   "seconds": 15.88
+  },
+  {
+   "group": "feelings",
+   "take": "a",
+   "session_id": "ahtr2zIp6OTYDcz5BIxW",
+   "seconds": 52.61
+  },
+  {
+   "group": "feelings",
+   "take": "b",
+   "session_id": "MmFpUjwwwToCzV8DK5IK",
+   "seconds": 50.44
+  },
+  {
+   "group": "chime",
+   "take": "a",
+   "session_id": "iNOw2ZUVrhm25N86grxl",
+   "seconds": 14.45
+  },
+  {
+   "group": "chime",
+   "take": "b",
+   "session_id": "ujvJiZSyXH6buvYWqYin",
+   "seconds": 14.29
+  },
+  {
+   "group": "bridge",
+   "take": "a",
+   "session_id": "bcyBKDnJ1HxzNKamCYph",
+   "seconds": 22.05
+  },
+  {
+   "group": "bridge",
+   "take": "b",
+   "session_id": "HRZZhjdQm0VvtI25DeNZ",
+   "seconds": 21.79
+  },
+  {
+   "group": "nests",
+   "take": "a",
+   "session_id": "CIMmJurn3DNfI9wC9za8",
+   "seconds": 18.21
+  },
+  {
+   "group": "nests",
+   "take": "b",
+   "session_id": "sYvBZn1Iho4tSDH7sw61",
+   "seconds": 18.44
+  },
+  {
+   "group": "sort",
+   "take": "a",
+   "session_id": "rF5LjFriAwIZxQxUgjUY",
+   "seconds": 25.39
+  },
+  {
+   "group": "sort",
+   "take": "b",
+   "session_id": "uZLYHrnkXPCNpGxZcOYW",
+   "seconds": 24.69
+  },
+  {
+   "group": "cleanup",
+   "take": "a",
+   "session_id": "DfUngNsxmnnAXFK0wjab",
+   "seconds": 15.49
+  },
+  {
+   "group": "cleanup",
+   "take": "b",
+   "session_id": "o84cv5VwNpzq3SxgRzDD",
+   "seconds": 15.15
+  },
+  {
+   "group": "seed",
+   "take": "a",
+   "session_id": "VIzZTZaMRUov2n89aE2K",
+   "seconds": 21.97
+  },
+  {
+   "group": "seed",
+   "take": "b",
+   "session_id": "EMUBD4D6uvoPbssM5Rz7",
+   "seconds": 22.52
+  },
+  {
+   "group": "backpack",
+   "take": "a",
+   "session_id": "m0t8yOhIM39Vc3cklAaL",
+   "seconds": 25.0
+  },
+  {
+   "group": "backpack",
+   "take": "b",
+   "session_id": "GrE6WJsBY95g0MRFvbiy",
+   "seconds": 25.08
+  },
+  {
+   "group": "bots",
+   "take": "a",
+   "session_id": "SmRx3h4X3EC7kWbwsaVG",
+   "seconds": 16.77
+  },
+  {
+   "group": "bots",
+   "take": "b",
+   "session_id": "Ns9LMMsO7zlzpKy2FIgs",
+   "seconds": 16.67
+  }
+ ]
+}

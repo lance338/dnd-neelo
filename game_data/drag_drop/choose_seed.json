@@ -1,0 +1,82 @@
+{
+  "id": "choose_seed",
+  "world": 1,
+  "template": "right_wrong",
+  "gameType": "drag_drop",
+  "title": "Plant the Seed",
+  "scene": "seed",
+  "background": "garden",
+  "edgeColor": "#A5DDF6",
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=3898-89748",
+  "successSound": false,
+  "guide": {
+    "intro": "What goes in the hole to grow a plant? Drag your choice into the hole.",
+    "success": "A seed! Look, it's starting to grow."
+  },
+  "actors": [
+    {
+      "id": "ziya",
+      "npc": "ziya",
+      "x": 880,
+      "y": 279,
+      "size": 347,
+      "mood": "neutral",
+      "facing": -1,
+      "moods": {
+        "neutral": "img:ziya_default",
+        "happy": "img:ziya_happy"
+      }
+    }
+  ],
+  "zones": [
+    {
+      "id": "hole",
+      "art": "dirt_hole",
+      "x": 560,
+      "y": 470,
+      "size": 300,
+      "accepts": [
+        "seed"
+      ],
+      "hitRadius": 125,
+      "mode": "absorb",
+      "landSound": "transform",
+      "wrongHint": "Hmm, that won't grow. What could?",
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -6,
+          "scale": 0.6
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "rock",
+      "art": "rock",
+      "x": 430,
+      "y": 652,
+      "size": 92,
+      "required": false,
+      "hint": "Rocks are great for paths, but they can't grow. What could grow into a plant?"
+    },
+    {
+      "id": "leaf",
+      "art": "leaf",
+      "x": 580,
+      "y": 652,
+      "size": 92,
+      "required": false,
+      "hint": "Leaves grow on plants. What does a plant start from?"
+    },
+    {
+      "id": "seed",
+      "art": "seed",
+      "x": 730,
+      "y": 652,
+      "size": 84
+    }
+  ],
+  "blindTargets": true
+}

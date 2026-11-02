@@ -1,0 +1,105 @@
+{
+  "id": "w1_r3_p1_l1_intro",
+  "world": 1,
+  "template": "simple",
+  "gameType": "drag_drop",
+  "title": "L1 Outro: Light the First Lantern",
+  "scene": "tower",
+  "background": {
+    "type": "nightSky"
+  },
+  "edgeColor": "#1C3F95",
+  "meter": false,
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=4112-50081",
+  "comic": {
+    "before": [
+      {
+        "img": "assets/comic/w1_r3_p1_l1_outro_1.jpg",
+        "who": "luma",
+        "text": "Thanks for the help! It makes such a difference when someone truly sees you."
+      },
+      {
+        "img": "assets/comic/w1_r3_p1_l1_outro_2.jpg",
+        "who": "brio",
+        "text": "I never thought about how much our faces and bodies show how we feel!"
+      },
+      {
+        "img": "assets/comic/w1_r3_p1_l1_outro_3.jpg",
+        "who": "nova",
+        "text": "I learned so much! Like that everyone has their own thoughts and feelings that can be different from one another."
+      }
+    ],
+    "after": [
+      {
+        "img": "assets/comic/w1_r3_p1_l1_outro_4.jpg",
+        "who": "ziya",
+        "text": "Wow, it's beautiful!"
+      },
+      {
+        "img": "assets/comic/w1_r3_p1_l1_outro_5.jpg",
+        "who": "skyrian",
+        "text": "Understanding how others feel is where it all begins. Five more lanterns to go! Let's keep learning!"
+      }
+    ]
+  },
+  "story": {
+    "intro": [
+      {
+        "who": "skyrian",
+        "pose": "wave_right",
+        "over": "comic",
+        "text": "Now it's time to use the Sun Drops to light the first lantern."
+      },
+      {
+        "who": "skyrian",
+        "pose": "point_right",
+        "text": "Drag the sundrop to light the lantern."
+      }
+    ]
+  },
+  "guide": {
+    "intro": "Drag the sundrop to light the lantern.",
+    "hint": "Drag the sundrop to light the lantern.",
+    "success": "The lantern is shining again!",
+    "wrong": "Try dropping it right into the lantern."
+  },
+  "zones": [
+    {
+      "id": "tower",
+      "art": "img:lantern_tower_1",
+      "x": 740,
+      "y": 445,
+      "size": 430,
+      "accepts": [
+        "sundrop"
+      ],
+      "capacity": 1,
+      "stages": 6,
+      "mode": "absorb",
+      "hitRadius": 230,
+      "hitDy": -50,
+      "slots": [
+        {
+          "dx": -150,
+          "dy": -125,
+          "scale": 0.25
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "sundrop_yellow",
+      "art": "img:sundrop_yellow",
+      "x": 290,
+      "y": 330,
+      "size": 150,
+      "tags": [
+        "sundrop"
+      ],
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE45C"
+    }
+  ]
+}

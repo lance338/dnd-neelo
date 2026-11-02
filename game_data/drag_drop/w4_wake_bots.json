@@ -1,0 +1,205 @@
+{
+  "id": "w4_wake_bots",
+  "world": 4,
+  "template": "state_change",
+  "gameType": "drag_drop",
+  "title": "Wake the Bots",
+  "scene": "bots",
+  "background": {
+    "sky": [
+      [
+        0,
+        "#141B45"
+      ],
+      [
+        0.55,
+        "#2E2D78"
+      ],
+      [
+        1,
+        "#4B3C93"
+      ]
+    ],
+    "color": "#141B45"
+  },
+  "edgeColor": "#141B45",
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=4565-749669",
+  "guide": {
+    "intro": "Voltis's helper bots are sleepy. Drag a power core to each bot to wake it up!",
+    "success": "Every bot is awake and ready to help!",
+    "cheers": [
+      "Beep boop! Awake!",
+      "That one's up!",
+      "One more to go!"
+    ],
+    "wrong": "Bring the core to a sleepy bot."
+  },
+  "actors": [
+    {
+      "id": "voltis",
+      "npc": "voltis",
+      "x": 160,
+      "y": 460,
+      "size": 322,
+      "mood": "neutral",
+      "facing": 1,
+      "moods": {
+        "neutral": "img:voltis_default",
+        "wave": "img:voltis_wave",
+        "happy": "img:voltis_celebrate"
+      }
+    },
+    {
+      "id": "cat",
+      "npc": "cat",
+      "x": 1095,
+      "y": 650,
+      "size": 110,
+      "mood": "neutral",
+      "facing": -1,
+      "moods": {
+        "neutral": "img:cat"
+      }
+    }
+  ],
+  "zones": [
+    {
+      "id": "bot_a",
+      "art": "dim:img:roundbot",
+      "onArt": "img:roundbot_digital",
+      "x": 390,
+      "y": 621,
+      "size": 130,
+      "accepts": [
+        "core"
+      ],
+      "mode": "absorb",
+      "hitRadius": 95,
+      "landSound": "powerup",
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -10,
+          "scale": 0.45
+        }
+      ]
+    },
+    {
+      "id": "bot_b",
+      "art": "dim:img:roundbot",
+      "onArt": "img:roundbot_digital",
+      "x": 570,
+      "y": 621,
+      "size": 130,
+      "accepts": [
+        "core"
+      ],
+      "mode": "absorb",
+      "hitRadius": 95,
+      "landSound": "powerup",
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -10,
+          "scale": 0.45
+        }
+      ]
+    },
+    {
+      "id": "bot_c",
+      "art": "dim:img:roundbot",
+      "onArt": "img:roundbot_digital",
+      "x": 750,
+      "y": 621,
+      "size": 130,
+      "accepts": [
+        "core"
+      ],
+      "mode": "absorb",
+      "hitRadius": 95,
+      "landSound": "powerup",
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -10,
+          "scale": 0.45
+        }
+      ]
+    },
+    {
+      "id": "bigbot",
+      "art": "dim:img:bigbot",
+      "onArt": "img:bigbot",
+      "x": 955,
+      "y": 589,
+      "size": 190,
+      "accepts": [
+        "core"
+      ],
+      "mode": "absorb",
+      "hitRadius": 95,
+      "landSound": "powerup",
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -10,
+          "scale": 0.45
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "core_0",
+      "art": "img:power_core_6",
+      "x": 390,
+      "y": 290,
+      "size": 92,
+      "tags": [
+        "core"
+      ],
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE39A"
+    },
+    {
+      "id": "core_1",
+      "art": "img:power_core_6",
+      "x": 570,
+      "y": 210,
+      "size": 92,
+      "tags": [
+        "core"
+      ],
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE39A"
+    },
+    {
+      "id": "core_2",
+      "art": "img:power_core_6",
+      "x": 750,
+      "y": 290,
+      "size": 92,
+      "tags": [
+        "core"
+      ],
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE39A"
+    },
+    {
+      "id": "core_3",
+      "art": "img:power_core_6",
+      "x": 930,
+      "y": 210,
+      "size": 92,
+      "tags": [
+        "core"
+      ],
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE39A"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "templates": [
+    {
+      "id": "simple_lantern",
+      "label": "Simple drag onto",
+      "art": "img:sundrop_yellow",
+      "blurb": "Drag the sundrops into the lantern.",
+      "color": "#4A3B9C"
+    },
+    {
+      "id": "match_nests",
+      "label": "Match the outline",
+      "art": "egg_blue",
+      "blurb": "Each egg into the nest with its shape.",
+      "color": "#3E9A8A"
+    },
+    {
+      "id": "sort_toys",
+      "label": "Grouping / sorting",
+      "art": "kite",
+      "blurb": "Toys into the basket of the NPC who'd enjoy them.",
+      "color": "#E0763B"
+    },
+    {
+      "id": "puzzle_bridge",
+      "label": "Solve the puzzle",
+      "art": "img:plank",
+      "blurb": "Planks fill the gaps to fix the path.",
+      "color": "#7A62AE"
+    },
+    {
+      "id": "state_power",
+      "label": "State change",
+      "art": "img:power_core_6",
+      "blurb": "The core turns the force field back on.",
+      "color": "#2F8FA8"
+    },
+    {
+      "id": "cleanup_garden",
+      "label": "Clean up",
+      "art": "leaves_1",
+      "blurb": "Tidy the garden and flowers bloom.",
+      "color": "#4E9A4A"
+    },
+    {
+      "id": "choose_seed",
+      "label": "Right or wrong",
+      "art": "seed",
+      "blurb": "Pick what goes in the hole to grow a plant.",
+      "color": "#B5652E"
+    }
+  ],
+  "path": {
+    "world": "Aetheris",
+    "module": "w1_r3_p1",
+    "steps": [
+      {
+        "id": "w1_r3_p1_l1_intro",
+        "label": "L1 Outro",
+        "title": "Light the Lantern",
+        "art": "img:sundrop_yellow"
+      },
+      {
+        "id": "w1_r3_p1_l1_outro",
+        "label": "All 6 stages",
+        "title": "Light the Tower",
+        "art": "img:lantern_tower_7"
+      },
+      {
+        "id": "w1_r3_p1_l3_lesson",
+        "label": "L3 Lesson",
+        "title": "The Empathy Gem",
+        "art": "empathy_gem"
+      },
+      {
+        "id": "w1_r3_p1_l3_outro",
+        "label": "L3 Outro",
+        "title": "Restore the Force Field",
+        "art": "img:power_core_6"
+      },
+      {
+        "id": "w1_r3_p1_l4_feelings",
+        "label": "L4 Game",
+        "title": "What's Brio Feeling?",
+        "art": "img:brio_face_veryhappy"
+      },
+      {
+        "id": "w1_r3_p1_l5_lesson",
+        "label": "L5 Lesson",
+        "title": "The Consideration Chime",
+        "art": "consideration_chime"
+      },
+      {
+        "id": "w1_r3_p1_l5_aerial",
+        "label": "L5 Aerial",
+        "title": "Fix the Bridge",
+        "art": "img:plank"
+      }
+    ]
+  },
+  "prototypes": [
+    {
+      "id": "w2_r1_p1_backpack",
+      "label": "Pack for the Trail",
+      "world": "W2 Cragspire",
+      "art": "img:backpack_tent",
+      "blurb": "Drag Obselda's gear into her backpack.",
+      "color": "#8A5A3C"
+    },
+    {
+      "id": "w1_r3_p1_l4_feelings",
+      "label": "What's Brio Feeling?",
+      "world": "W1 L4",
+      "art": "img:brio_face_terrified",
+      "blurb": "Match the face to what happened to Brio.",
+      "color": "#475967"
+    },
+    {
+      "id": "w4_wake_bots",
+      "label": "Wake the Bots",
+      "world": "W4",
+      "art": "img:roundbot_digital",
+      "blurb": "Power cores wake up Voltis's helper bots.",
+      "color": "#2E2D78"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "id": "w1_r3_p1_l5_lesson",
+  "world": 1,
+  "template": "state_change",
+  "gameType": "drag_drop",
+  "title": "L5 Lesson: The Consideration Chime",
+  "scene": "chime",
+  "background": {
+    "img": "img:bg_schoolyard",
+    "x": 0,
+    "y": 0,
+    "w": 1162,
+    "color": "#72A142",
+    "top": "#A0D1F7",
+    "splitY": 330
+  },
+  "edgeColor": "#72A142",
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=4112-50325",
+  "successSound": false,
+  "guide": {
+    "intro": "Luma and Ziya each want something different. Drag the Consideration Chime between them so they can listen to each other.",
+    "success": "When they listened to each other, they found a plan that works for both!",
+    "wrong": "Bring the chime to the space between them.",
+    "hint": "Drag the Consideration Chime between them so they can listen to each other."
+  },
+  "actors": [
+    {
+      "id": "luma",
+      "npc": "luma",
+      "x": 360,
+      "y": 323,
+      "size": 428,
+      "mood": "cross",
+      "facing": 1,
+      "moods": {
+        "cross": "img:luma_cross",
+        "soft": "img:luma_default",
+        "happy": "img:luma_laugh",
+        "cheer": "img:luma_armsup"
+      }
+    },
+    {
+      "id": "ziya",
+      "npc": "ziya",
+      "x": 800,
+      "y": 322,
+      "size": 428,
+      "mood": "cross",
+      "facing": -1,
+      "moods": {
+        "cross": "img:ziya_cross",
+        "soft": "img:ziya_default",
+        "happy": "img:ziya_happy",
+        "cheer": "img:ziya_armsup"
+      }
+    }
+  ],
+  "zones": [
+    {
+      "id": "between",
+      "x": 581,
+      "y": 470,
+      "size": 200,
+      "hitRadius": 140,
+      "accepts": [
+        "consideration_chime"
+      ],
+      "ghost": "consideration_chime",
+      "ghostSize": 96,
+      "landSound": "chime",
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -30,
+          "scale": 0.8727272727272727
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "consideration_chime",
+      "art": "consideration_chime",
+      "x": 581,
+      "y": 180,
+      "size": 110,
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE08A"
+    }
+  ],
+  "comic": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=4575-838081",
+  "props": {
+    "ball": {
+      "x": 430,
+      "y": 640,
+      "size": 84
+    },
+    "rope": {
+      "x": 735,
+      "y": 668,
+      "size": 210,
+      "rot": 0
+    }
+  },
+  "story": {
+    "before": [
+      {
+        "who": "luma",
+        "text": "I want to play soccer!",
+        "mood": "cross"
+      },
+      {
+        "who": "ziya",
+        "text": "But I want to jump rope!",
+        "mood": "cross"
+      }
+    ],
+    "intro": [
+      {
+        "who": "skyrian",
+        "pose": "point_right",
+        "text": "They each want something different. Watch what happens when they share how they feel and really listen to each other"
+      },
+      {
+        "who": "skyrian",
+        "pose": "wave_right",
+        "text": "Drag the Consideration Chime between them so they can listen to each other."
+      }
+    ],
+    "after": [
+      {
+        "who": "luma",
+        "text": "I really want to play soccer because I've been practicing all week.",
+        "mood": "soft"
+      },
+      {
+        "who": "ziya",
+        "text": "I hear you. And I've been looking forward to jumping rope with you all day.",
+        "mood": "soft"
+      },
+      {
+        "who": "luma",
+        "text": "So what if we jump rope first and then play soccer?",
+        "mood": "happy"
+      },
+      {
+        "who": "ziya",
+        "text": "Or we could flip a coin to decide!",
+        "mood": "happy"
+      }
+    ],
+    "finale": [
+      {
+        "who": "nova",
+        "pose": "correct",
+        "text": "They shared what they wanted, listened to each other, and came up with ideas together!"
+      },
+      {
+        "who": "skyrian",
+        "pose": "celebrate",
+        "text": "That's brainstorming! It means we put all our ideas on the table before we pick one. It’s like a “menu” of choices. We pick the one that works for both of us!"
+      }
+    ]
+  }
+}

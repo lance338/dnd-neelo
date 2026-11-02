@@ -1,0 +1,116 @@
+{
+  "id": "w1_r3_p1_l4_feelings",
+  "world": 1,
+  "template": "right_wrong",
+  "gameType": "drag_drop",
+  "title": "L4: What's Brio Feeling?",
+  "scene": "feelings",
+  "background": {
+    "color": "#69879F"
+  },
+  "edgeColor": "#69879F",
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=4565-749083",
+  "blindTargets": true,
+  "successSound": true,
+  "rounds": [
+    {
+      "caption": "Brio's team just won the big soccer game!",
+      "answer": "face_veryhappy",
+      "reveal": "Brio feels excited!",
+      "hint": "Look at Brio's eyes and beak. Which face looks like a big win?"
+    },
+    {
+      "caption": "Brio's balloon floated away into the sky.",
+      "answer": "face_verysad",
+      "reveal": "Brio feels sad.",
+      "hint": "How would you feel if your balloon floated away?"
+    },
+    {
+      "caption": "A big boom of thunder wakes Brio up at night.",
+      "answer": "face_terrified",
+      "reveal": "Brio feels scared.",
+      "hint": "Thunder can be really loud. Which face looks surprised and scared?"
+    },
+    {
+      "caption": "Luma says her kite can fly all the way to the moon.",
+      "answer": "face_unconvinced",
+      "reveal": "Brio isn't so sure about that!",
+      "hint": "Does Brio believe it? Look for the face that's not so sure."
+    }
+  ],
+  "guide": {
+    "intro": "Read what happened to Brio, then drag the face that shows how he feels.",
+    "success": "You figured out all of Brio's feelings!"
+  },
+  "actors": [
+    {
+      "id": "brio",
+      "npc": "brio",
+      "x": 305,
+      "y": 678,
+      "size": 356,
+      "mood": "neutral",
+      "facing": 1,
+      "moods": {
+        "neutral": "img:brio_body"
+      }
+    }
+  ],
+  "zones": [
+    {
+      "id": "brio_face",
+      "actor": "brio",
+      "actorDy": -180,
+      "x": 305,
+      "y": 498,
+      "size": 267,
+      "hitRadius": 150,
+      "accepts": [],
+      "ghost": "img:brio_face_default",
+      "ghostSize": 290,
+      "glowColor": "#FFFFFF",
+      "slots": [
+        {
+          "dx": 0,
+          "dy": 0,
+          "scale": 1.5705882352941176
+        }
+      ],
+      "ghostStyle": "outline"
+    }
+  ],
+  "items": [
+    {
+      "id": "face_veryhappy",
+      "art": "img:brio_face_veryhappy",
+      "x": 940,
+      "y": 565,
+      "size": 170,
+      "noShadow": true
+    },
+    {
+      "id": "face_verysad",
+      "art": "img:brio_face_verysad",
+      "x": 659,
+      "y": 377,
+      "size": 170,
+      "noShadow": true
+    },
+    {
+      "id": "face_terrified",
+      "art": "img:brio_face_terrified",
+      "x": 940,
+      "y": 377,
+      "size": 170,
+      "noShadow": true
+    },
+    {
+      "id": "face_unconvinced",
+      "art": "img:brio_face_unconvinced",
+      "x": 659,
+      "y": 565,
+      "size": 170,
+      "noShadow": true
+    }
+  ]
+}

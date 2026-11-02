@@ -1,0 +1,56 @@
+{
+  "id": "state_power",
+  "world": 1,
+  "template": "state_change",
+  "gameType": "drag_drop",
+  "title": "Power the Force Field",
+  "scene": "power",
+  "background": {
+    "img": "img:bg_force_field",
+    "x": -683,
+    "y": -102,
+    "w": 2944,
+    "color": "#B0DEEF"
+  },
+  "edgeColor": "#B0DEEF",
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=3993-88468",
+  "guide": {
+    "intro": "The force field is off! Drag the power core into the machine to turn it back on.",
+    "success": "The force field is back on. The island is safe!",
+    "wrong": "The power core goes in the machine's ring."
+  },
+  "zones": [
+    {
+      "id": "machine",
+      "art": "img:machine_off",
+      "x": 568,
+      "y": 607,
+      "size": 472,
+      "accepts": [
+        "power_core"
+      ],
+      "hitRadius": 110,
+      "hitDy": -63,
+      "landSound": "powerup",
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -63,
+          "scale": 1
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "power_core",
+      "art": "img:power_core_1",
+      "x": 569,
+      "y": 190,
+      "size": 192,
+      "float": true,
+      "noShadow": true,
+      "glow": "#FFE39A"
+    }
+  ]
+}

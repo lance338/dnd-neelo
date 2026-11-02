@@ -1,0 +1,167 @@
+{
+  "id": "match_nests",
+  "world": 1,
+  "template": "match",
+  "gameType": "drag_drop",
+  "title": "Match the Eggs",
+  "scene": "nests",
+  "background": "meadow",
+  "edgeColor": "#8FD3F4",
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=3898-89741",
+  "guide": {
+    "intro": "Each nest shows the shape of its egg. Drag every egg to the nest that matches!",
+    "success": "Every egg is home safe!",
+    "cheers": [
+      "A perfect match!",
+      "Snug as can be!",
+      "That's the one!"
+    ],
+    "wrong": "Look at the pattern in the nest. Which egg matches it?"
+  },
+  "actors": [
+    {
+      "id": "parent_pink",
+      "npc": "parentPink",
+      "x": 190,
+      "y": 318,
+      "size": 150,
+      "mood": "neutral"
+    },
+    {
+      "id": "parent_blue",
+      "npc": "parentBlue",
+      "x": 440,
+      "y": 318,
+      "size": 150,
+      "mood": "neutral"
+    },
+    {
+      "id": "parent_brown",
+      "npc": "parentBrown",
+      "x": 720,
+      "y": 318,
+      "size": 150,
+      "mood": "neutral"
+    },
+    {
+      "id": "parent_orange",
+      "npc": "parentOrange",
+      "x": 970,
+      "y": 318,
+      "size": 150,
+      "mood": "neutral"
+    }
+  ],
+  "zones": [
+    {
+      "id": "nest_pink",
+      "art": "nest",
+      "x": 190,
+      "y": 452,
+      "size": 176,
+      "accepts": [
+        "egg_pink"
+      ],
+      "ghost": "egg_pink",
+      "ghostSize": 72,
+      "hitRadius": 92,
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -30,
+          "scale": 0.86
+        }
+      ]
+    },
+    {
+      "id": "nest_blue",
+      "art": "nest",
+      "x": 440,
+      "y": 452,
+      "size": 176,
+      "accepts": [
+        "egg_blue"
+      ],
+      "ghost": "egg_blue",
+      "ghostSize": 72,
+      "hitRadius": 92,
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -30,
+          "scale": 0.86
+        }
+      ]
+    },
+    {
+      "id": "nest_brown",
+      "art": "nest",
+      "x": 720,
+      "y": 452,
+      "size": 176,
+      "accepts": [
+        "egg_brown"
+      ],
+      "ghost": "egg_brown",
+      "ghostSize": 72,
+      "hitRadius": 92,
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -30,
+          "scale": 0.86
+        }
+      ]
+    },
+    {
+      "id": "nest_orange",
+      "art": "nest",
+      "x": 970,
+      "y": 452,
+      "size": 176,
+      "accepts": [
+        "egg_orange"
+      ],
+      "ghost": "egg_orange",
+      "ghostSize": 72,
+      "hitRadius": 92,
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -30,
+          "scale": 0.86
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "egg_orange",
+      "art": "egg_orange",
+      "x": 330,
+      "y": 672,
+      "size": 84
+    },
+    {
+      "id": "egg_pink",
+      "art": "egg_pink",
+      "x": 505,
+      "y": 672,
+      "size": 84
+    },
+    {
+      "id": "egg_blue",
+      "art": "egg_blue",
+      "x": 680,
+      "y": 672,
+      "size": 84
+    },
+    {
+      "id": "egg_brown",
+      "art": "egg_brown",
+      "x": 855,
+      "y": 672,
+      "size": 84
+    }
+  ]
+}
