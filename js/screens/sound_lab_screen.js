@@ -1,7 +1,7 @@
 import { SOUND_CATALOG } from '../config/sound_catalog.js';
 import { soundLab } from '../services/sound_lab_service.js';
 import { audio } from '../services/audio_service.js';
-import { tuning } from '../services/tuning_service.js';
+import { isSoundLogOn, setSoundLog } from '../services/sound_log.js';
 import { Icons } from '../components/icons.js';
 
 /**
@@ -15,8 +15,7 @@ function inUse(sound) {
   const opts = soundLab.options(sound.id);
   const picked = soundLab.chosen(sound.id);
   if (picked && opts.some((o) => o.id === picked)) return picked;
-  const local = sound.kind === 'sfx' ? 'ab'[tuning.soundChoice[sound.event] ?? 0] : tuning.get('novaVoiceTake') >= 1 ? 'b' : 'a';
-  return opts.some((o) => o.id === local) ? local : opts[0]?.id;
+  return opts.some((o) => o.id === 'a') ? 'a' : opts[0]?.id;
 }
 
 const ERRORS = {
@@ -48,7 +47,7 @@ export function renderSoundLab(root, { onBack }) {
     <div class="hub-inner">
       <div class="hub-head">
         <h1 class="hub-title">Sound Lab<small>Every sound in the prototype. Play it, generate new takes, and pick the one the game uses.</small></h1>
-        <div class="hub-actions"><button class="pill-btn" data-a="sync" title="Get new takes ready to play on this page and in the game">Sync takes <span class="lab-count"></span></button><button class="pill-btn" data-a="back">Back to levels</button></div>
+        <div class="hub-actions"><button class="pill-btn" data-a="sync" title="Get new takes ready to play on this page and in the game">Sync takes <span class="lab-count"></span></button><button class="pill-btn" data-a="log" title="List every sound as it plays, with its file">Sound log</button><button class="pill-btn" data-a="back">Back to levels</button></div>
       </div>
       <div class="lab-status" role="status"></div>
       <div class="lab-bar">
@@ -67,7 +66,7 @@ export function renderSoundLab(root, { onBack }) {
 
   function renderStatus() {
     const notes = [];
-    if (soundLab.state === 'offline') notes.push('Choices last until you reload: shared saving is not available on this view.');
+    if (soundLab.state === 'offline') notes.push('Showing the picks saved on the claude.ai Sound Lab. Changes here last until you reload; make picks on the claude.ai page.');
     else if (soundLab.state === 'loading') notes.push('Loading saved choices…');
     else if (soundLab.state === 'slow') notes.push('Saved choices can not be reached yet. What you see may be out of date.');
     if (soundLab.mcpState === 'unavailable') notes.push('Open this page in Claude with the ElevenLabs connector to generate new takes.');
@@ -172,6 +171,11 @@ export function renderSoundLab(root, { onBack }) {
   const unsub = soundLab.subscribe(render);
 
   root.querySelector('[data-a="back"]').addEventListener('click', onBack);
+  const logBtn = root.querySelector('[data-a="log"]');
+  const syncLog = () => logBtn.isConnected && logBtn.classList.toggle('on', isSoundLogOn());
+  logBtn.addEventListener('click', () => setSoundLog(!isSoundLogOn()));
+  document.addEventListener('soundlog', syncLog);
+  syncLog();
   root.querySelector('[data-a="sync"]').addEventListener('click', async () => {
     syncing = true;
     syncNote = 'Checking which takes are on the page…';
@@ -227,7 +231,6 @@ export function renderSoundLab(root, { onBack }) {
 
     if (a === 'use') {
       const o = btn.dataset.o;
-      if (s.kind === 'sfx' && (o === 'a' || o === 'b')) tuning.setSoundChoice(s.event, o === 'a' ? 0 : 1);
       try {
         await soundLab.choose(id, o);
         ui[id].error = null;

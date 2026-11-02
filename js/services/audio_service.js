@@ -1,7 +1,9 @@
 import { SOUND_MANIFEST } from '../config/sound_manifest.js';
 import { logSound } from './sound_log.js';
-import { tuning } from './tuning_service.js';
 import { soundLab, voiceIdFor } from './sound_lab_service.js';
+
+/** Bus levels. Fixed mix; which take plays is chosen only in the Sound Lab. */
+const MIX = Object.freeze({ sfx: 0.85, jingle: 0.8, voice: 1 });
 
 /**
  * Web Audio implementation of the game's AudioService.
@@ -32,7 +34,6 @@ class AudioService {
     this.jingleBus = this._bus();
     this.voiceBus = this._bus();
     this._applyVolumes();
-    tuning.subscribe(() => this._applyVolumes());
     this.unlocked = true;
     if (this.ctx.state === 'suspended') this.ctx.resume();
     this.preloadAll();
@@ -47,9 +48,9 @@ class AudioService {
   _applyVolumes() {
     if (!this.ctx) return;
     const t = this.ctx.currentTime;
-    this.sfxBus.gain.setTargetAtTime(tuning.get('volSfx'), t, 0.05);
-    this.jingleBus.gain.setTargetAtTime(tuning.get('volJingle'), t, 0.05);
-    this.voiceBus.gain.setTargetAtTime(tuning.get('volVoice'), t, 0.05);
+    this.sfxBus.gain.setTargetAtTime(MIX.sfx, t, 0.05);
+    this.jingleBus.gain.setTargetAtTime(MIX.jingle, t, 0.05);
+    this.voiceBus.gain.setTargetAtTime(MIX.voice, t, 0.05);
     this.master.gain.setTargetAtTime(this.muted ? 0 : 1, t, 0.05);
   }
 
@@ -82,8 +83,8 @@ class AudioService {
   resolve(event) {
     const s = SOUND_MANIFEST[event];
     if (!s) return { url: null, isFallback: false };
-    let choice = tuning.soundChoice[event] ?? 0;
-    if (choice >= s.options.length) choice = 0;
+    const picked = soundLab.chosen('sfx-' + event);
+    const choice = picked === 'b' && s.options.length > 1 ? 1 : 0;
     const url = s.options[choice];
     const buf = this.buffers.get(url);
     if (buf && !(buf instanceof Promise)) return { url, isFallback: false };
@@ -100,29 +101,22 @@ class AudioService {
     if (now - (this.lastPlay.get(event) || 0) < 40) return;
     this.lastPlay.set(event, now);
 
-    let choice = tuning.soundChoice[event] ?? 0;
-    if (choice >= s.options.length) choice = 0;
+    let choice = 0;
     let buf = null;
     let trim = null;
     // A choice made in the Sound Lab wins: a built-in file or a generated take
-    // Off claude.ai there is no Sound Lab database, so the picks baked into the
-    // manifest (`pick`) apply unless a take was chosen in the Tuning panel.
-    let picked = soundLab.chosen('sfx-' + event);
-    if (!picked && tuning.soundChoice[event] === undefined && s.pick) picked = s.pick;
+    // The Sound Lab is the only place a take is chosen: a built-in file or a generated take
+    const picked = soundLab.chosen('sfx-' + event);
     if (picked === 'a' || picked === 'b') choice = picked === 'a' ? 0 : 1;
-    else if (picked && picked.startsWith('audio/')) {
-      buf = await this._load(picked);
-      if (buf) trim = await this.matchLevel(event, buf);
-    } else if (picked) {
+    else if (picked) {
       const take = soundLab.takeFor('sfx-' + event, picked);
       if (take) {
         buf = await this.loadTake(take);
         if (buf) trim = await this.matchLevel(event, buf);
       }
     }
-    const baked = buf && picked.startsWith('audio/');
-    let file = buf ? (baked ? picked : soundLab.localFile(soundLab.takeFor('sfx-' + event, picked)) || 'Sound Lab take ' + picked) : null;
-    let which = buf ? (baked ? 'Sound Lab pick' : labName('sfx-' + event, picked)) : null;
+    let file = buf ? soundLab.localFile(soundLab.takeFor('sfx-' + event, picked)) || 'Sound Lab take ' + picked : null;
+    let which = buf ? labName('sfx-' + event, picked) : null;
     if (!buf) {
       buf = await this._load(s.options[choice]);
       file = s.options[choice];
@@ -174,7 +168,7 @@ class AudioService {
       const take = soundLab.takeFor(id, picked);
       if (take) buf = await this.loadTake(take);
     }
-    const useB = picked ? picked === 'b' : tuning.get('novaVoiceTake') >= 1;
+    const useB = picked === 'b';
     let file = buf ? soundLab.localFile(soundLab.takeFor(id, picked)) || 'Sound Lab take ' + picked : null;
     let which = buf ? labName(id, picked) : null;
     if (!buf) {
@@ -271,7 +265,7 @@ class AudioService {
    */
   async preview(sound, option) {
     // A take that is not on the page yet: start the browser player inside this tap
-    if (!option.builtin && !soundLab.localFile(option.take)) return this.playRemote(option.take, tuning.get(sound.kind === 'sfx' ? 'volSfx' : 'volVoice') ?? 1);
+    if (!option.builtin && !soundLab.localFile(option.take)) return this.playRemote(option.take, MIX[sound.kind === 'sfx' ? 'sfx' : 'voice']);
     this.unlock();
     if (!this.ctx) return { ok: false, reason: 'Audio is not available in this browser.' };
     if (this.ctx.state === 'suspended') await this.ctx.resume();

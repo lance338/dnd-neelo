@@ -127,7 +127,7 @@ plus square portraits `nova_w{n}_head.png` / `_head_flat.png` for the circle.
    makes the circle ring and wiggle. Hint taps are counted in the summary.
 5. **Voice**: every line Nova says is also spoken (ElevenLabs voice "Nova V3", Eleven v4, stability 0.32,
    similarity 0.75, delivery tags per sentence, 85 lines, takes A and B). `audio.speak(text)` looks the exact on-screen text up in `audio/nova/lines.json`
-   and plays `audio/nova/{a,b}/<file>.mp3` on its own voice bus (tuning: Nova voice volume and take).
+   and plays `audio/nova/{a,b}/<file>.mp3` on its own voice bus (take chosen in the Sound Lab).
    A new line cuts off the previous one. In the feelings level Nova also reads each situation.
    Recording script: `audio/nova/script.json`; downloads are split per line with
    `python3 tools/split_nova.py <folder>` (it recognises each take by its length).
@@ -149,8 +149,8 @@ SEL notes baked into the lesson scenes (from the research review):
 
 ## Sound
 
-`js/config/sound_manifest.js` maps each game event to two ElevenLabs takes (A and B, pick in the
-Tuning panel). The set comes from the ElevenLabs flow "Neelo - Drag and Drop SFX v2 (UI set)":
+`js/config/sound_manifest.js` maps each game event to two ElevenLabs takes (A and B). Which take
+plays is chosen only in the Sound Lab (below); the Tuning panel has no sound settings. The set comes from the ElevenLabs flow "Neelo - Drag and Drop SFX v2 (UI set)":
 one palette (felt-mallet marimba, celesta, soft wood), short UI lengths (0.5s for pickup, hover,
 snap and meter; 0.6s for bounce, return, plank and poof; 1 to 1.4s for hit, gem, chime, ignite,
 powerup and transform). Model `eleven_text_to_sound_v2`, prompt influence 0.65, duration set per
@@ -171,7 +171,9 @@ the game uses, and cleared of unused options.
   lines rerun their existing node; Nova lines (which were recorded as one take per level) get a
   node of their own in the "Neelo - Sound Lab" flow the first time.
 - Each press of Generate makes two takes. Choices are shared through the artifact's database
-  (`lab/<sound id>`).
+  (`lab/<sound id>`). Builds without that database (GitHub Pages, a local server) read the same
+  choices from `audio/lab/picks.json`, a snapshot of it; refresh the snapshot after changing picks.
+- "Sound log" in the Sound Lab lists every sound as it plays, with its file.
 - The published page can't load audio straight from ElevenLabs (its links are on another domain),
   so a new take opens in a new tab until it is synced: `tools/sync_lab_takes.py` downloads takes
   into `audio/lab/` and lists them in `audio/lab/index.json`. Synced takes play on the page and in

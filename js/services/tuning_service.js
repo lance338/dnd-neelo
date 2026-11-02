@@ -2,6 +2,9 @@ import { TUNING_DEFAULTS } from '../config/tuning_defaults.js';
 
 const STORAGE_KEY = 'neelo-dnd-tuning-v1';
 
+/** Defaults overlaid with saved values; keys that are no longer tuning (old audio settings) are dropped. */
+const pick = (saved = {}) => Object.fromEntries(Object.keys(TUNING_DEFAULTS).map((k) => [k, k in saved ? saved[k] : TUNING_DEFAULTS[k]]));
+
 /**
  * Holds live tuning values. In Flutter this becomes a Riverpod Notifier
  * (tuning_provider.dart) seeded from the exported JSON.
@@ -9,7 +12,6 @@ const STORAGE_KEY = 'neelo-dnd-tuning-v1';
 class TuningService {
   constructor() {
     this.values = { ...TUNING_DEFAULTS };
-    this.soundChoice = {};
     this.listeners = new Set();
     this._load();
   }
@@ -24,12 +26,6 @@ class TuningService {
     this.listeners.forEach((fn) => fn(key, value));
   }
 
-  setSoundChoice(event, option) {
-    this.soundChoice[event] = option;
-    this._save();
-    this.listeners.forEach((fn) => fn('sound:' + event, option));
-  }
-
   subscribe(fn) {
     this.listeners.add(fn);
     return () => this.listeners.delete(fn);
@@ -37,7 +33,6 @@ class TuningService {
 
   reset() {
     this.values = { ...TUNING_DEFAULTS };
-    this.soundChoice = {};
     this._save();
     this.listeners.forEach((fn) => fn('*'));
   }
@@ -49,14 +44,12 @@ class TuningService {
       exportedAt: new Date().toISOString(),
       stage: { width: 1162, height: 806, units: 'logical' },
       values: { ...this.values },
-      soundChoice: { ...this.soundChoice },
     };
   }
 
   importJSON(obj) {
     if (!obj || !obj.values) return false;
-    this.values = { ...TUNING_DEFAULTS, ...obj.values };
-    this.soundChoice = { ...(obj.soundChoice || {}) };
+    this.values = pick(obj.values);
     this._save();
     this.listeners.forEach((fn) => fn('*'));
     return true;
@@ -67,8 +60,7 @@ class TuningService {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return;
       const obj = JSON.parse(raw);
-      this.values = { ...TUNING_DEFAULTS, ...(obj.values || {}) };
-      this.soundChoice = { ...(obj.soundChoice || {}) };
+      this.values = pick(obj.values);
     } catch (e) {
       /* storage unavailable: run on defaults */
     }
@@ -76,7 +68,7 @@ class TuningService {
 
   _save() {
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify({ values: this.values, soundChoice: this.soundChoice }));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ values: this.values }));
     } catch (e) {
       /* storage unavailable */
     }

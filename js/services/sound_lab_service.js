@@ -33,9 +33,8 @@ class SoundLab {
   async _init() {
     const c = window.claude;
     if (!c?.use) {
-      this.state = 'offline';
       this.mcpState = 'unavailable';
-      return this._emit();
+      return this._offline();
     }
     c.use('mcp')
       .then((m) => {
@@ -53,10 +52,7 @@ class SoundLab {
     } catch (e) {
       /* no database */
     }
-    if (!db) {
-      this.state = 'offline';
-      return this._emit();
-    }
+    if (!db) return this._offline();
     this.db = db;
     const timer = setTimeout(() => {
       if (this.state === 'loading') {
@@ -82,10 +78,26 @@ class SoundLab {
       },
       () => {
         clearTimeout(timer);
-        this.state = 'offline';
-        this._emit();
+        this._offline();
       },
     );
+  }
+
+  /**
+   * No shared database on this view (GitHub Pages, local server): load the
+   * picks saved in the Sound Lab from audio/lab/picks.json, a snapshot of the
+   * database, so every build plays the same sounds. The Sound Lab is the only
+   * place sounds are chosen.
+   */
+  async _offline() {
+    this.state = 'offline';
+    try {
+      const snap = await fetch('audio/lab/picks.json', { cache: 'no-store' }).then((r) => (r.ok ? r.json() : {}));
+      if (!Object.keys(this.docs).length) this.docs = snap;
+    } catch (e) {
+      /* no snapshot: built-in take A everywhere */
+    }
+    this._emit();
   }
 
   subscribe(fn) {

@@ -34,6 +34,7 @@ button { font-family: inherit; cursor: pointer; }
 .hub-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 .pill-btn { border: 0; border-radius: 999px; padding: 13px 22px; font-size: 16px; font-weight: 600; background: rgba(255, 255, 255, 0.16); color: #fff; backdrop-filter: blur(6px); box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25); }
 .pill-btn:hover { background: rgba(255, 255, 255, 0.26); }
+.pill-btn.on { background: #fff; color: var(--primary-700); }
 .pill-btn.solid { background: #fff; color: var(--primary-700); box-shadow: 0 4px 0 rgba(30, 18, 70, 0.3); }
 
 .section-label { font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.6px; opacity: 0.8; margin: 56px 0 8px; }

@@ -71,16 +71,6 @@ export const TUNING_SCHEMA = [
       { key: 'showHitAreas', label: 'Show hit areas (debug)', type: 'bool', def: false },
     ],
   },
-  {
-    group: 'Audio',
-    params: [
-      { key: 'volSfx', label: 'SFX volume', min: 0, max: 1, step: 0.01, def: 0.85 },
-      { key: 'volJingle', label: 'Victory jingle volume', min: 0, max: 1, step: 0.01, def: 0.8 },
-      { key: 'volVoice', label: 'Nova voice volume', min: 0, max: 1, step: 0.05, def: 1 },
-      { key: 'novaVoiceTake', label: 'Nova voice take (0 = A, 1 = B)', min: 0, max: 1, step: 1, def: 0 },
-      { key: 'soundLog', label: 'Sound log (developer): list every sound as it plays', type: 'bool', def: false },
-    ],
-  },
 ];
 
 export const TUNING_DEFAULTS = Object.freeze(

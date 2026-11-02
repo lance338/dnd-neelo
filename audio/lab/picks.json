@@ -1,0 +1,335 @@
+{
+ "sfx-bounce": {
+  "chosen": "synth-buzz-warm",
+  "hidden": [
+   "a",
+   "b"
+  ],
+  "takes": [
+   {
+    "at": 1793600000000,
+    "credits": 0,
+    "flow": "synth",
+    "id": "synth-buzz-classic",
+    "session": "synth",
+    "sessions": [
+     "synth"
+    ]
+   },
+   {
+    "at": 1793600000001,
+    "credits": 0,
+    "flow": "synth",
+    "id": "synth-buzz-warm",
+    "session": "synth",
+    "sessions": [
+     "synth"
+    ]
+   },
+   {
+    "at": 1793600000002,
+    "credits": 0,
+    "flow": "synth",
+    "id": "synth-buzz-kazoo",
+    "session": "synth",
+    "sessions": [
+     "synth"
+    ]
+   },
+   {
+    "at": 1793600000003,
+    "credits": 0,
+    "flow": "synth",
+    "id": "synth-buzz-bright",
+    "session": "synth",
+    "sessions": [
+     "synth"
+    ]
+   },
+   {
+    "at": 1793600000004,
+    "credits": 0,
+    "flow": "synth",
+    "id": "synth-buzz-droop",
+    "session": "synth",
+    "sessions": [
+     "synth"
+    ]
+   }
+  ]
+ },
+ "sfx-hit": {
+  "chosen": "p27xa8JwFHJsj5aF3YmK",
+  "hidden": [
+   "a",
+   "b"
+  ],
+  "takes": [
+   {
+    "at": 1793563421908,
+    "credits": 12,
+    "flow": "2gRbavHqAimJYJBgh7qt",
+    "id": "p27xa8JwFHJsj5aF3YmK",
+    "session": "yABkdLCvhHLTv5LXFiXD",
+    "sessions": [
+     "yABkdLCvhHLTv5LXFiXD",
+     "nvITBlWBkixdqMErSNi6"
+    ]
+   },
+   {
+    "at": 1793564127775,
+    "credits": 12,
+    "flow": "2gRbavHqAimJYJBgh7qt",
+    "id": "pb47atyzEVYstYhWbRyb",
+    "session": "d9YTo1PSDEj6VymosO31",
+    "sessions": [
+     "w5vQpQOfZZt4vEP6z1Ko",
+     "d9YTo1PSDEj6VymosO31"
+    ]
+   }
+  ]
+ },
+ "sfx-hover": {
+  "chosen": "rHzS7G6GGXWqaadxxipS",
+  "hidden": [
+   "a",
+   "b"
+  ],
+  "takes": [
+   {
+    "at": 1793561960402,
+    "credits": 8,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "rHzS7G6GGXWqaadxxipS",
+    "session": "aPO6dXqqlGvagsSbaXMv",
+    "sessions": [
+     "aPO6dXqqlGvagsSbaXMv",
+     "77SFdw8SIIautqebdeZ4"
+    ]
+   },
+   {
+    "at": 1793598504393,
+    "credits": 35,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "iPrQeInTIhWYiBWM5mjq",
+    "session": "n7JKk3UNseIPegTurKqb",
+    "sessions": [
+     "n7JKk3UNseIPegTurKqb"
+    ]
+   },
+   {
+    "at": 1793598504470,
+    "credits": 35,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "qIhnRvnHSV6GMhi4mEH3",
+    "session": "RZsyR33kRenzcDMQN9xr",
+    "sessions": [
+     "RZsyR33kRenzcDMQN9xr"
+    ]
+   }
+  ]
+ },
+ "sfx-ignite": {
+  "chosen": "Gq3Uq5qUmfj6s9NAdqjI",
+  "hidden": [
+   "b"
+  ],
+  "takes": [
+   {
+    "at": 1793567317940,
+    "credits": 22,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "AYvYlBhGqnfaITM4ZDMi",
+    "session": "ZpJMORJ1h4YCLWofACSm",
+    "sessions": [
+     "ZOxmpx2m6jbN1xl2Xmua",
+     "ZpJMORJ1h4YCLWofACSm"
+    ]
+   },
+   {
+    "at": 1793567565622,
+    "credits": 22,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "Gq3Uq5qUmfj6s9NAdqjI",
+    "session": "xdBFPDLy4KcUjKFupuD6",
+    "sessions": [
+     "YOsQ30pZpC5MrDd7W9uq",
+     "xdBFPDLy4KcUjKFupuD6"
+    ]
+   }
+  ]
+ },
+ "sfx-pickup": {
+  "chosen": "dY2wgmWTOzF1s7uw0OBC",
+  "hidden": [
+   "a",
+   "b"
+  ],
+  "takes": [
+   {
+    "at": 1793560309337,
+    "credits": 5,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "dY2wgmWTOzF1s7uw0OBC",
+    "session": "nF3V6bZSUDw4eL9GblCf"
+   },
+   {
+    "at": 1793598392703,
+    "credits": 5,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "jPKfryogVvBs6sK4KAYn",
+    "session": "OGCwHqaIu5UJWxdNW09e",
+    "sessions": [
+     "OGCwHqaIu5UJWxdNW09e",
+     "bGZyRAXgE6lL7AHh6do8"
+    ]
+   },
+   {
+    "at": 1793598392704,
+    "credits": 5,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "DV4j07gxuUcTanKeKLkA",
+    "session": "bGZyRAXgE6lL7AHh6do8",
+    "sessions": [
+     "OGCwHqaIu5UJWxdNW09e",
+     "bGZyRAXgE6lL7AHh6do8"
+    ]
+   }
+  ]
+ },
+ "sfx-plank": {
+  "chosen": "b",
+  "hidden": [
+   "a"
+  ],
+  "takes": []
+ },
+ "sfx-poof": {
+  "chosen": "kOH8MR2BovMdBot5l3gY-puff",
+  "takes": [
+   {
+    "at": 1793598900000,
+    "credits": 6,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "kOH8MR2BovMdBot5l3gY-puff",
+    "session": "C9YQfT9LDzGcHnAYokBa",
+    "sessions": [
+     "C9YQfT9LDzGcHnAYokBa"
+    ]
+   },
+   {
+    "at": 1793599500004,
+    "credits": 0,
+    "flow": "synth",
+    "id": "synth-poof-small",
+    "session": "synth",
+    "sessions": [
+     "synth"
+    ]
+   },
+   {
+    "at": 1793599500005,
+    "credits": 0,
+    "flow": "synth",
+    "id": "synth-poof-fluffy",
+    "session": "synth",
+    "sessions": [
+     "synth"
+    ]
+   },
+   {
+    "at": 1793599500006,
+    "credits": 0,
+    "flow": "synth",
+    "id": "synth-poof-double",
+    "session": "synth",
+    "sessions": [
+     "synth"
+    ]
+   }
+  ]
+ },
+ "sfx-powerup": {
+  "chosen": "b",
+  "takes": [
+   {
+    "at": 1793568859612,
+    "credits": 15,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "6XfmV8Kw2l1KSB3c1bd2",
+    "session": "i0DnZu6NH2ijc36HRvPj",
+    "sessions": [
+     "u6QJsYbVk1r8hQFN9WQY",
+     "i0DnZu6NH2ijc36HRvPj"
+    ]
+   },
+   {
+    "at": 1793570100000,
+    "credits": 20,
+    "flow": "2gRbavHqAimJYJBgh7qt",
+    "id": "5aSXyWkq78A05P8Rm2dM",
+    "session": "zeGWXQn7v076AmUMecD7",
+    "sessions": [
+     "zeGWXQn7v076AmUMecD7"
+    ]
+   },
+   {
+    "at": 1793570100001,
+    "credits": 20,
+    "flow": "2gRbavHqAimJYJBgh7qt",
+    "id": "ts2DlyVbXlrcnjNhUoT3",
+    "session": "YfsRhhCaGIqg0Lk5MAkz",
+    "sessions": [
+     "YfsRhhCaGIqg0Lk5MAkz"
+    ]
+   },
+   {
+    "at": 1793570100002,
+    "credits": 20,
+    "flow": "2gRbavHqAimJYJBgh7qt",
+    "id": "Fe5evNJfPb0l5txAkgvj",
+    "session": "TWfYKGI8XzKTzbFzmVta",
+    "sessions": [
+     "TWfYKGI8XzKTzbFzmVta"
+    ]
+   }
+  ]
+ },
+ "sfx-return": {
+  "chosen": "H7tY1nXWnDUVvl06hZEx-soft",
+  "hidden": [
+   "a",
+   "b"
+  ],
+  "takes": [
+   {
+    "at": 1793566625190,
+    "credits": 6,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "83K2OjFS3Ykkfr6C3TZk",
+    "session": "CM4ApkSesUljFEOmyY04",
+    "sessions": [
+     "CM4ApkSesUljFEOmyY04",
+     "eCLkps2W5j8sdIJoHHhC"
+    ]
+   },
+   {
+    "at": 1793598600002,
+    "credits": 7,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "H7tY1nXWnDUVvl06hZEx-soft",
+    "session": "QqMn6PNf77Vkx6d1u4O2",
+    "sessions": [
+     "QqMn6PNf77Vkx6d1u4O2"
+    ]
+   }
+  ]
+ },
+ "sfx-snap": {
+  "chosen": "b",
+  "hidden": [
+   "a"
+  ],
+  "takes": []
+ }
+}

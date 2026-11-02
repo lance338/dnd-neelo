@@ -1,8 +1,5 @@
 import { TUNING_SCHEMA } from '../../../config/tuning_defaults.js';
-import { SOUND_MANIFEST } from '../../../config/sound_manifest.js';
 import { tuning } from '../../../services/tuning_service.js';
-import { audio } from '../../../services/audio_service.js';
-import { soundLab } from '../../../services/sound_lab_service.js';
 import { Icons } from '../../../components/icons.js';
 
 /**
@@ -54,37 +51,6 @@ export function createTuningPanel(host) {
       body.appendChild(d);
     });
 
-    const sd = document.createElement('details');
-    sd.open = true;
-    sd.innerHTML = `<summary>Sounds (pick a take)</summary>`;
-    Object.entries(SOUND_MANIFEST).forEach(([ev, s]) => {
-      const row = document.createElement('div');
-      row.className = 'srow';
-      // A pick made in the Sound Lab is shared and wins over this panel
-      const labPick = soundLab.chosen('sfx-' + ev) || (tuning.soundChoice[ev] === undefined ? s.pick : undefined);
-      const choice = labPick === 'a' ? 0 : labPick === 'b' ? 1 : labPick ? -1 : tuning.soundChoice[ev] ?? 0;
-      const res = audio.unlocked ? audio.resolve(ev) : { isFallback: false };
-      row.innerHTML = `<div class="sname">${s.label}${res.isFallback ? '<small>new take not added yet, using library sound</small>' : ''}${choice < 0 ? '<small>Using a new take from the Sound Lab</small>' : ''}</div>
-        <div class="seg">${(s.optionLabels || ['A', 'B']).map((l, i) => `<button data-o="${i}" class="${choice === i ? 'on' : ''}">${l}</button>`).join('')}<button class="play" aria-label="Preview">${Icons.play}</button></div>`;
-      if (s.optionNotes) row.querySelector('.sname').insertAdjacentHTML('beforeend', `<small style="color:var(--ink-soft)">${Object.entries(s.optionNotes).map(([k, v]) => k + ': ' + v).join(' · ')}</small>`);
-      row.querySelectorAll('[data-o]').forEach((b) =>
-        b.addEventListener('click', () => {
-          audio.unlock();
-          tuning.setSoundChoice(ev, Number(b.dataset.o));
-          if (soundLab.chosen('sfx-' + ev)) soundLab.choose('sfx-' + ev, 'ab'[Number(b.dataset.o)]).catch(() => {});
-          row.querySelectorAll('[data-o]').forEach((x) => x.classList.toggle('on', x === b));
-          audio.lastPlay.delete(ev);
-          audio.play(ev);
-        }),
-      );
-      row.querySelector('.play').addEventListener('click', () => {
-        audio.unlock();
-        audio.lastPlay.delete(ev);
-        audio.play(ev);
-      });
-      sd.appendChild(row);
-    });
-    body.appendChild(sd);
   }
 
   el.querySelector('.close').addEventListener('click', () => toggle(false));

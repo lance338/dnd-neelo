@@ -1,7 +1,13 @@
-import { tuning } from './tuning_service.js';
+const KEY = 'neelo-dnd-sound-log';
+let on = false;
+try {
+  on = localStorage.getItem(KEY) === '1';
+} catch (e) {
+  /* storage unavailable */
+}
 
 /**
- * Developer sound log (Tuning > Audio > "Sound log"). Every sound the game plays
+ * Developer sound log (Sound Lab > "Sound log"). Every sound the game plays
  * is written to the browser console and to a small on-screen panel: the action it
  * belongs to and the exact file or Sound Lab take that played.
  * Prototype only; in Flutter this maps to a debug overlay behind the same flag.
@@ -30,7 +36,7 @@ function ensurePanel() {
       entries.length = 0;
       render();
     }
-    if (a === 'off') tuning.set('soundLog', false);
+    if (a === 'off') setSoundLog(false);
   });
   document.body.appendChild(panel);
 }
@@ -45,17 +51,27 @@ function render() {
 }
 
 function sync() {
-  const on = !!tuning.get('soundLog');
   if (on) ensurePanel();
   if (panel) panel.classList.toggle('show', on);
   if (on) render();
 }
-tuning.subscribe((key) => (key === 'soundLog' || key === '*') && sync());
 sync();
+
+export const isSoundLogOn = () => on;
+export function setSoundLog(value) {
+  on = !!value;
+  try {
+    localStorage.setItem(KEY, on ? '1' : '0');
+  } catch (e) {
+    /* storage unavailable */
+  }
+  sync();
+  document.dispatchEvent(new CustomEvent('soundlog', { detail: on }));
+}
 
 /** Record one played sound: kind 'sfx' | 'voice', the action, which sound, and its file. */
 export function logSound({ kind = 'sfx', action, sound, file }) {
-  if (!tuning.get('soundLog')) return;
+  if (!on) return;
   const e = { kind, at: time(), action, sound, file };
   entries.unshift(e);
   if (entries.length > MAX) entries.pop();
