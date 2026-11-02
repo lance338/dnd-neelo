@@ -105,17 +105,24 @@ class AudioService {
     let buf = null;
     let trim = null;
     // A choice made in the Sound Lab wins: a built-in file or a generated take
-    const picked = soundLab.chosen('sfx-' + event);
+    // Off claude.ai there is no Sound Lab database, so the picks baked into the
+    // manifest (`pick`) apply unless a take was chosen in the Tuning panel.
+    let picked = soundLab.chosen('sfx-' + event);
+    if (!picked && tuning.soundChoice[event] === undefined && s.pick) picked = s.pick;
     if (picked === 'a' || picked === 'b') choice = picked === 'a' ? 0 : 1;
-    else if (picked) {
+    else if (picked && picked.startsWith('audio/')) {
+      buf = await this._load(picked);
+      if (buf) trim = await this.matchLevel(event, buf);
+    } else if (picked) {
       const take = soundLab.takeFor('sfx-' + event, picked);
       if (take) {
         buf = await this.loadTake(take);
         if (buf) trim = await this.matchLevel(event, buf);
       }
     }
-    let file = buf ? soundLab.localFile(soundLab.takeFor('sfx-' + event, picked)) || 'Sound Lab take ' + picked : null;
-    let which = buf ? labName('sfx-' + event, picked) : null;
+    const baked = buf && picked.startsWith('audio/');
+    let file = buf ? (baked ? picked : soundLab.localFile(soundLab.takeFor('sfx-' + event, picked)) || 'Sound Lab take ' + picked) : null;
+    let which = buf ? (baked ? 'Sound Lab pick' : labName('sfx-' + event, picked)) : null;
     if (!buf) {
       buf = await this._load(s.options[choice]);
       file = s.options[choice];

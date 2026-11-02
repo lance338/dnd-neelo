@@ -457,7 +457,7 @@ export class DragDropGame {
       this.effects.puff(sp.x, sp.y - 10, 7);
     }
     this.hud.setProgress(this.controller.progress, true);
-    if (this.controller.progress < 1 && this.controller.placedIds.size > 0) this.play('meter', { gain: 0.6 });
+    if (this.level.meter !== false && this.controller.progress < 1 && this.controller.placedIds.size > 0) this.play('meter', { gain: 0.6 });
     if (this.scene.onPlace) await this.scene.onPlace(this, item, zone);
     else this._cheer();
 

@@ -61,7 +61,7 @@ export function createTuningPanel(host) {
       const row = document.createElement('div');
       row.className = 'srow';
       // A pick made in the Sound Lab is shared and wins over this panel
-      const labPick = soundLab.chosen('sfx-' + ev);
+      const labPick = soundLab.chosen('sfx-' + ev) || (tuning.soundChoice[ev] === undefined ? s.pick : undefined);
       const choice = labPick === 'a' ? 0 : labPick === 'b' ? 1 : labPick ? -1 : tuning.soundChoice[ev] ?? 0;
       const res = audio.unlocked ? audio.resolve(ev) : { isFallback: false };
       row.innerHTML = `<div class="sname">${s.label}${res.isFallback ? '<small>new take not added yet, using library sound</small>' : ''}${choice < 0 ? '<small>Using a new take from the Sound Lab</small>' : ''}</div>

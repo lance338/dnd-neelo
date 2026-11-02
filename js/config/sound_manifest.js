@@ -8,20 +8,24 @@
  * `gain` is a per-event trim on top of the SFX bus, and `vary` adds a tiny random
  * pitch change so repeated drops never sound identical.
  * `fallback` is an existing Neelo library sound, used only if a file is missing.
+ * `pick` is the take chosen in the Sound Lab ('a', 'b' or a file in audio/lab/),
+ * baked in so the GitHub build plays the same sounds as the claude.ai page.
+ * A take chosen in the Tuning panel overrides it.
  */
 const LIB = 'audio/lib/';
 const DND = 'audio/dnd/';
+const LAB = 'audio/lab/';
 
 export const SOUND_MANIFEST = {
-  pickup: { label: 'Pick up', options: [DND + 'dnd-pickup-a.mp3', DND + 'dnd-pickup-b.mp3'], trims: [0.56, 2.6], fallback: LIB + 'ui-tap-B-bubble-pop-a.mp3', gain: 0.8, vary: 0.05 },
-  snap: { label: 'Snap into place', options: [DND + 'dnd-snap-a.mp3', DND + 'dnd-snap-b.mp3'], trims: [0.52, 0.81], fallback: null, gain: 0.9, vary: 0.04 },
-  hit: { label: 'Correct drop (hits the target)', options: [DND + 'dnd-hit-a.mp3', DND + 'dnd-hit-b.mp3'], trims: [3.05, 1.84], fallback: LIB + 'coin-F-marimba-3-note-a.mp3', gain: 0.9, vary: 0.03 },
-  bounce: { label: 'Not this one (bounce back)', options: [DND + 'dnd-bounce-a.mp3', DND + 'dnd-bounce-b.mp3'], trims: [1.88, 0.84], fallback: null, gain: 0.75, vary: 0.04 },
-  return: { label: 'Glide home', options: [DND + 'dnd-return-a.mp3', DND + 'dnd-return-b.mp3'], trims: [0.99, 0.76], fallback: null, gain: 0.6, vary: 0.05 },
-  plank: { label: 'Bridge plank', options: [DND + 'dnd-plank-a.mp3', DND + 'dnd-plank-b.mp3'], trims: [1.74, 0.97], fallback: LIB + 'footstep-wood-a.mp3', gain: 1, vary: 0.06 },
-  ignite: { label: 'Lantern lights', options: [DND + 'dnd-ignite-a.mp3', DND + 'dnd-ignite-b.mp3'], trims: [3.98, 2.37], fallback: null, gain: 0.9, vary: 0 },
-  powerup: { label: 'Machine powers on', options: [DND + 'dnd-powerup-a.mp3', DND + 'dnd-powerup-b.mp3'], trims: [0.79, 0.6], fallback: null, gain: 0.9, vary: 0 },
-  poof: { label: 'Clean up poof', options: [DND + 'dnd-poof-a.mp3', DND + 'dnd-poof-b.mp3'], trims: [1.06, 2.26], fallback: null, gain: 0.8, vary: 0.08 },
+  pickup: { label: 'Pick up', pick: LAB + 'sfx-pickup-dY2wgmWTOzF1s7uw0OBC.mp3', options: [DND + 'dnd-pickup-a.mp3', DND + 'dnd-pickup-b.mp3'], trims: [0.56, 2.6], fallback: LIB + 'ui-tap-B-bubble-pop-a.mp3', gain: 0.8, vary: 0.05 },
+  snap: { label: 'Snap into place', pick: 'b', options: [DND + 'dnd-snap-a.mp3', DND + 'dnd-snap-b.mp3'], trims: [0.52, 0.81], fallback: null, gain: 0.9, vary: 0.04 },
+  hit: { label: 'Correct drop (hits the target)', pick: LAB + 'sfx-hit-p27xa8JwFHJsj5aF3YmK.mp3', options: [DND + 'dnd-hit-a.mp3', DND + 'dnd-hit-b.mp3'], trims: [3.05, 1.84], fallback: LIB + 'coin-F-marimba-3-note-a.mp3', gain: 0.9, vary: 0.03 },
+  bounce: { label: 'Not this one (bounce back)', pick: LAB + 'sfx-bounce-synth-buzz-warm.mp3', options: [DND + 'dnd-bounce-a.mp3', DND + 'dnd-bounce-b.mp3'], trims: [1.88, 0.84], fallback: null, gain: 0.75, vary: 0.04 },
+  return: { label: 'Glide home', pick: LAB + 'sfx-return-H7tY1nXWnDUVvl06hZEx-soft.mp3', options: [DND + 'dnd-return-a.mp3', DND + 'dnd-return-b.mp3'], trims: [0.99, 0.76], fallback: null, gain: 0.6, vary: 0.05 },
+  plank: { label: 'Bridge plank', pick: 'b', options: [DND + 'dnd-plank-a.mp3', DND + 'dnd-plank-b.mp3'], trims: [1.74, 0.97], fallback: LIB + 'footstep-wood-a.mp3', gain: 1, vary: 0.06 },
+  ignite: { label: 'Lantern lights', pick: LAB + 'sfx-ignite-Gq3Uq5qUmfj6s9NAdqjI.mp3', options: [DND + 'dnd-ignite-a.mp3', DND + 'dnd-ignite-b.mp3'], trims: [3.98, 2.37], fallback: null, gain: 0.9, vary: 0 },
+  powerup: { label: 'Machine powers on', pick: 'b', options: [DND + 'dnd-powerup-a.mp3', DND + 'dnd-powerup-b.mp3'], trims: [0.79, 0.6], fallback: null, gain: 0.9, vary: 0 },
+  poof: { label: 'Clean up poof', pick: LAB + 'sfx-poof-kOH8MR2BovMdBot5l3gY-puff.mp3', options: [DND + 'dnd-poof-a.mp3', DND + 'dnd-poof-b.mp3'], trims: [1.06, 2.26], fallback: null, gain: 0.8, vary: 0.08 },
   transform: { label: 'State change', options: [DND + 'dnd-transform-a.mp3', DND + 'dnd-transform-b.mp3'], trims: [0.6, 1.46], fallback: null, gain: 0.85, vary: 0 },
   chime: { label: 'Consideration Chime', options: [DND + 'dnd-chime-a.mp3', DND + 'dnd-chime-b.mp3'], trims: [1.07, 2.92], fallback: null, gain: 1, vary: 0 },
   gem: { label: 'Empathy Gem', options: [DND + 'dnd-gem-a.mp3', DND + 'dnd-gem-b.mp3'], trims: [2.75, 2.92], fallback: null, gain: 0.9, vary: 0 },

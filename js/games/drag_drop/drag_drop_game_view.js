@@ -412,6 +412,8 @@ export async function mountGameView(root, levelId, { onExit, onNext, nextLabel }
     const level = await fetch(`game_data/drag_drop/${levelId}.json`).then((r) => r.json());
     world = level.world || 1;
     hideComic();
+    // Story beats told as a comic are not a game: no progress meter
+    if (Array.isArray(level.comic?.before) || Array.isArray(level.comic?.after)) level.meter = false;
     gameEl.classList.toggle('no-meter', level.meter === false);
     [...(level.comic?.before || []), ...(level.comic?.after || [])].forEach((f) => (new Image().src = f.img));
     ['quiz', 'correct', 'head', 'head_flat'].forEach((p) => (new Image().src = novaArt(world, p)));
