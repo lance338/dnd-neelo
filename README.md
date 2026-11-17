@@ -18,6 +18,16 @@ every interaction, animation, sound and rule.
 Run locally: `python3 -m http.server` in this folder, open `http://localhost:8000`.
 Press **T** in any level (or the sliders button) for the Tuning panel.
 
+## Comic to Check-In · Camera Pan (W5R1P1 Level 1)
+
+A full lesson flow on its own page: Tremu's comic, his two lines, the drag and drop with a
+**camera pan** to the Everglenians, the zoom and burst, then Nova's check-in.
+Play it at https://lance338.github.io/dnd-neelo/comic-to-checkin/ (also on the launch pad under
+New prototypes). Everything the developer needs to rebuild the camera pan and the sequence in
+Flutter + Flame (positions, timings, easing, the camera model, the item-above-target rule, the
+payoff) is in [`comic-to-checkin/README.md`](comic-to-checkin/README.md). The folder is
+self-contained and does not change anything else in this repo.
+
 ## What to look at
 
 | Template | Level file | What it proves |

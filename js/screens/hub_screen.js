@@ -61,7 +61,13 @@ export function renderHub(root, index, { onPlay }) {
       <div class="grid">
         ${(index.prototypes || [])
           .map(
-            (t) => `<button class="tcard" style="background:${t.color}" data-id="${t.id}" data-group="prototypes">
+            (t) =>
+              // A prototype that lives on its own page (e.g. comic-to-checkin/) opens it directly
+              t.href
+                ? `<a class="tcard" style="background:${t.color};text-decoration:none" href="${t.href}">
+              <img alt="" src="${t.thumb || artThumb(t.art)}" style="padding:22px;box-sizing:border-box">
+              <span class="num">${t.world}</span><span class="label">${t.label}</span><span class="blurb">${t.blurb}</span></a>`
+                : `<button class="tcard" style="background:${t.color}" data-id="${t.id}" data-group="prototypes">
               <img alt="" src="${artThumb(t.art)}">
               <span class="num">${t.world}</span><span class="label">${t.label}</span><span class="blurb">${t.blurb}</span></button>`,
           )

@@ -100,6 +100,16 @@
   },
   "prototypes": [
     {
+      "id": "w5_r1_p1_l1_c2c_camera",
+      "href": "comic-to-checkin/",
+      "thumb": "comic-to-checkin/assets/img/w5_stress_symbol.svg",
+      "label": "Camera Pan",
+      "world": "W5 Everglen",
+      "art": "img:w5_stress_symbol",
+      "blurb": "Comic, drag and drop with a camera pan, then the check-in.",
+      "color": "#3E8F7A"
+    },
+    {
       "id": "w2_r1_p1_backpack",
       "label": "Pack for the Trail",
       "world": "W2 Cragspire",
