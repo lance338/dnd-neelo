@@ -89,7 +89,7 @@ export class ActorComponent {
     const feetY = this.y.value + h / 2; // all transforms pivot on the feet
     const c = this.cheer.value;
     const bw = this.size * (base.bodyW || 1); // shadow follows the body, not the padded art
-    shadow(ctx, x, this.y.value + h * 0.47, bw * 0.32 * s * (1 + c * 0.04), bw * 0.06 * s, 0.16);
+    if (!this.def.noShadow) shadow(ctx, x, this.y.value + h * 0.47, bw * 0.32 * s * (1 + c * 0.04), bw * 0.06 * s, 0.16);
     const opts = {
       scaleX: this.facing * s * (1 - breath * 0.5 - c * 0.06),
       scaleY: s * (1 + breath + c * 0.1),

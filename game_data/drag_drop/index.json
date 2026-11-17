@@ -1,137 +1,204 @@
 {
-  "templates": [
-    {
-      "id": "simple_lantern",
-      "label": "Simple drag onto",
-      "art": "img:sundrop_yellow",
-      "blurb": "Drag the sundrops into the lantern.",
-      "color": "#4A3B9C"
-    },
-    {
-      "id": "match_nests",
-      "label": "Match the outline",
-      "art": "egg_blue",
-      "blurb": "Each egg into the nest with its shape.",
-      "color": "#3E9A8A"
-    },
-    {
-      "id": "sort_toys",
-      "label": "Grouping / sorting",
-      "art": "kite",
-      "blurb": "Toys into the basket of the NPC who'd enjoy them.",
-      "color": "#E0763B"
-    },
-    {
-      "id": "puzzle_bridge",
-      "label": "Solve the puzzle",
-      "art": "img:plank",
-      "blurb": "Planks fill the gaps to fix the path.",
-      "color": "#7A62AE"
-    },
-    {
-      "id": "state_power",
-      "label": "State change",
-      "art": "img:power_core_6",
-      "blurb": "The core turns the force field back on.",
-      "color": "#2F8FA8"
-    },
-    {
-      "id": "cleanup_garden",
-      "label": "Clean up",
-      "art": "leaves_1",
-      "blurb": "Tidy the garden and flowers bloom.",
-      "color": "#4E9A4A"
-    },
-    {
-      "id": "choose_seed",
-      "label": "Right or wrong",
-      "art": "seed",
-      "blurb": "Pick what goes in the hole to grow a plant.",
-      "color": "#B5652E"
-    }
-  ],
-  "path": {
-    "world": "Aetheris",
-    "module": "w1_r3_p1",
-    "steps": [
-      {
-        "id": "w1_r3_p1_l1_intro",
-        "label": "L1 Outro",
-        "title": "Light the Lantern",
-        "art": "img:sundrop_yellow"
-      },
-      {
-        "id": "w1_r3_p1_l1_outro",
-        "label": "All 6 stages",
-        "title": "Light the Tower",
-        "art": "img:lantern_tower_7"
-      },
-      {
-        "id": "w1_r3_p1_l3_lesson",
-        "label": "L3 Lesson",
-        "title": "The Empathy Gem",
-        "art": "empathy_gem"
-      },
-      {
-        "id": "w1_r3_p1_l3_outro",
-        "label": "L3 Outro",
-        "title": "Restore the Force Field",
-        "art": "img:power_core_6"
-      },
-      {
-        "id": "w1_r3_p1_l4_feelings",
-        "label": "L4 Game",
-        "title": "What's Brio Feeling?",
-        "art": "img:brio_face_veryhappy"
-      },
-      {
-        "id": "w1_r3_p1_l5_lesson",
-        "label": "L5 Lesson",
-        "title": "The Consideration Chime",
-        "art": "consideration_chime"
-      },
-      {
-        "id": "w1_r3_p1_l5_aerial",
-        "label": "L5 Aerial",
-        "title": "Fix the Bridge",
-        "art": "img:plank"
-      }
-    ]
+ "featured": [
+  {
+   "id": "w5_r1_p1_l1_c2c_v2",
+   "label": "Camera Pan",
+   "world": "W5 Everglen · Comic to Check-In",
+   "art": "img:w5_stress_symbol",
+   "blurb": "Tremu’s comic, a camera pan to the Everglenians for the drag and drop, then Nova’s check-in.",
+   "color": "#3E8F7A"
   },
-  "prototypes": [
-    {
-      "id": "w5_r1_p1_l1_c2c_camera",
-      "href": "comic-to-checkin/",
-      "thumb": "comic-to-checkin/assets/img/w5_stress_symbol.svg",
-      "label": "Camera Pan",
-      "world": "W5 Everglen",
-      "art": "img:w5_stress_symbol",
-      "blurb": "Comic, drag and drop with a camera pan, then the check-in.",
-      "color": "#3E8F7A"
-    },
-    {
-      "id": "w2_r1_p1_backpack",
-      "label": "Pack for the Trail",
-      "world": "W2 Cragspire",
-      "art": "img:backpack_tent",
-      "blurb": "Drag Obselda's gear into her backpack.",
-      "color": "#8A5A3C"
-    },
-    {
-      "id": "w1_r3_p1_l4_feelings",
-      "label": "What's Brio Feeling?",
-      "world": "W1 L4",
-      "art": "img:brio_face_terrified",
-      "blurb": "Match the face to what happened to Brio.",
-      "color": "#475967"
-    },
-    {
-      "id": "w4_wake_bots",
-      "label": "Wake the Bots",
-      "world": "W4",
-      "art": "img:roundbot_digital",
-      "blurb": "Power cores wake up Voltis's helper bots.",
-      "color": "#2E2D78"
-    }
+  {
+   "id": "w2_r1_p1_l1_lessons",
+   "label": "Pack for the Trail",
+   "world": "W2 Cragspire · L1",
+   "art": "img:backpack_tent",
+   "blurb": "Pack Obselda's gear. Every piece teaches a lesson about flexible thinking.",
+   "color": "#8A5A3C"
+  },
+  {
+   "id": "w1_r3_p1_l1_intro",
+   "label": "Light the Lantern",
+   "world": "W1 Aetheris · L1 Outro",
+   "art": "img:sundrop_yellow",
+   "blurb": "Drag the sundrops into the lantern to light the way.",
+   "color": "#4A3B9C"
+  }
+ ],
+ "templates": [
+  {
+   "id": "simple_lantern",
+   "label": "Simple drag onto",
+   "art": "img:sundrop_yellow",
+   "blurb": "Drag the sundrops into the lantern.",
+   "color": "#4A3B9C"
+  },
+  {
+   "id": "match_nests",
+   "label": "Match the outline",
+   "art": "egg_blue",
+   "blurb": "Each egg into the nest with its shape.",
+   "color": "#3E9A8A"
+  },
+  {
+   "id": "sort_toys",
+   "label": "Grouping / sorting",
+   "art": "kite",
+   "blurb": "Toys into the basket of the NPC who'd enjoy them.",
+   "color": "#E0763B"
+  },
+  {
+   "id": "puzzle_bridge",
+   "label": "Solve the puzzle",
+   "art": "plank",
+   "blurb": "Planks fill the gaps to fix the path.",
+   "color": "#7A62AE"
+  },
+  {
+   "id": "state_power",
+   "label": "State change",
+   "art": "img:power_core_6",
+   "blurb": "The core turns the force field back on.",
+   "color": "#2F8FA8"
+  },
+  {
+   "id": "cleanup_garden",
+   "label": "Clean up",
+   "art": "leaves_1",
+   "blurb": "Tidy the garden and flowers bloom.",
+   "color": "#4E9A4A"
+  },
+  {
+   "id": "choose_seed",
+   "label": "Right or wrong",
+   "art": "seed",
+   "blurb": "Pick what goes in the hole to grow a plant.",
+   "color": "#B5652E"
+  }
+ ],
+ "path": {
+  "world": "Aetheris",
+  "module": "w1_r3_p1",
+  "steps": [
+   {
+    "id": "w1_r3_p1_l1_intro",
+    "label": "L1 Outro",
+    "title": "Light the Lantern",
+    "art": "img:sundrop_yellow"
+   },
+   {
+    "id": "w1_r3_p1_l1_intro_game",
+    "label": "L1 Outro (game only)",
+    "title": "Light the Lantern",
+    "art": "img:sundrop_yellow"
+   },
+   {
+    "id": "w1_r3_p1_l1_outro",
+    "label": "All 6 stages",
+    "title": "Light the Tower",
+    "art": "img:lantern_tower_7"
+   },
+   {
+    "id": "w1_r3_p1_l3_lesson",
+    "label": "L3 Lesson",
+    "title": "The Empathy Gem",
+    "art": "empathy_gem"
+   },
+   {
+    "id": "w1_r3_p1_l3_outro",
+    "label": "L3 Outro",
+    "title": "Restore the Force Field",
+    "art": "img:power_core_6"
+   },
+   {
+    "id": "w1_r3_p1_l4_feelings",
+    "label": "L4 Game",
+    "title": "What's Brio Feeling?",
+    "art": "img:brio_face_veryhappy"
+   },
+   {
+    "id": "w1_r3_p1_l5_lesson",
+    "label": "L5 Lesson",
+    "title": "The Consideration Chime",
+    "art": "consideration_chime"
+   },
+   {
+    "id": "w1_r3_p1_l5_aerial",
+    "label": "L5 Aerial",
+    "title": "Fix the Bridge",
+    "art": "plank"
+   }
   ]
+ },
+ "prototypes": [
+  {
+   "id": "w5_r1_p1_l1_body_stress",
+   "label": "Comic to Check-In · Caption",
+   "world": "W5 Everglen · R1P1 L1",
+   "art": "img:w5_stress_symbol",
+   "blurb": "Tremu's body stress comic, help the Everglenians, then Nova's check-in."
+  },
+  {
+   "id": "w5_r1_p1_l1_body_stress_overlay",
+   "label": "Comic to Check-In · Overlay",
+   "world": "W5 Everglen · R1P1 L1",
+   "art": "img:w5_stress_symbol",
+   "blurb": "Same lesson, with Tremu's lines in the pop-up overlay instead of the caption."
+  },
+  {
+   "id": "w2_r1_p1_backpack",
+   "label": "Pack for the Trail (no lessons)",
+   "world": "W2 Cragspire",
+   "art": "img:backpack_tent",
+   "blurb": "Drag Obselda's gear into her backpack.",
+   "color": "#8A5A3C"
+  },
+  {
+   "id": "w1_r3_p1_l4_feelings",
+   "label": "What's Brio Feeling?",
+   "world": "W1 L4",
+   "art": "img:brio_face_terrified",
+   "blurb": "Match the face to what happened to Brio.",
+   "color": "#475967"
+  },
+  {
+   "id": "w4_wake_bots",
+   "label": "Wake the Bots",
+   "world": "W4",
+   "art": "img:roundbot_digital",
+   "blurb": "Power cores wake up Voltis's helper bots.",
+   "color": "#2E2D78"
+  }
+ ],
+ "c2c": {
+  "kicker": "W5 Everglen · R1P1 Level 1",
+  "title": "Comic to Check-In",
+  "lede": "Three ways to get from Tremu’s comic into the drag and drop.",
+  "versions": [
+   {
+    "id": "w5_r1_p1_l1_c2c_v1",
+    "label": "Version 1",
+    "name": "The NPCs move",
+    "about": "The body stress symbol appears during Tremu’s second line. When he leaves, the Everglenians slide to the middle of the screen."
+   },
+   {
+    "id": "w5_r1_p1_l1_c2c_v2",
+    "label": "Version 2",
+    "name": "The camera pans",
+    "about": "The body stress symbol appears during Tremu’s second line. When he leaves, the camera pans so the Everglenians are in the middle of the screen."
+   },
+   {
+    "id": "w5_r1_p1_l1_c2c_v3",
+    "label": "Version 3",
+    "name": "Tremu stays",
+    "about": "Nothing moves. Tremu stays on screen with his second line while you drag. The drop sends him off and the zoom plays."
+   }
+  ]
+ },
+ "labels": {
+  "featured": "Current templates",
+  "featuredTitle": "Finalized and ready to build",
+  "wip": "Work in progress",
+  "wipTitle": "Prototypes and earlier templates"
+ }
 }

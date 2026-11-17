@@ -92,13 +92,13 @@ class AudioService {
     return { url: s.fallback, isFallback: true };
   }
 
-  async play(event, { gain = 1, rate = 1 } = {}) {
+  async play(event, { gain = 1, rate = 1, repeat = false } = {}) {
     if (!this.unlocked || !this.ctx) return;
     const s = SOUND_MANIFEST[event];
     if (!s) return;
     // Debounce identical events fired within 40ms (multi-touch, double callbacks)
     const now = performance.now();
-    if (now - (this.lastPlay.get(event) || 0) < 40) return;
+    if (!repeat && now - (this.lastPlay.get(event) || 0) < 40) return;
     this.lastPlay.set(event, now);
 
     let choice = 0;
@@ -168,6 +168,9 @@ class AudioService {
       const take = soundLab.takeFor(id, picked);
       if (take) buf = await this.loadTake(take);
     }
+    // New Sound Lab takes come out of ElevenLabs at their own loudness; play them
+    // as loud as this line's built-in take so every line sits at the same level
+    const trim = buf ? await this.matchVoice(entry.a, buf) : 1;
     const useB = picked === 'b';
     let file = buf ? soundLab.localFile(soundLab.takeFor(id, picked)) || 'Sound Lab take ' + picked : null;
     let which = buf ? labName(id, picked) : null;
@@ -175,6 +178,12 @@ class AudioService {
       file = useB ? entry.b : entry.a;
       which = useB ? 'B' : 'A';
       buf = await this._load(file);
+      // A build that only ships take A still speaks when B is picked
+      if (!buf && useB && entry.a) {
+        file = entry.a;
+        which = 'A';
+        buf = await this._load(file);
+      }
     }
     if (!buf) return;
     const name = who ? who[0].toUpperCase() + who.slice(1) : 'Nova';
@@ -182,7 +191,10 @@ class AudioService {
     this.stopVoice();
     const src = this.ctx.createBufferSource();
     src.buffer = buf;
-    src.connect(this.voiceBus);
+    const g = this.ctx.createGain();
+    g.gain.value = trim;
+    src.connect(g);
+    g.connect(this.voiceBus);
     src.start();
     this.voiceSrc = src;
     return src;
@@ -259,6 +271,15 @@ class AudioService {
     return Math.min(6, Math.max(0.15, target / r));
   }
 
+  /** Trim for a Sound Lab voice take so it plays as loud as the line's built-in take. */
+  async matchVoice(builtinFile, buf) {
+    const ref = builtinFile ? await this._load(builtinFile) : null;
+    const target = this._rms(ref);
+    const r = this._rms(buf);
+    if (!target || !r) return 1;
+    return Math.min(8, Math.max(0.25, target / r));
+  }
+
   /**
    * Sound Lab preview: play one option of one sound (catalog entry + option from
    * soundLab.options). Resolves { ok, reason }.
@@ -281,6 +302,7 @@ class AudioService {
     } else {
       buf = await this.loadTake(option.take);
       if (buf && sound.kind === 'sfx') level = (SOUND_MANIFEST[sound.event]?.gain ?? 1) * (await this.matchLevel(sound.event, buf));
+      else if (buf) level = await this.matchVoice(sound.builtins?.[0]?.src, buf);
     }
     if (!buf) return { ok: false, reason: 'File missing.' };
     this.stopPreview();

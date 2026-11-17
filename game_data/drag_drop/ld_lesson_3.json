@@ -1,0 +1,50 @@
+{
+  "id": "ld_lesson_3",
+  "world": 5,
+  "gameType": "drag_drop",
+  "kind": "comic",
+  "title": "Lesson 3",
+  "background": {
+    "color": "#FFFFFF"
+  },
+  "edgeColor": "#FFFFFF",
+  "meter": false,
+  "comic": {
+    "before": [
+      {
+        "img": "assets/level_demo/l3_frame_1.svg",
+        "who": "tremu",
+        "text": "A third way that stress can come up is through our THOUGHTS. Stress can change how you think."
+      },
+      {
+        "img": "assets/level_demo/l3_frame_2.svg",
+        "who": "tremu",
+        "text": "Your mind might feel foggy or confused."
+      },
+      {
+        "img": "assets/level_demo/l3_frame_3.svg",
+        "who": "tremu",
+        "text": "Things you know might suddenly become hard to remember."
+      },
+      {
+        "img": "assets/level_demo/l3_frame_4.svg",
+        "who": "tremu",
+        "text": "Or, you might imagine something bad will happen if you try, which makes you want to give up before you even start."
+      },
+      {
+        "img": "assets/level_demo/l3_frame_5.svg",
+        "who": "tremu",
+        "text": "But remember, this is just thought stress. It can feel big and scary, but we are strong and we can absolutely overcome it."
+      },
+      {
+        "img": "assets/level_demo/l3_frame_6.svg",
+        "who": "tremu",
+        "text": "Even the mightiest forest creatures feel stress feelings. If we know how to spot them, then we can choose to focus on more helpful thoughts instead."
+      }
+    ]
+  },
+  "guide": {},
+  "actors": [],
+  "zones": [],
+  "items": []
+}

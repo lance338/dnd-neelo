@@ -122,7 +122,8 @@ async function loadImageArt(key) {
     return { img, w: fw, h: fh, frame: { x: fx, y: fy, iw: img.naturalWidth, ih: img.naturalHeight } };
   }
   // NPCs share one Figma frame with margin for arms, so the body is ~40% of the art's width.
-  return { img, w: img.naturalWidth, h: img.naturalHeight, bodyW: entry.npcFrame ? 0.4 : 1 };
+  // head: where the top of the head sits, as a fraction of the art's height (speech bubbles point there)
+  return { img, w: img.naturalWidth, h: img.naturalHeight, bodyW: entry.npcFrame ? 0.4 : 1, head: entry.head };
 }
 
 /** URL for hub thumbnails: real art file, or the SVG stand-in as a data URI. */

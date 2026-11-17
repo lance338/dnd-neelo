@@ -65,7 +65,9 @@ export const TUNING_SCHEMA = [
   {
     group: 'Effects',
     params: [
-      { key: 'sparkleCount', label: 'Sparkles on correct drop', min: 0, max: 60, step: 1, def: 22 },
+      { key: 'hitStyle', label: 'Correct drop effect', type: 'choice', options: ['Current', 'Pop', 'Stars', 'Glow', 'Bubble'], def: 0 },
+      { key: 'burstStyle', label: 'Lantern burst (L1 Outro)', type: 'choice', options: ['Rays', 'Bloom', 'Firework', 'Starburst', 'Bubble'], def: 0 },
+      { key: 'sparkleCount', label: 'Sparkles on correct drop (Current effect)', min: 0, max: 60, step: 1, def: 22 },
       { key: 'confettiCount', label: 'Celebration confetti', min: 0, max: 200, step: 5, def: 90 },
       { key: 'ambientMotion', label: 'Ambient motion (clouds, bob, twinkle)', min: 0, max: 2, step: 0.05, def: 1 },
       { key: 'showHitAreas', label: 'Show hit areas (debug)', type: 'bool', def: false },

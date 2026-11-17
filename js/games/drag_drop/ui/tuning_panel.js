@@ -36,6 +36,15 @@ export function createTuningPanel(host) {
           row.className = 'trow bool';
           row.innerHTML = `<label>${p.label}<input type="checkbox" ${v ? 'checked' : ''}></label>`;
           row.querySelector('input').addEventListener('change', (e) => tuning.set(p.key, e.target.checked));
+        } else if (p.type === 'choice') {
+          row.className = 'trow choice';
+          row.innerHTML = `<label><span>${p.label}</span></label><div class="seg">${p.options.map((o, i) => `<button type="button" class="${i === v ? 'on' : ''}">${o}</button>`).join('')}</div>`;
+          row.querySelectorAll('.seg button').forEach((b, i) =>
+            b.addEventListener('click', () => {
+              tuning.set(p.key, i);
+              row.querySelectorAll('.seg button').forEach((x, j) => x.classList.toggle('on', j === i));
+            }),
+          );
         } else {
           row.className = 'trow';
           row.innerHTML = `<label><span>${p.label}</span><b>${fmt(p, v)}</b></label><input type="range" min="${p.min}" max="${p.max}" step="${p.step}" value="${v}">`;

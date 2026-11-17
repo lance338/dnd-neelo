@@ -18,12 +18,23 @@ every interaction, animation, sound and rule.
 Run locally: `python3 -m http.server` in this folder, open `http://localhost:8000`.
 Press **T** in any level (or the sliders button) for the Tuning panel.
 
+## Current templates (top of the launch pad)
+
+These three are finalized and are the ones to build. Everything else on the launch pad is under
+**Work in progress**: earlier templates and prototypes kept for reference.
+
+| Template | Level file | What it is |
+| --- | --- | --- |
+| Camera Pan | `w5_r1_p1_l1_c2c_v2` | W5R1P1 L1 Comic to Check-In: Tremu's comic, his two overlay lines, the drag and drop with a camera pan to the Everglenians, the zoom and burst, then Nova's check-in. Full notes in [`comic-to-checkin/README.md`](comic-to-checkin/README.md) |
+| Pack for the Trail | `w2_r1_p1_l1_lessons` | W2 Cragspire L1: pack Obselda's gear, each piece plays a short lesson |
+| Light the Lantern | `w1_r3_p1_l1_intro` | W1 Aetheris L1 Outro: drag the sundrops into the lantern to light the way |
+
 ## Comic to Check-In · Camera Pan (W5R1P1 Level 1)
 
 A full lesson flow on its own page: Tremu's comic, his two lines, the drag and drop with a
 **camera pan** to the Everglenians, the zoom and burst, then Nova's check-in.
-Play it at https://lance338.github.io/dnd-neelo/comic-to-checkin/ (also on the launch pad under
-New prototypes). Everything the developer needs to rebuild the camera pan and the sequence in
+Play it at https://lance338.github.io/dnd-neelo/comic-to-checkin/ (also the first card on the
+launch pad). Everything the developer needs to rebuild the camera pan and the sequence in
 Flutter + Flame (positions, timings, easing, the camera model, the item-above-target rule, the
 payoff) is in [`comic-to-checkin/README.md`](comic-to-checkin/README.md). The folder is
 self-contained and does not change anything else in this repo.

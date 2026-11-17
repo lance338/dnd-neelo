@@ -1,0 +1,50 @@
+{
+  "id": "ld_lesson_2",
+  "world": 5,
+  "gameType": "drag_drop",
+  "kind": "comic",
+  "title": "Lesson 2",
+  "background": {
+    "color": "#FFFFFF"
+  },
+  "edgeColor": "#FFFFFF",
+  "meter": false,
+  "comic": {
+    "before": [
+      {
+        "img": "assets/level_demo/l2_frame_1.svg",
+        "who": "tremu",
+        "text": "A second way that stress can show up is in our emotions! By giving us big feelings! Like REALLY big."
+      },
+      {
+        "img": "assets/level_demo/l2_frame_2.svg",
+        "who": "tremu",
+        "text": "Like a heavy feeling or not wanting to practice, even when a big show is coming."
+      },
+      {
+        "img": "assets/level_demo/l2_frame_3.svg",
+        "who": "tremu",
+        "text": "The nervous stress makes you want to avoid getting ready, like you’re pushing the big day away to give yourself more time."
+      },
+      {
+        "img": "assets/level_demo/l2_frame_4.svg",
+        "who": "tremu",
+        "text": "But actually, you’re just making yourself more nervous and stressed."
+      },
+      {
+        "img": "assets/level_demo/l2_frame_5.svg",
+        "who": "tremu",
+        "text": "When I feel stressed like this, I get cranky and mean to people around me. This might happen to you too."
+      },
+      {
+        "img": "assets/level_demo/l2_frame_6.svg",
+        "who": "tremu",
+        "text": "This is emotional stress! It’s totally normal, and we can learn how to handle it."
+      }
+    ]
+  },
+  "guide": {},
+  "actors": [],
+  "zones": [],
+  "items": []
+}

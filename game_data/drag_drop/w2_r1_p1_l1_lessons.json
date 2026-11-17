@@ -1,0 +1,293 @@
+{
+  "id": "w2_r1_p1_l1_lessons",
+  "world": 2,
+  "template": "simple",
+  "gameType": "drag_drop",
+  "title": "Pack for the Trail: Gear Lessons",
+  "scene": "trail_lessons",
+  "background": {
+    "img": "img:bg_cragspire",
+    "x": -319,
+    "y": -28,
+    "w": 1800,
+    "color": "#AEE1EE"
+  },
+  "edgeColor": "#AEE1EE",
+  "figma": "https://www.figma.com/design/MO9N0aXrIAacfj1oleXLKa/Lance-s-Sandbox?node-id=4614-859658",
+  "guide": {
+    "intro": "Obselda is packing for the climb. Drag each piece of gear into her backpack to find out what it's for!",
+    "success": "All packed! Obselda is ready for the trail.",
+    "wrong": "Drop it right into the backpack."
+  },
+  "actors": [
+    {
+      "id": "obselda",
+      "npc": "obselda",
+      "x": 165,
+      "y": 430,
+      "size": 350,
+      "mood": "neutral",
+      "facing": 1,
+      "moods": {
+        "neutral": "img:obselda"
+      }
+    }
+  ],
+  "zones": [
+    {
+      "id": "backpack",
+      "art": "img:backpack_open",
+      "x": 650,
+      "y": 509,
+      "size": 200,
+      "accepts": [
+        "gear"
+      ],
+      "capacity": 6,
+      "mode": "absorb",
+      "hitRadius": 150,
+      "hitDy": -20,
+      "slots": [
+        {
+          "dx": 0,
+          "dy": -90,
+          "scale": 0.55
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "rope",
+      "art": "img:cfo_item1",
+      "x": 330,
+      "y": 410,
+      "size": 112,
+      "tags": [
+        "gear"
+      ],
+      "float": true
+    },
+    {
+      "id": "lunchbox",
+      "art": "img:cfo_item2",
+      "x": 440,
+      "y": 245,
+      "size": 112,
+      "tags": [
+        "gear"
+      ],
+      "float": true
+    },
+    {
+      "id": "helmet",
+      "art": "img:cfo_item3",
+      "x": 600,
+      "y": 175,
+      "size": 112,
+      "tags": [
+        "gear"
+      ],
+      "float": true
+    },
+    {
+      "id": "tent",
+      "art": "img:cfo_item4",
+      "x": 775,
+      "y": 185,
+      "size": 112,
+      "tags": [
+        "gear"
+      ],
+      "float": true
+    },
+    {
+      "id": "boots",
+      "art": "img:cfo_item5",
+      "x": 925,
+      "y": 275,
+      "size": 112,
+      "tags": [
+        "gear"
+      ],
+      "float": true
+    },
+    {
+      "id": "map",
+      "art": "img:cfo_item6",
+      "x": 1030,
+      "y": 440,
+      "size": 112,
+      "tags": [
+        "gear"
+      ],
+      "float": true
+    }
+  ],
+  "lessons": {
+    "rope": [
+      {
+        "text": "This special climbing rope is one of our most important tools.",
+        "anim": "pop"
+      },
+      {
+        "text": "Watch how it stretches without breaking!",
+        "anim": "stretch"
+      },
+      {
+        "text": "Regular ropes can snap if pulled too hard. Just like our thinking can ‘snap’ when things don’t go as planned.",
+        "anim": "shake"
+      },
+      {
+        "text": "Imagine you always play video games after school, but one day your console stops working.",
+        "anim": "wiggle"
+      },
+      {
+        "text": "If your thinking is flexible, like this stretchy rope, you can come up with other fun ideas, like reading a comic book or calling a friend.",
+        "anim": "stretch"
+      },
+      {
+        "text": "Flexible thinking helps us find new paths when our usual way is blocked, just like our stretchy rope helps climbers find new paths up the mountain!",
+        "anim": "ropeDrop"
+      },
+      {
+        "text": "The more we practice, the easier it becomes to handle changes!",
+        "anim": "shine"
+      }
+    ],
+    "lunchbox": [
+      {
+        "text": "Next up, our special expanding snack container! Watch what happens as we climb higher.",
+        "anim": "pop"
+      },
+      {
+        "text": "At high altitudes, air pressure changes.",
+        "anim": "pressure"
+      },
+      {
+        "text": "A regular container might crack or pop, but this one adjusts, just like we need to adjust our thinking when plans change.",
+        "anim": "expand"
+      },
+      {
+        "text": "Think about dinner time. If Mom says we’re having pizza but then the oven breaks, rigid thinking might make us upset.",
+        "anim": "shake"
+      },
+      {
+        "text": "But expandable thinking helps us say, “That’s okay, sandwiches can be just as good!”",
+        "anim": "snack"
+      },
+      {
+        "text": "Just like our container adjusts to different pressures, we can adjust our thinking to handle changes!",
+        "anim": "shine"
+      }
+    ],
+    "helmet": [
+      {
+        "text": "These next two items work together: our special sunglasses and aerodynamic helmet. They help us adapt to all kinds of weather on our climb.",
+        "anim": "pop"
+      },
+      {
+        "text": "The sunglasses protect our eyes from the sun…",
+        "anim": "sunny"
+      },
+      {
+        "text": "But watch what happens when clouds roll in! The helmet protects us from wind. Nature doesn’t always give us the weather we want.",
+        "anim": "storm"
+      },
+      {
+        "text": "It’s frustrating when we’re excited for one thing and suddenly have to do something else.",
+        "anim": "wiggle"
+      },
+      {
+        "text": "But what if we expected that change and were ready for it? Like at the park: if it’s sunny, you swing.",
+        "anim": "sunny"
+      },
+      {
+        "text": "If it rains, you can jump in puddles! Being flexible and prepared means you can have fun no matter what happens.",
+        "anim": "puddle"
+      },
+      {
+        "text": "Just like we bring the right gear, we can bring the right mindset to any challenge in life!",
+        "anim": "shine"
+      }
+    ],
+    "tent": [
+      {
+        "text": "This tent might seem heavy, but it’s one of our most important tools.",
+        "anim": "heavy"
+      },
+      {
+        "text": "Sometimes the mountain sends us storms, fog, or strong winds.",
+        "anim": "storm"
+      },
+      {
+        "text": "When that happens, rushing ahead could be dangerous. Our tent gives us a safe place to wait.",
+        "anim": "shelter"
+      },
+      {
+        "text": "Pausing or taking a break can give us energy to start again! Pausing doesn’t mean we’re giving up.",
+        "anim": "calm"
+      },
+      {
+        "text": "The mountain will still be there when we’re ready to continue!",
+        "anim": "clear"
+      },
+      {
+        "text": "The best climbers know when to push forward and when to pause. Success isn’t just about moving fast, it’s about moving wisely!",
+        "anim": "shine"
+      }
+    ],
+    "boots": [
+      {
+        "text": "Ah, I see you’re already wearing hiking boots! But look at this second pair I have for you…",
+        "anim": "pop"
+      },
+      {
+        "text": "Your boots work great on dry ground, but this pair has special treads that grip on slippery paths!",
+        "anim": "grip"
+      },
+      {
+        "text": "What if your boots get soaked crossing a stream? Dry backups keep you going! And look, on ice…",
+        "anim": "slip"
+      },
+      {
+        "text": "The backup boots help us handle surprise challenges. It’s just like having a backup plan for other things we do.",
+        "anim": "steps"
+      },
+      {
+        "text": "Backup plans help us keep going even when things don’t go as planned.",
+        "anim": "bob"
+      },
+      {
+        "text": "When we know we have options, changes don’t feel as scary. They just become part of the adventure!",
+        "anim": "shine"
+      }
+    ],
+    "map": [
+      {
+        "text": "This special map might be the most important item we pack. See how it shows the path up the mountain?",
+        "anim": "route"
+      },
+      {
+        "text": "Sometimes nature changes our plans! A rockslide might block our usual path.",
+        "anim": "rockslide"
+      },
+      {
+        "text": "That’s when our map becomes a treasure! See these other paths? They all lead to the same amazing view at the top!",
+        "anim": "routes"
+      },
+      {
+        "text": "Some might take longer, but they all get us there.",
+        "anim": "bob"
+      },
+      {
+        "text": "There are different paths to reach the peak of the mountain, just like there are many paths to reach our goals.",
+        "anim": "nod"
+      },
+      {
+        "text": "Our map reminds us that there’s usually more than one way to reach our destination.",
+        "anim": "shine"
+      }
+    ]
+  }
+}

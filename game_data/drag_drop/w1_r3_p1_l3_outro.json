@@ -38,75 +38,19 @@
           "dy": -63,
           "scale": 1
         }
-      ],
-      "capacity": 5
+      ]
     }
   ],
   "items": [
     {
-      "id": "power_core_1",
+      "id": "power_core",
       "art": "img:power_core_1",
-      "x": 230,
-      "y": 180,
-      "size": 140,
+      "x": 569,
+      "y": 190,
+      "size": 192,
       "float": true,
       "noShadow": true,
-      "glow": "#FFE39A",
-      "tags": [
-        "power_core"
-      ]
-    },
-    {
-      "id": "power_core_2",
-      "art": "img:power_core_1",
-      "x": 400,
-      "y": 180,
-      "size": 140,
-      "float": true,
-      "noShadow": true,
-      "glow": "#FFE39A",
-      "tags": [
-        "power_core"
-      ]
-    },
-    {
-      "id": "power_core_3",
-      "art": "img:power_core_1",
-      "x": 570,
-      "y": 180,
-      "size": 140,
-      "float": true,
-      "noShadow": true,
-      "glow": "#FFE39A",
-      "tags": [
-        "power_core"
-      ]
-    },
-    {
-      "id": "power_core_4",
-      "art": "img:power_core_1",
-      "x": 740,
-      "y": 180,
-      "size": 140,
-      "float": true,
-      "noShadow": true,
-      "glow": "#FFE39A",
-      "tags": [
-        "power_core"
-      ]
-    },
-    {
-      "id": "power_core_5",
-      "art": "img:power_core_1",
-      "x": 910,
-      "y": 180,
-      "size": 140,
-      "float": true,
-      "noShadow": true,
-      "glow": "#FFE39A",
-      "tags": [
-        "power_core"
-      ]
+      "glow": "#FFE39A"
     }
   ]
 }

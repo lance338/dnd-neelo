@@ -375,14 +375,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-lantern-01-the-lantern-has-gone-dark-drag-the-sundr",
-    "prompt": "[softly] [curious] The lantern has gone dark. [excited] [playful] Drag the sundrops into the lantern to light it up!",
+    "prompt": "The lantern has gone dark. Drag the sundrops into the lantern to light it up!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -411,14 +410,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-lantern-02-it-s-glowing",
-    "prompt": "[gasps] [excited] It's glowing!",
+    "prompt": "It's glowing!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -447,14 +445,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-lantern-03-brighter-and-brighter",
-    "prompt": "[delighted] Brighter and brighter!",
+    "prompt": "Brighter and brighter!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -483,14 +480,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-lantern-04-almost-there",
-    "prompt": "[eager] Almost there!",
+    "prompt": "Almost there!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -519,14 +515,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-lantern-05-try-dropping-it-right-into-the-lantern",
-    "prompt": "[gently] [encouraging] Try dropping it right into the lantern.",
+    "prompt": "Try dropping it right into the lantern.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -555,14 +550,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-lantern-06-you-lit-the-lantern-look-how-bright-the-",
-    "prompt": "[cheering] You lit the lantern! [amazed] Look how bright the sky is now.",
+    "prompt": "You lit the lantern! Look how bright the sky is now.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -591,14 +585,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-lantern-07-drag-the-sundrop-to-light-the-lantern",
-    "prompt": "[warmly] [playful] Drag the sundrop to light the lantern.",
+    "prompt": "Drag the sundrop to light the lantern.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -627,14 +620,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-lantern-08-the-lantern-is-shining-again",
-    "prompt": "[happy] [excited] The lantern is shining again!",
+    "prompt": "The lantern is shining again!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -663,14 +655,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-tower-01-each-sundrop-lights-another-lantern-on-t",
-    "prompt": "[warmly] Each sundrop lights another lantern on the tower. [excited] [playful] Light them all!",
+    "prompt": "Each sundrop lights another lantern on the tower. Light them all!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -699,14 +690,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-tower-02-another-lantern",
-    "prompt": "[excited] Another lantern!",
+    "prompt": "Another lantern!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -735,14 +725,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-tower-03-it-s-getting-brighter",
-    "prompt": "[delighted] It's getting brighter!",
+    "prompt": "It's getting brighter!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -771,14 +760,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-tower-04-keep-going",
-    "prompt": "[encouraging] Keep going!",
+    "prompt": "Keep going!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -807,14 +795,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-tower-05-so-bright",
-    "prompt": "[amazed] So bright!",
+    "prompt": "So bright!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -843,14 +830,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-tower-06-one-more",
-    "prompt": "[eager] One more!",
+    "prompt": "One more!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -879,14 +865,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-tower-07-drop-the-sundrop-onto-the-tower",
-    "prompt": "[gently] [encouraging] Drop the sundrop onto the tower.",
+    "prompt": "Drop the sundrop onto the tower.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -915,14 +900,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-tower-08-the-whole-tower-is-glowing",
-    "prompt": "[gasps] [cheering] The whole tower is glowing!",
+    "prompt": "The whole tower is glowing!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -951,14 +935,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-power-01-the-force-field-is-off-drag-the-power-co",
-    "prompt": "[surprised] The force field is off! [playful] [encouraging] Drag the power core into the machine to turn it back on.",
+    "prompt": "The force field is off! Drag the power core into the machine to turn it back on.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -987,14 +970,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-power-02-the-power-core-goes-in-the-machine-s-rin",
-    "prompt": "[gently] [helpful] The power core goes in the machine's ring.",
+    "prompt": "The power core goes in the machine's ring.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1023,14 +1005,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-power-03-the-force-field-is-back-on-the-island-is",
-    "prompt": "[cheering] The force field is back on. [relieved] [happy] The island is safe!",
+    "prompt": "The force field is back on. The island is safe!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1059,14 +1040,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-power-04-bring-the-power-core-to-the-machine-to-r",
-    "prompt": "[warmly] [determined] Bring the power core to the machine to restore the force field around the island.",
+    "prompt": "Bring the power core to the machine to restore the force field around the island.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1095,14 +1075,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-empathy-01-ziya-is-sitting-by-herself-drag-the-empa",
-    "prompt": "[softly] [concerned] Ziya is sitting by herself. [warmly] [encouraging] Drag the Empathy Gem to Ziya to understand how she feels.",
+    "prompt": "Ziya is sitting by herself. Drag the Empathy Gem to Ziya to understand how she feels.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1131,14 +1110,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-empathy-02-luma-and-brio-are-playing-together-let-s",
-    "prompt": "[gently] Luma and Brio are playing together. [softly] Let's check on Ziya. She's sitting by herself.",
+    "prompt": "Luma and Brio are playing together. Let's check on Ziya. She's sitting by herself.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1167,14 +1145,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-empathy-03-empathy-helped-us-understand-how-she-fee",
-    "prompt": "[warmly] [proud] Empathy helped us understand how she feels.",
+    "prompt": "Empathy helped us understand how she feels.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1203,14 +1180,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-feelings-01-read-what-happened-to-brio-then-drag-the",
-    "prompt": "[warmly] [playful] Read what happened to Brio, then drag the face that shows how he feels.",
+    "prompt": "Read what happened to Brio, then drag the face that shows how he feels.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1239,14 +1215,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-feelings-02-brio-s-team-just-won-the-big-soccer-game",
-    "prompt": "[excited] Brio's team just won the big soccer game!",
+    "prompt": "Brio's team just won the big soccer game!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1275,14 +1250,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-feelings-03-brio-feels-excited",
-    "prompt": "[happy] Brio feels excited!",
+    "prompt": "Brio feels excited!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1311,14 +1285,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-feelings-04-look-at-brio-s-eyes-and-beak-which-face-",
-    "prompt": "[gently] [encouraging] Look at Brio's eyes and beak. [curious] Which face looks like a big win?",
+    "prompt": "Look at Brio's eyes and beak. Which face looks like a big win?",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1347,14 +1320,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-feelings-05-brio-s-balloon-floated-away-into-the-sky",
-    "prompt": "[softly] [sad] Brio's balloon floated away into the sky.",
+    "prompt": "Brio's balloon floated away into the sky.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1383,14 +1355,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-feelings-06-brio-feels-sad",
-    "prompt": "[gently] [sympathetic] Brio feels sad.",
+    "prompt": "Brio feels sad.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1419,14 +1390,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-feelings-07-how-would-you-feel-if-your-balloon-float",
-    "prompt": "[softly] [curious] How would you feel if your balloon floated away?",
+    "prompt": "How would you feel if your balloon floated away?",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1455,14 +1425,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-feelings-08-a-big-boom-of-thunder-wakes-brio-up-at-n",
-    "prompt": "[dramatically] A big boom of thunder wakes Brio up at night.",
+    "prompt": "A big boom of thunder wakes Brio up at night.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1491,14 +1460,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-feelings-09-brio-feels-scared",
-    "prompt": "[softly] [nervous] Brio feels scared.",
+    "prompt": "Brio feels scared.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1527,14 +1495,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-feelings-10-thunder-can-be-really-loud-which-face-lo",
-    "prompt": "[gently] Thunder can be really loud. [curious] Which face looks surprised and scared?",
+    "prompt": "Thunder can be really loud. Which face looks surprised and scared?",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1563,14 +1530,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-feelings-11-luma-says-her-kite-can-fly-all-the-way-t",
-    "prompt": "[mischievously] Luma says her kite can fly all the way to the moon.",
+    "prompt": "Luma says her kite can fly all the way to the moon.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1599,14 +1565,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-feelings-12-brio-isn-t-so-sure-about-that",
-    "prompt": "[chuckles] [playful] Brio isn't so sure about that!",
+    "prompt": "Brio isn't so sure about that!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1635,14 +1600,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-feelings-13-does-brio-believe-it-look-for-the-face-t",
-    "prompt": "[curious] Does Brio believe it? [encouraging] Look for the face that's not so sure.",
+    "prompt": "Does Brio believe it? Look for the face that's not so sure.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1671,14 +1635,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-feelings-14-you-figured-out-all-of-brio-s-feelings",
-    "prompt": "[cheering] You figured out all of Brio's feelings!",
+    "prompt": "You figured out all of Brio's feelings!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1707,14 +1670,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-chime-01-luma-and-ziya-each-want-something-differ",
-    "prompt": "[warmly] Luma and Ziya each want something different. [encouraging] Drag the Consideration Chime between them so they can listen to each other.",
+    "prompt": "Luma and Ziya each want something different. Drag the Consideration Chime between them so they can listen to each other.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1743,14 +1705,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-chime-02-bring-the-chime-to-the-space-between-the",
-    "prompt": "[gently] [encouraging] Bring the chime to the space between them.",
+    "prompt": "Bring the chime to the space between them.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1779,14 +1740,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-chime-03-when-they-listened-to-each-other-they-fo",
-    "prompt": "[warmly] [happy] When they listened to each other, they found a plan that works for both!",
+    "prompt": "When they listened to each other, they found a plan that works for both!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1815,14 +1775,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-bridge-01-the-bridge-is-broken-drag-the-planks-int",
-    "prompt": "[surprised] The bridge is broken! [playful] [encouraging] Drag the planks into the gaps so Luma can cross.",
+    "prompt": "The bridge is broken! Drag the planks into the gaps so Luma can cross.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1851,14 +1810,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-bridge-02-clunk-that-fits",
-    "prompt": "[playful] Clunk! [happy] That fits.",
+    "prompt": "Clunk! That fits.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1887,14 +1845,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-bridge-03-one-step-closer",
-    "prompt": "[excited] One step closer!",
+    "prompt": "One step closer!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1923,14 +1880,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-bridge-04-sturdy",
-    "prompt": "[impressed] Sturdy!",
+    "prompt": "Sturdy!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1959,14 +1915,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-bridge-05-planks-go-across-the-gaps-in-the-path",
-    "prompt": "[gently] [encouraging] Planks go across the gaps in the path.",
+    "prompt": "Planks go across the gaps in the path.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -1995,14 +1950,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-bridge-06-the-path-is-fixed-luma-made-it-across",
-    "prompt": "[cheering] The path is fixed! [happy] Luma made it across.",
+    "prompt": "The path is fixed! Luma made it across.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2031,14 +1985,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-bridge-07-drag-and-drop-to-fix-the-bridge",
-    "prompt": "[warmly] [playful] Drag and drop to fix the bridge.",
+    "prompt": "Drag and drop to fix the bridge.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2067,14 +2020,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-nests-01-each-nest-shows-the-shape-of-its-egg-dra",
-    "prompt": "[curious] Each nest shows the shape of its egg. [playful] [encouraging] Drag every egg to the nest that matches!",
+    "prompt": "Each nest shows the shape of its egg. Drag every egg to the nest that matches!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2103,14 +2055,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-nests-02-a-perfect-match",
-    "prompt": "[delighted] A perfect match!",
+    "prompt": "A perfect match!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2139,14 +2090,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-nests-03-snug-as-can-be",
-    "prompt": "[warmly] Snug as can be!",
+    "prompt": "Snug as can be!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2175,14 +2125,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-nests-04-that-s-the-one",
-    "prompt": "[excited] That's the one!",
+    "prompt": "That's the one!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2211,14 +2160,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-nests-05-look-at-the-pattern-in-the-nest-which-eg",
-    "prompt": "[gently] [encouraging] Look at the pattern in the nest. [curious] Which egg matches it?",
+    "prompt": "Look at the pattern in the nest. Which egg matches it?",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2247,14 +2195,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-nests-06-every-egg-is-home-safe",
-    "prompt": "[happy] [relieved] Every egg is home safe!",
+    "prompt": "Every egg is home safe!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2283,14 +2230,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-sort-01-luma-loves-playing-outside-ziya-loves-qu",
-    "prompt": "[warmly] Luma loves playing outside. Ziya loves quiet making time. [playful] [encouraging] Drag each toy to the basket of the NPC who'd enjoy it!",
+    "prompt": "Luma loves playing outside. Ziya loves quiet making time. Drag each toy to the basket of the NPC who'd enjoy it!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2319,14 +2265,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-sort-02-good-thinking",
-    "prompt": "[impressed] Good thinking!",
+    "prompt": "Good thinking!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2355,14 +2300,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-sort-03-they-ll-love-that",
-    "prompt": "[delighted] They'll love that!",
+    "prompt": "They'll love that!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2391,14 +2335,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-sort-04-nice-sorting",
-    "prompt": "[happy] Nice sorting!",
+    "prompt": "Nice sorting!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2427,14 +2370,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-sort-05-luma-loves-playing-outside-try-luma-s-ba",
-    "prompt": "[gently] [helpful] Luma loves playing outside. [encouraging] Try Luma's basket!",
+    "prompt": "Luma loves playing outside. Try Luma's basket!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2463,14 +2405,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-sort-06-ziya-loves-quiet-making-time-try-ziya-s-",
-    "prompt": "[gently] [helpful] Ziya loves quiet making time. [encouraging] Try Ziya's basket!",
+    "prompt": "Ziya loves quiet making time. Try Ziya's basket!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2499,14 +2440,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-sort-07-everyone-has-something-they-enjoy",
-    "prompt": "[warmly] [happy] Everyone has something they enjoy!",
+    "prompt": "Everyone has something they enjoy!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2535,14 +2475,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-cleanup-01-the-garden-is-messy-drag-everything-into",
-    "prompt": "[playful] [surprised] The garden is messy! [excited] Drag everything into the basket and watch what grows.",
+    "prompt": "The garden is messy! Drag everything into the basket and watch what grows.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2571,14 +2510,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-cleanup-02-poof",
-    "prompt": "[giggles] Poof!",
+    "prompt": "Poof!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2607,14 +2545,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-cleanup-03-so-tidy",
-    "prompt": "[happy] So tidy!",
+    "prompt": "So tidy!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2643,14 +2580,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-cleanup-04-something-s-growing",
-    "prompt": "[gasps] [amazed] Something's growing!",
+    "prompt": "Something's growing!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2679,14 +2615,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-cleanup-05-all-tidy-look-at-all-those-flowers",
-    "prompt": "[cheering] All tidy! [amazed] Look at all those flowers.",
+    "prompt": "All tidy! Look at all those flowers.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2715,14 +2650,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-seed-01-what-goes-in-the-hole-to-grow-a-plant-dr",
-    "prompt": "[curious] What goes in the hole to grow a plant? [playful] [encouraging] Drag your choice into the hole.",
+    "prompt": "What goes in the hole to grow a plant? Drag your choice into the hole.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2751,14 +2685,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-seed-02-hmm-that-won-t-grow-what-could",
-    "prompt": "[thoughtful] Hmm, that won't grow. [curious] What could?",
+    "prompt": "Hmm, that won't grow. What could?",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2787,14 +2720,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-seed-03-rocks-are-great-for-paths-but-they-can-t",
-    "prompt": "[gently] Rocks are great for paths, but they can't grow. [curious] What could grow into a plant?",
+    "prompt": "Rocks are great for paths, but they can't grow. What could grow into a plant?",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2823,14 +2755,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-seed-04-leaves-grow-on-plants-what-does-a-plant-",
-    "prompt": "[gently] Leaves grow on plants. [curious] What does a plant start from?",
+    "prompt": "Leaves grow on plants. What does a plant start from?",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2859,14 +2790,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-seed-05-a-seed-look-it-s-starting-to-grow",
-    "prompt": "[excited] A seed! [amazed] Look, it's starting to grow.",
+    "prompt": "A seed! Look, it's starting to grow.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2895,14 +2825,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-backpack-01-obselda-is-heading-up-the-trail-drag-eve",
-    "prompt": "[warmly] Obselda is heading up the trail. [excited] [playful] Drag everything she needs into her backpack!",
+    "prompt": "Obselda is heading up the trail. Drag everything she needs into her backpack!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2931,14 +2860,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-backpack-02-drop-it-right-into-the-backpack",
-    "prompt": "[gently] [encouraging] Drop it right into the backpack.",
+    "prompt": "Drop it right into the backpack.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -2967,14 +2895,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-backpack-03-all-packed-obselda-is-ready-for-the-trai",
-    "prompt": "[cheering] All packed! [happy] Obselda is ready for the trail.",
+    "prompt": "All packed! Obselda is ready for the trail.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -3003,14 +2930,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-backpack-04-rope-packed",
-    "prompt": "[cheerful] Rope, packed!",
+    "prompt": "Rope, packed!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -3039,14 +2965,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-backpack-05-lunch-packed",
-    "prompt": "[playful] Lunch, packed!",
+    "prompt": "Lunch, packed!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -3075,14 +3000,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-backpack-06-headlamp-packed",
-    "prompt": "[excited] Headlamp, packed!",
+    "prompt": "Headlamp, packed!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -3111,14 +3035,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-backpack-07-tent-packed",
-    "prompt": "[cheerful] Tent, packed!",
+    "prompt": "Tent, packed!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -3147,14 +3070,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-backpack-08-boots-packed",
-    "prompt": "[playful] Boots, packed!",
+    "prompt": "Boots, packed!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -3183,14 +3105,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-backpack-09-map-packed",
-    "prompt": "[happy] Map, packed!",
+    "prompt": "Map, packed!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -3219,14 +3140,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-bots-01-voltis-s-helper-bots-are-sleepy-drag-a-p",
-    "prompt": "[softly] [playful] Voltis's helper bots are sleepy. [excited] Drag a power core to each bot to wake it up!",
+    "prompt": "Voltis's helper bots are sleepy. Drag a power core to each bot to wake it up!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -3255,14 +3175,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-bots-02-beep-boop-awake",
-    "prompt": "[playful] [robotic voice] Beep boop! [excited] Awake!",
+    "prompt": "Beep boop! Awake!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -3291,14 +3210,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-bots-03-that-one-s-up",
-    "prompt": "[delighted] That one's up!",
+    "prompt": "That one's up!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -3327,14 +3245,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-bots-04-one-more-to-go",
-    "prompt": "[encouraging] One more to go!",
+    "prompt": "One more to go!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -3363,14 +3280,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-bots-05-bring-the-core-to-a-sleepy-bot",
-    "prompt": "[gently] [encouraging] Bring the core to a sleepy bot.",
+    "prompt": "Bring the core to a sleepy bot.",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }
@@ -3399,14 +3315,13 @@ export const SOUND_CATALOG = [
     "node_type": "tts",
     "model_id": "eleven_v4",
     "label": "nova-bots-06-every-bot-is-awake-and-ready-to-help",
-    "prompt": "[cheering] Every bot is awake and ready to help!",
+    "prompt": "Every bot is awake and ready to help!",
     "voice_id": "nLRXVuIXwgReSGURqkJV",
     "model_parameters": {
      "voice_settings": {
       "stability": 0.32,
       "similarity": 0.75
-     },
-     "output_format": "mp3_44100_128"
+     }
     }
    }
   }

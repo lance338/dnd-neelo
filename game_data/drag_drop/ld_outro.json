@@ -1,0 +1,24 @@
+{
+  "id": "ld_outro",
+  "world": 5,
+  "gameType": "drag_drop",
+  "kind": "comic",
+  "title": "Level 1 closing story",
+  "background": {
+    "color": "#FFFFFF"
+  },
+  "edgeColor": "#FFFFFF",
+  "meter": false,
+  "comic": {
+    "before": [
+      {
+        "img": "assets/level_demo/outro_1.svg",
+        "text": ""
+      }
+    ]
+  },
+  "guide": {},
+  "actors": [],
+  "zones": [],
+  "items": []
+}

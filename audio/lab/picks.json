@@ -25,41 +25,27 @@
     "sessions": [
      "synth"
     ]
-   },
+   }
+  ]
+ },
+ "sfx-complete": {
+  "node": "5VxSufnDbdUCVrDK0bAL",
+  "takes": [
    {
-    "at": 1793600000002,
-    "credits": 0,
-    "flow": "synth",
-    "id": "synth-buzz-kazoo",
-    "session": "synth",
+    "at": 1793671541579,
+    "credits": 35,
+    "flow": "2gRbavHqAimJYJBgh7qt",
+    "id": "qjkfnhUnSowe1rktY3lR",
+    "session": "kvNAuC0eyGEHQKHPjEJc",
     "sessions": [
-     "synth"
-    ]
-   },
-   {
-    "at": 1793600000003,
-    "credits": 0,
-    "flow": "synth",
-    "id": "synth-buzz-bright",
-    "session": "synth",
-    "sessions": [
-     "synth"
-    ]
-   },
-   {
-    "at": 1793600000004,
-    "credits": 0,
-    "flow": "synth",
-    "id": "synth-buzz-droop",
-    "session": "synth",
-    "sessions": [
-     "synth"
+     "44u21zooE6e3neWp6aII",
+     "kvNAuC0eyGEHQKHPjEJc"
     ]
    }
   ]
  },
  "sfx-hit": {
-  "chosen": "p27xa8JwFHJsj5aF3YmK",
+  "chosen": "pb47atyzEVYstYhWbRyb",
   "hidden": [
    "a",
    "b"
@@ -130,7 +116,7 @@
   ]
  },
  "sfx-ignite": {
-  "chosen": "Gq3Uq5qUmfj6s9NAdqjI",
+  "chosen": "AYvYlBhGqnfaITM4ZDMi",
   "hidden": [
    "b"
   ],
@@ -172,40 +158,34 @@
     "flow": "91JQCKggiRYiLsyCT1Ef",
     "id": "dY2wgmWTOzF1s7uw0OBC",
     "session": "nF3V6bZSUDw4eL9GblCf"
-   },
-   {
-    "at": 1793598392703,
-    "credits": 5,
-    "flow": "91JQCKggiRYiLsyCT1Ef",
-    "id": "jPKfryogVvBs6sK4KAYn",
-    "session": "OGCwHqaIu5UJWxdNW09e",
-    "sessions": [
-     "OGCwHqaIu5UJWxdNW09e",
-     "bGZyRAXgE6lL7AHh6do8"
-    ]
-   },
-   {
-    "at": 1793598392704,
-    "credits": 5,
-    "flow": "91JQCKggiRYiLsyCT1Ef",
-    "id": "DV4j07gxuUcTanKeKLkA",
-    "session": "bGZyRAXgE6lL7AHh6do8",
-    "sessions": [
-     "OGCwHqaIu5UJWxdNW09e",
-     "bGZyRAXgE6lL7AHh6do8"
-    ]
    }
   ]
  },
  "sfx-plank": {
-  "chosen": "b",
+  "chosen": "gtXLupWVF7el4kgLhKGG",
   "hidden": [
    "a"
   ],
-  "takes": []
+  "takes": [
+   {
+    "at": 1793671397316,
+    "credits": 6.000000000000001,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "gtXLupWVF7el4kgLhKGG",
+    "session": "2Tqgbrov6Z6HWYA0kDgd",
+    "sessions": [
+     "lLJmaqbKgf3xcN16JqjT",
+     "2Tqgbrov6Z6HWYA0kDgd"
+    ]
+   }
+  ]
  },
  "sfx-poof": {
-  "chosen": "kOH8MR2BovMdBot5l3gY-puff",
+  "chosen": "aXmCuqhSzJ7yrICgmWWp",
+  "hidden": [
+   "a",
+   "b"
+  ],
   "takes": [
    {
     "at": 1793598900000,
@@ -218,109 +198,86 @@
     ]
    },
    {
-    "at": 1793599500004,
-    "credits": 0,
-    "flow": "synth",
-    "id": "synth-poof-small",
-    "session": "synth",
+    "at": 1793671640001,
+    "credits": 5,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "aXmCuqhSzJ7yrICgmWWp",
+    "session": "hys6JrbFN8JlW1dtnH9K",
     "sessions": [
-     "synth"
+     "hys6JrbFN8JlW1dtnH9K"
     ]
    },
    {
-    "at": 1793599500005,
-    "credits": 0,
-    "flow": "synth",
-    "id": "synth-poof-fluffy",
-    "session": "synth",
+    "at": 1793671640003,
+    "credits": 5,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "1ujpoMf29ZXdjwjTs314",
+    "session": "gsf8hbCbWq588t4vHlNQ",
     "sessions": [
-     "synth"
+     "gsf8hbCbWq588t4vHlNQ"
     ]
    },
    {
-    "at": 1793599500006,
-    "credits": 0,
-    "flow": "synth",
-    "id": "synth-poof-double",
-    "session": "synth",
+    "at": 1793671640004,
+    "credits": 5,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "aXGssnWGxK3KLUViJ18k",
+    "session": "gqOc6HMC7ZZD5OhTqrzW",
     "sessions": [
-     "synth"
+     "gqOc6HMC7ZZD5OhTqrzW"
     ]
    }
   ]
  },
  "sfx-powerup": {
   "chosen": "b",
-  "takes": [
-   {
-    "at": 1793568859612,
-    "credits": 15,
-    "flow": "91JQCKggiRYiLsyCT1Ef",
-    "id": "6XfmV8Kw2l1KSB3c1bd2",
-    "session": "i0DnZu6NH2ijc36HRvPj",
-    "sessions": [
-     "u6QJsYbVk1r8hQFN9WQY",
-     "i0DnZu6NH2ijc36HRvPj"
-    ]
-   },
-   {
-    "at": 1793570100000,
-    "credits": 20,
-    "flow": "2gRbavHqAimJYJBgh7qt",
-    "id": "5aSXyWkq78A05P8Rm2dM",
-    "session": "zeGWXQn7v076AmUMecD7",
-    "sessions": [
-     "zeGWXQn7v076AmUMecD7"
-    ]
-   },
-   {
-    "at": 1793570100001,
-    "credits": 20,
-    "flow": "2gRbavHqAimJYJBgh7qt",
-    "id": "ts2DlyVbXlrcnjNhUoT3",
-    "session": "YfsRhhCaGIqg0Lk5MAkz",
-    "sessions": [
-     "YfsRhhCaGIqg0Lk5MAkz"
-    ]
-   },
-   {
-    "at": 1793570100002,
-    "credits": 20,
-    "flow": "2gRbavHqAimJYJBgh7qt",
-    "id": "Fe5evNJfPb0l5txAkgvj",
-    "session": "TWfYKGI8XzKTzbFzmVta",
-    "sessions": [
-     "TWfYKGI8XzKTzbFzmVta"
-    ]
-   }
-  ]
+  "takes": []
  },
  "sfx-return": {
-  "chosen": "H7tY1nXWnDUVvl06hZEx-soft",
+  "chosen": "VNlwCbe9TKlFMK2Vo1Qq",
   "hidden": [
    "a",
    "b"
   ],
   "takes": [
    {
-    "at": 1793566625190,
-    "credits": 6,
+    "at": 1793668830002,
+    "credits": 50,
     "flow": "91JQCKggiRYiLsyCT1Ef",
-    "id": "83K2OjFS3Ykkfr6C3TZk",
-    "session": "CM4ApkSesUljFEOmyY04",
+    "id": "9blLLJCQBWuaqNg8vNUy",
+    "session": "E08057MavqtDMOalVPHB",
     "sessions": [
-     "CM4ApkSesUljFEOmyY04",
-     "eCLkps2W5j8sdIJoHHhC"
+     "E08057MavqtDMOalVPHB"
     ]
    },
    {
-    "at": 1793598600002,
-    "credits": 7,
+    "at": 1793668830006,
+    "credits": 50,
     "flow": "91JQCKggiRYiLsyCT1Ef",
-    "id": "H7tY1nXWnDUVvl06hZEx-soft",
-    "session": "QqMn6PNf77Vkx6d1u4O2",
+    "id": "onOyFPcd0fXzDMAsjgGi",
+    "session": "b2B1sIak1vQ0CG1K63tU",
     "sessions": [
-     "QqMn6PNf77Vkx6d1u4O2"
+     "b2B1sIak1vQ0CG1K63tU"
+    ]
+   },
+   {
+    "at": 1793671050002,
+    "credits": 5,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "VNlwCbe9TKlFMK2Vo1Qq",
+    "session": "QFu8Fu49RqFpVimH19RB",
+    "sessions": [
+     "QFu8Fu49RqFpVimH19RB"
+    ]
+   },
+   {
+    "at": 1793671050004,
+    "credits": 5,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "cE8gXESJVn72trHBIyoP",
+    "session": "YwvXBQp4huqytyIbBmGG",
+    "sessions": [
+     "YwvXBQp4huqytyIbBmGG"
     ]
    }
   ]
@@ -330,6 +287,135 @@
   "hidden": [
    "a"
   ],
-  "takes": []
+  "takes": [
+   {
+    "at": 1793671679798,
+    "credits": 7,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "2Q53NMwZ9Q0wnQe6Gbcz",
+    "session": "c1eZTVvVOWv4ASdeBHhm",
+    "sessions": [
+     "c1eZTVvVOWv4ASdeBHhm",
+     "n1Wf3lxnOtlsZYwVy08p"
+    ]
+   },
+   {
+    "at": 1793671679799,
+    "credits": 7,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "zpIWxn9IQBskz2zvPhSc",
+    "session": "n1Wf3lxnOtlsZYwVy08p",
+    "sessions": [
+     "c1eZTVvVOWv4ASdeBHhm",
+     "n1Wf3lxnOtlsZYwVy08p"
+    ]
+   }
+  ]
+ },
+ "sfx-transform": {
+  "takes": [
+   {
+    "at": 1793671740397,
+    "credits": 12.000000000000002,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "C2c0h6OlE0G9FyTAAtYG",
+    "session": "c39RrqgHIifwmsf031Sm",
+    "sessions": [
+     "c39RrqgHIifwmsf031Sm",
+     "Lc7mNctWKmiKxxjCYtt8"
+    ]
+   },
+   {
+    "at": 1793671740398,
+    "credits": 12.000000000000002,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "4O6wpRcaKaZ0nEGmO19i",
+    "session": "Lc7mNctWKmiKxxjCYtt8",
+    "sessions": [
+     "c39RrqgHIifwmsf031Sm",
+     "Lc7mNctWKmiKxxjCYtt8"
+    ]
+   },
+   {
+    "at": 1793671790000,
+    "credits": 12,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "BMOWRQf9fwPU6u3zyIrO",
+    "session": "qp13HjBZTSB0gKxoAQQ6",
+    "sessions": [
+     "qp13HjBZTSB0gKxoAQQ6"
+    ]
+   },
+   {
+    "at": 1793671790001,
+    "credits": 12,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "PrpCLSTcJjcIgeiwkQMP",
+    "session": "WSabKThOy2ZqbzJf7amW",
+    "sessions": [
+     "WSabKThOy2ZqbzJf7amW"
+    ]
+   },
+   {
+    "at": 1793671790002,
+    "credits": 12,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "ruENant38YdjVxF6YIJx",
+    "session": "eHTbBtHh8lekT5UWMU6l",
+    "sessions": [
+     "eHTbBtHh8lekT5UWMU6l"
+    ]
+   },
+   {
+    "at": 1793671790003,
+    "credits": 12,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "ImN8AdlhkzdsmVJu8DFp",
+    "session": "5T6koGAs2LybcQFjycXD",
+    "sessions": [
+     "5T6koGAs2LybcQFjycXD"
+    ]
+   },
+   {
+    "at": 1793671790004,
+    "credits": 12,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "R2CiojJTVXLZUxfHHLe0",
+    "session": "5gyLxwG4sqAUMzL0OeIZ",
+    "sessions": [
+     "5gyLxwG4sqAUMzL0OeIZ"
+    ]
+   },
+   {
+    "at": 1793671790005,
+    "credits": 12,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "2Un3QrKhHzL1emo9HTYt",
+    "session": "WWb8n02h3Rhx5fLbmHjG",
+    "sessions": [
+     "WWb8n02h3Rhx5fLbmHjG"
+    ]
+   },
+   {
+    "at": 1793671790006,
+    "credits": 12,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "RJhmlq0xO2KIO2uv7zvZ",
+    "session": "SRo76wLAHVDOSKQ8eZRP",
+    "sessions": [
+     "SRo76wLAHVDOSKQ8eZRP"
+    ]
+   },
+   {
+    "at": 1793671790007,
+    "credits": 12,
+    "flow": "91JQCKggiRYiLsyCT1Ef",
+    "id": "LNzMi2mSaCuIdZBVI8gs",
+    "session": "PGwmtFwkThngVvd7VFav",
+    "sessions": [
+     "PGwmtFwkThngVvd7VFav"
+    ]
+   }
+  ]
  }
 }

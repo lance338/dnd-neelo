@@ -1,0 +1,212 @@
+{
+  "id": "ld_v3_lesson_1",
+  "world": 1,
+  "gameType": "drag_drop",
+  "kind": "interstitial",
+  "title": "Lesson 1 + Lantern interstitial + check-in",
+  "scene": "tower",
+  "background": {
+    "type": "nightSky"
+  },
+  "edgeColor": "#1C3F95",
+  "meter": false,
+  "comic": {
+    "before": [
+      {
+        "img": "assets/comic/w5_r1_p1_l1_1.svg",
+        "who": "tremu",
+        "text": "Stress can show up in one of three ways."
+      },
+      {
+        "img": "assets/comic/w5_r1_p1_l1_2.svg",
+        "who": "tremu",
+        "text": "Sometimes it’s in our bodies, like your heart beating really fast."
+      },
+      {
+        "img": "assets/comic/w5_r1_p1_l1_3.svg",
+        "who": "tremu",
+        "text": "Or your stomach feeling fluttery or achy."
+      },
+      {
+        "img": "assets/comic/w5_r1_p1_l1_4.svg",
+        "who": "tremu",
+        "text": "You might even shake, feel hot, or get sweaty."
+      },
+      {
+        "img": "assets/comic/w5_r1_p1_l1_5.svg",
+        "who": "tremu",
+        "text": "These are body stress feelings. They mean your body is getting ready to do something important!"
+      }
+    ]
+  },
+  "cast": {
+    "tremu": {
+      "name": "Tremu",
+      "lid": "#D3663F",
+      "lash": "#3E2527",
+      "poses": {
+        "standing": {
+          "img": "assets/img/w5_tremu_standing.svg",
+          "x": 764,
+          "y": 112,
+          "w": 362,
+          "eyes": [
+            [
+              125,
+              173,
+              45
+            ],
+            [
+              197,
+              173,
+              45
+            ]
+          ]
+        },
+        "pointing": {
+          "img": "assets/img/w5_tremu_pointing.svg",
+          "x": 648,
+          "y": 112,
+          "w": 479,
+          "eyes": [
+            [
+              237,
+              173,
+              45
+            ],
+            [
+              308,
+              173,
+              45
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "story": {
+    "intro": [
+      {
+        "who": "tremu",
+        "pose": "standing",
+        "style": "overlay",
+        "text": "Now let's check in with Nova and see what you learned about Body Stress!",
+        "box": "assets/img/w5_textbox_1.svg"
+      },
+      {
+        "who": "skyrian",
+        "pose": "wave_right",
+        "text": "[Skyrian line that leads into the check-in]",
+        "cta": "[CTA]"
+      }
+    ]
+  },
+  "guide": {
+    "intro": ""
+  },
+  "zones": [
+    {
+      "id": "tower",
+      "art": "img:lantern_tower_1",
+      "x": 740,
+      "y": 445,
+      "size": 430,
+      "accepts": [],
+      "capacity": 1,
+      "mode": "absorb"
+    }
+  ],
+  "items": [],
+  "checkin": {
+    "question": "What is one way body stress might show up?",
+    "answers": [
+      {
+        "text": "Feeling angry",
+        "correct": false,
+        "feedback": "Not quite. Feeling angry is a big feeling, not something in your body. Try again!"
+      },
+      {
+        "text": "Fluttery achy stomach",
+        "correct": true,
+        "feedback": "Exactly! A fluttery tummy is a body stress feeling. Let’s keep running!"
+      },
+      {
+        "text": "Forgetting your lines",
+        "correct": false,
+        "feedback": "Not quite. That’s stress in your thoughts. Think about your body. Try again!"
+      }
+    ],
+    "secondWrong": "That was a great try! The answer is: Fluttery achy stomach. Let’s get back to the run!",
+    "reward": 450,
+    "art": {
+      "bg": "assets/w5/checkin_bg_nosign.svg",
+      "bgSign": "assets/w5/checkin_bg.svg",
+      "titleGreat": "assets/w5/title_great_job.png",
+      "titleTry": "assets/w5/title_nice_try.png",
+      "coin": "assets/w5/coin.svg",
+      "hudExit": "assets/w5/hud_exit.png",
+      "hudHelp": "assets/w5/hud_help.png",
+      "hudCoins": "assets/w5/hud_rewards.png"
+    },
+    "nova": {
+      "lid": "#983820",
+      "lash": "#3D200A",
+      "respondY": 282,
+      "quiz": {
+        "img": "assets/w5/nova_checkin.svg",
+        "x": 108.2,
+        "y": 340.7,
+        "w": 326,
+        "h": 668,
+        "eyes": [
+          [
+            106,
+            148,
+            39
+          ],
+          [
+            179,
+            148,
+            39
+          ]
+        ]
+      },
+      "incorrect": {
+        "img": "assets/w5/nova_incorrect.svg",
+        "w": 425,
+        "h": 870,
+        "cx": 211,
+        "eyes": [
+          [
+            137,
+            192,
+            51
+          ],
+          [
+            233,
+            192,
+            51
+          ]
+        ]
+      },
+      "correct": {
+        "img": "assets/w5/nova_correct.svg",
+        "w": 521,
+        "h": 870,
+        "cx": 260,
+        "eyes": [
+          [
+            188,
+            192,
+            51
+          ],
+          [
+            284,
+            192,
+            51
+          ]
+        ]
+      }
+    }
+  }
+}

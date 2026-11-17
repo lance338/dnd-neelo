@@ -1,0 +1,216 @@
+{
+  "id": "ld_v3_lesson_3",
+  "world": 1,
+  "gameType": "drag_drop",
+  "kind": "interstitial",
+  "title": "Lesson 3 + Lantern interstitial + check-in",
+  "scene": "tower",
+  "background": {
+    "type": "nightSky"
+  },
+  "edgeColor": "#1C3F95",
+  "meter": false,
+  "comic": {
+    "before": [
+      {
+        "img": "assets/level_demo/l3_frame_1.svg",
+        "who": "tremu",
+        "text": "A third way that stress can come up is through our THOUGHTS. Stress can change how you think."
+      },
+      {
+        "img": "assets/level_demo/l3_frame_2.svg",
+        "who": "tremu",
+        "text": "Your mind might feel foggy or confused."
+      },
+      {
+        "img": "assets/level_demo/l3_frame_3.svg",
+        "who": "tremu",
+        "text": "Things you know might suddenly become hard to remember."
+      },
+      {
+        "img": "assets/level_demo/l3_frame_4.svg",
+        "who": "tremu",
+        "text": "Or, you might imagine something bad will happen if you try, which makes you want to give up before you even start."
+      },
+      {
+        "img": "assets/level_demo/l3_frame_5.svg",
+        "who": "tremu",
+        "text": "But remember, this is just thought stress. It can feel big and scary, but we are strong and we can absolutely overcome it."
+      },
+      {
+        "img": "assets/level_demo/l3_frame_6.svg",
+        "who": "tremu",
+        "text": "Even the mightiest forest creatures feel stress feelings. If we know how to spot them, then we can choose to focus on more helpful thoughts instead."
+      }
+    ]
+  },
+  "cast": {
+    "tremu": {
+      "name": "Tremu",
+      "lid": "#D3663F",
+      "lash": "#3E2527",
+      "poses": {
+        "standing": {
+          "img": "assets/img/w5_tremu_standing.svg",
+          "x": 764,
+          "y": 112,
+          "w": 362,
+          "eyes": [
+            [
+              125,
+              173,
+              45
+            ],
+            [
+              197,
+              173,
+              45
+            ]
+          ]
+        },
+        "pointing": {
+          "img": "assets/img/w5_tremu_pointing.svg",
+          "x": 648,
+          "y": 112,
+          "w": 479,
+          "eyes": [
+            [
+              237,
+              173,
+              45
+            ],
+            [
+              308,
+              173,
+              45
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "story": {
+    "intro": [
+      {
+        "who": "tremu",
+        "pose": "standing",
+        "style": "overlay",
+        "text": "[Tremu overlay line: check in about Thought Stress]"
+      },
+      {
+        "who": "skyrian",
+        "pose": "wave_right",
+        "text": "[Skyrian line that leads into the check-in]",
+        "cta": "[CTA]"
+      }
+    ]
+  },
+  "guide": {
+    "intro": ""
+  },
+  "zones": [
+    {
+      "id": "tower",
+      "art": "img:lantern_tower_1",
+      "x": 740,
+      "y": 445,
+      "size": 430,
+      "accepts": [],
+      "capacity": 1,
+      "mode": "absorb"
+    }
+  ],
+  "items": [],
+  "checkin": {
+    "question": "[Lesson 3 check-in question from the spec]",
+    "answers": [
+      {
+        "text": "[Answer A]",
+        "correct": false,
+        "feedback": "[Feedback for answer A]"
+      },
+      {
+        "text": "[Answer B]",
+        "correct": true,
+        "feedback": "[Feedback for answer B]"
+      },
+      {
+        "text": "[Answer C]",
+        "correct": false,
+        "feedback": "[Feedback for answer C]"
+      }
+    ],
+    "secondWrong": "[Second wrong answer line]",
+    "reward": 450,
+    "art": {
+      "bg": "assets/w5/checkin_bg_nosign.svg",
+      "bgSign": "assets/w5/checkin_bg.svg",
+      "titleGreat": "assets/w5/title_great_job.png",
+      "titleTry": "assets/w5/title_nice_try.png",
+      "coin": "assets/w5/coin.svg",
+      "hudExit": "assets/w5/hud_exit.png",
+      "hudHelp": "assets/w5/hud_help.png",
+      "hudCoins": "assets/w5/hud_rewards.png"
+    },
+    "nova": {
+      "lid": "#983820",
+      "lash": "#3D200A",
+      "respondY": 282,
+      "quiz": {
+        "img": "assets/w5/nova_checkin.svg",
+        "x": 108.2,
+        "y": 340.7,
+        "w": 326,
+        "h": 668,
+        "eyes": [
+          [
+            106,
+            148,
+            39
+          ],
+          [
+            179,
+            148,
+            39
+          ]
+        ]
+      },
+      "incorrect": {
+        "img": "assets/w5/nova_incorrect.svg",
+        "w": 425,
+        "h": 870,
+        "cx": 211,
+        "eyes": [
+          [
+            137,
+            192,
+            51
+          ],
+          [
+            233,
+            192,
+            51
+          ]
+        ]
+      },
+      "correct": {
+        "img": "assets/w5/nova_correct.svg",
+        "w": 521,
+        "h": 870,
+        "cx": 260,
+        "eyes": [
+          [
+            188,
+            192,
+            51
+          ],
+          [
+            284,
+            192,
+            51
+          ]
+        ]
+      }
+    }
+  }
+}

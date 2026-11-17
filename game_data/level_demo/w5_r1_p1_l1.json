@@ -1,0 +1,50 @@
+{
+  "id": "w5_r1_p1_l1",
+  "title": "Overcoming Performance Stress",
+  "subtitle": "W5R1P1 · Level 1 · Everglen",
+  "map": {
+    "art": "assets/w5l1/map.svg",
+    "w": 1800,
+    "h": 834,
+    "pinSize": 148,
+    "pins": [
+      { "x": 554, "y": 445, "art": "assets/w5l1/pin_1.svg", "done": "assets/w5l1/pin_1_done.svg" },
+      { "x": 720, "y": 596, "art": "assets/w5l1/pin_2_locked.svg", "open": "assets/w5l1/pin_2_open.svg" },
+      { "x": 940, "y": 693, "art": "assets/w5l1/pin_3_locked.svg" },
+      { "x": 1170, "y": 567, "art": "assets/w5l1/pin_4_locked.svg" },
+      { "x": 920, "y": 421, "art": "assets/w5l1/pin_5_locked.svg" },
+      { "x": 848, "y": 211, "art": "assets/w5l1/pin_6_locked.svg" }
+    ]
+  },
+  "complete": {
+    "bg": "assets/w5l1/complete_bg.svg",
+    "sunburst": "assets/w5l1/sunburst.svg",
+    "scoreboard": "assets/w5l1/scoreboard.svg",
+    "stars": ["assets/w5l1/star_left.svg", "assets/w5l1/star_mid.svg", "assets/w5l1/star_right.svg"],
+    "buttons": "assets/w5l1/complete_buttons.svg"
+  },
+  "templates": [
+    {
+      "id": "t1",
+      "label": "Template 1",
+      "name": "Discover with the firefly",
+      "about": "Tremu sets up each Everling, the player brings the firefly over to find where the stress is showing, the comic explains it, then the check-in.",
+      "status": "Built for Lesson 1",
+      "steps": [{ "type": "level", "id": "w5_l1_flow1" }, { "type": "complete" }]
+    },
+    {
+      "id": "t2",
+      "label": "Template 2",
+      "name": "Tremu leads into the check-in",
+      "about": "The lesson comic, then a themed Everglen screen where Tremu pops up with a speech bubble and a button that starts the check-in.",
+      "status": "Next"
+    },
+    {
+      "id": "t3",
+      "label": "Template 3",
+      "name": "Drag and drops, no check-in",
+      "about": "The lesson told through drag and drops of different types that carry the story.",
+      "status": "Next"
+    }
+  ]
+}

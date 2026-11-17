@@ -29,7 +29,12 @@ const ERRORS = {
   server_unavailable: 'ElevenLabs did not answer. It may still be generating; check back shortly.',
   timeout: 'Still generating. It will show up here when ElevenLabs finishes.',
 };
-const errorText = (e) => ERRORS[e?.code] || (e?.code === 'tool_error' && e?.message && e.message.length < 140 ? e.message : 'Something went wrong with ElevenLabs. Try again in a moment.');
+// Unknown errors show ElevenLabs' own reason (trimmed) so a failure can be traced
+const errorText = (e) => {
+  if (ERRORS[e?.code]) return ERRORS[e.code];
+  const msg = String(e?.message || '').replace(/^\{?\s*"?error"?:?\s*"?/, '').replace(/creative_\w+ on flow '\w+' failed\.\s*/, '').trim();
+  return msg ? 'ElevenLabs: ' + (msg.length > 160 ? msg.slice(0, 157) + '…' : msg) : 'Something went wrong with ElevenLabs. Try again in a moment.';
+};
 
 export function renderSoundLab(root, { onBack }) {
   const ui = {}; // id -> { status, error, confirm }

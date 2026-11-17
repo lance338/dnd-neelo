@@ -9,6 +9,7 @@ import { ZoneComponent } from './components/zone_component.js';
 import { ActorComponent } from './components/actor_component.js';
 import { EffectsComponent } from './components/effects_component.js';
 import { HintHandComponent } from './components/hint_hand_component.js';
+import { LottieFx, HIT_STYLES } from './components/lottie_fx.js';
 import { drawArt } from './components/draw.js';
 import { GameController } from './game_controller.js';
 
@@ -39,6 +40,8 @@ export class DragDropGame {
     this.hoverZone = null;
     this.assistItem = null;
     this.time = 0;
+    this.lottieFx = new LottieFx();
+    this.lottieFx.preload(HIT_STYLES[tuning.get('hitStyle')]);
     this.timers = [];
     this.idleT = 0;
     this.completing = false;
@@ -46,6 +49,8 @@ export class DragDropGame {
     this.bgFade = new Spring(0, 30, 11);
     // Camera: looks at (x, y) in stage units; zoom 1 at the stage centre is the normal view
     this.cam = { x: Dimens.stageWidth / 2, y: Dimens.stageHeight / 2, zoom: 1, tween: null, shake: null, ox: 0, oy: 0 };
+    // Where the camera rests between moves (a scene can pan it, e.g. over to the NPCs)
+    this.camHome = { x: Dimens.stageWidth / 2, y: Dimens.stageHeight / 2 };
     this.running = false;
     this._bind();
   }
@@ -83,9 +88,14 @@ export class DragDropGame {
       c.tween = { from: { x: c.x, y: c.y, zoom: c.zoom }, to: { x, y, zoom }, t: 0, d: Math.max(0.01, duration), resolve };
     });
   }
-  /** Back to the normal view. */
+  /** Back to the resting view (the stage centre, or wherever a scene panned the camera). */
   zoomReset(duration = 0.7) {
-    return this.zoomTo(Dimens.stageWidth / 2, Dimens.stageHeight / 2, 1, duration);
+    return this.zoomTo(this.camHome.x, this.camHome.y, 1, duration);
+  }
+  /** Pan the camera to a new resting point at normal zoom. */
+  panTo(x, y = Dimens.stageHeight / 2, duration = 1) {
+    this.camHome = { x, y };
+    return this.zoomTo(x, y, 1, duration);
   }
   /** Shake the camera (stage units). `grow` ramps the shake up instead of letting it fade. */
   shake(amount = 8, duration = 0.5, { grow = false } = {}) {
@@ -130,7 +140,8 @@ export class DragDropGame {
   async load() {
     const L = this.level;
     const bgKey = typeof L.background === 'string' ? `bg:${L.background}` : L.background.img;
-    const keys = new Set(['hand', ...(this.scene.assets || [])]);
+    // Levels can list extra art their scene draws (layers, badges) in `assets`
+    const keys = new Set(['hand', ...(this.scene.assets || []), ...(L.assets || [])]);
     if (bgKey) keys.add(bgKey);
     if (L.background?.type === 'nightSky') NIGHT_SKY_ASSETS.forEach((k) => keys.add(k));
     L.items.forEach((i) => keys.add(i.art));
@@ -194,17 +205,34 @@ export class DragDropGame {
    * An NPC says a line: comic speech bubble over their head, their voice if
    * one exists in audio/nova/lines.json, then wait until it has been heard.
    */
-  async talk(actorId, text, { mood, width = 440, hold = 0.5 } = {}) {
+  async talk(actorId, text, { mood, width = 440, hold = 0.5, skippable = false, dy } = {}) {
     const a = this.actor(actorId);
     if (!a || !text) return;
     if (mood) a.setMood(mood);
     a.hop(0.35);
     const art = a.arts[a.mood] || a.arts.neutral;
-    const top = a.y.value - (a.size * art.h) / art.w / 2;
+    // NPC frames (Figma Section 3 art) have headroom above the head: point the bubble at the head itself
+    const top = art.head ? this.headY(a) - 42 : a.y.value - (a.size * art.h) / art.w / 2;
+    dy ??= 0;
     const src = await this.speak(text, actorId);
     const secs = src && src.buffer ? src.buffer.duration + hold : Math.max(2.4, text.length / 15 + 1);
-    this.effects.bubble({ x: a.x.value, y: top - 8, text, kind: 'comic', duration: secs + 0.35, width });
-    await this.wait(secs);
+    const bubble = this.effects.bubble({ x: a.x.value, y: top - 8 + dy, text, kind: 'comic', duration: secs + 0.35, width });
+    if (!skippable) return this.wait(secs);
+    // A tap while the line is up moves straight on to the next one
+    let skipped = false;
+    await Promise.race([this.wait(secs), new Promise((r) => (this._skipTalk = () => ((skipped = true), r())))]);
+    this._skipTalk = null;
+    if (skipped) {
+      audio.stopVoice();
+      bubble.max = Math.min(bubble.max, bubble.life + 0.2);
+    }
+  }
+
+  /** Top of an NPC's head in stage units (top of the art when its head position isn't known). */
+  headY(a) {
+    const art = a.arts[a.mood] || a.arts.neutral;
+    const artH = (a.size * art.h) / art.w;
+    return a.y.value - artH / 2 + artH * (art.head || 0);
   }
 
   /** Nova voices a line without a bubble (e.g. text already drawn in the scene). */
@@ -322,11 +350,19 @@ export class DragDropGame {
 
   _toStage(e) {
     const r = this.canvas.getBoundingClientRect();
-    return { x: (e.clientX - r.left - this.view.ox) / this.view.s, y: (e.clientY - r.top - this.view.oy) / this.view.s };
+    const sx = (e.clientX - r.left - this.view.ox) / this.view.s;
+    const sy = (e.clientY - r.top - this.view.oy) / this.view.s;
+    // Undo the camera so a finger lands on the world point it is over, even when the view is panned
+    const c = this.cam;
+    return { x: (sx - Dimens.stageWidth / 2) / c.zoom + c.x - c.ox, y: (sy - Dimens.stageHeight / 2) / c.zoom + c.y - c.oy };
   }
 
   _down(e) {
     audio.unlock();
+    if (this.locked && this._skipTalk) {
+      this._skipTalk();
+      return;
+    }
     if (this.pointer.id !== null || this.completing || this.locked) return;
     const p = this._toStage(e);
     this.idleT = 0;
@@ -448,8 +484,13 @@ export class DragDropGame {
   /** Called by ItemComponent the frame it lands in its slot. */
   async onItemLanded(item, zone) {
     const sp = zone.slotPos(item.slot.index);
-    this.effects.sparkles(sp.x, sp.y, this.t('sparkleCount'));
-    this.effects.ring(sp.x, sp.y, '#FFFFFF', 120, 8, 0.6);
+    // Tuning > Effects > Correct drop effect: 0 is the code sparkles and ring, 1 to 3 are Lottie files
+    const hitUrl = HIT_STYLES[this.t('hitStyle')];
+    if (hitUrl) this.lottieFx.play(hitUrl, sp.x, sp.y, Math.min(380, Math.max(260, (item.def.size || 100) * 3)));
+    else {
+      this.effects.sparkles(sp.x, sp.y, this.t('sparkleCount'));
+      this.effects.ring(sp.x, sp.y, '#FFFFFF', 120, 8, 0.6);
+    }
     if (zone.def.landSound) this.play(zone.def.landSound);
     else if (this.level.successSound !== false) this.play('hit');
     if (zone.mode === 'absorb') {
@@ -473,13 +514,20 @@ export class DragDropGame {
   async _complete() {
     this.completing = true;
     this.hand.stop();
+    this.hud.beforeComplete?.();
     await this.wait(0.35);
     if (this.scene.onComplete) await this.scene.onComplete(this);
-    this.effects.confetti(this.t('confettiCount'));
-    this.play('complete');
-    this.hud.celebrate?.();
-    // A level that carries on into a comic lets the confetti play out a little longer first
-    await this.wait(this.level.comic?.after ? 3.1 : 1.6);
+    // A lesson played in rounds (level.discover) hands the ending to the game view
+    if (this.level.discover) return;
+    // Optional ending celebration (victory jingle + confetti). A level turns it off with
+    // "celebrate": false and goes straight from the payoff to what follows (e.g. the check-in).
+    if (this.level.celebrate !== false) {
+      this.effects.confetti(this.t('confettiCount'));
+      this.play('complete');
+      this.hud.celebrate?.();
+      // A level that carries on into a comic lets the confetti play out a little longer first
+      await this.wait(this.level.comic?.after ? 3.1 : 1.6);
+    } else await this.wait(0.6);
     this.completed = true;
     this.hud.onComplete(this.controller.summary());
   }
@@ -550,6 +598,7 @@ export class DragDropGame {
       this.dragging.render(ctx, t);
     }
     this.effects.render(ctx, t);
+    this.lottieFx.draw(ctx, this.time);
     this.hand.render(ctx);
     if (this.scene.drawFront) this.scene.drawFront(this, ctx, t);
   }

@@ -5,6 +5,7 @@
   "gameType": "drag_drop",
   "title": "L1 Outro: Light the First Lantern",
   "scene": "tower",
+  "burst": "lottie",
   "background": {
     "type": "nightSky"
   },

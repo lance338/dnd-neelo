@@ -27,5 +27,6 @@ export const SOUND_MANIFEST = {
   gem: { label: 'Empathy Gem', options: [DND + 'dnd-gem-a.mp3', DND + 'dnd-gem-b.mp3'], trims: [2.75, 2.92], fallback: null, gain: 0.9, vary: 0 },
   meter: { label: 'Meter tick', options: [DND + 'dnd-meter-a.mp3', DND + 'dnd-meter-b.mp3'], trims: [2.0, 3.98], fallback: null, gain: 0.55, vary: 0.02 },
   npc: { label: 'NPC reacts', options: [LIB + 'cutehello-female.mp3', LIB + 'npc-pop-A-bubble-boing-a.mp3'], fallback: null, gain: 0.6, vary: 0.03 },
+  coins: { label: 'Coins hit the counter', options: [LIB + 'coin-L-fast-fourth-a.mp3'], fallback: null, gain: 0.4, vary: 0.02 },
   complete: { label: 'Victory jingle', options: [LIB + 'victory-B-4s-bouncy-fanfare-a.mp3', LIB + 'victory-F-4s-bouncy-fanfare-2-a.mp3'], fallback: null, gain: 1, vary: 0, bus: 'jingle' },
 };

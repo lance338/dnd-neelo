@@ -5,17 +5,6 @@ import { openDoc } from '../components/doc_viewer.js';
 
 const svgUri = (svg) => 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
 
-function pathD(pts) {
-  let d = `M${pts[0][0]} ${pts[0][1]}`;
-  for (let i = 1; i < pts.length; i++) {
-    const [x0, y0] = pts[i - 1];
-    const [x1, y1] = pts[i];
-    const mx = (x0 + x1) / 2;
-    d += ` C ${mx} ${y0}, ${mx} ${y1}, ${x1} ${y1}`;
-  }
-  return d;
-}
-
 function starsSvg() {
   const r = seeded(9);
   let s = '';
@@ -24,9 +13,14 @@ function starsSvg() {
 }
 
 export function renderHub(root, index, { onPlay }) {
-  const steps = index.path.steps;
-  // Even spacing, alternating high and low, like the world map paths
-  const PATH_PTS = steps.map((_, i) => [80 + (i * 840) / Math.max(1, steps.length - 1), i % 2 ? 108 : 226]);
+  // Two finished modules up top; everything else is a smaller work-in-progress tile
+  const featured = new Set((index.featured || []).map((t) => t.id));
+  const seen = new Set(featured);
+  const wip = [
+    ...index.path.steps.map((t) => ({ ...t, label: t.title, tag: `${index.path.world} · ${t.label}`, group: 'path', color: '#4A3B9C' })),
+    ...(index.prototypes || []).map((t) => ({ ...t, tag: t.world, group: 'prototypes' })),
+    ...index.templates.map((t, i) => ({ ...t, tag: `Template 0${i + 1}`, group: 'templates' })),
+  ].filter((t) => !seen.has(t.id) && seen.add(t.id));
   root.innerHTML = `
   <div class="hub">
     ${starsSvg()}
@@ -36,52 +30,27 @@ export function renderHub(root, index, { onPlay }) {
         <div class="hub-actions"><button class="pill-btn" data-a="tune">Tuning</button><a class="pill-btn" href="#sounds" style="text-decoration:none">Sound Lab</a><button class="pill-btn solid" data-doc="README.md" data-title="Developer notes">Developer notes</button></div>
       </div>
 
-      <div class="section-label">Module path · ${index.path.world} ${index.path.module}</div>
-      <h2 class="section-title">Play it in the story</h2>
-      <div class="path-card">
-        <svg class="path-svg" viewBox="0 0 1000 320" aria-hidden="true">
-          <path d="${pathD(PATH_PTS)}" stroke="rgba(30,18,70,0.25)" stroke-width="44" fill="none" stroke-linecap="round" transform="translate(0 8)"/>
-          <path d="${pathD(PATH_PTS)}" stroke="#9FD35C" stroke-width="40" fill="none" stroke-linecap="round"/>
-          <path d="${pathD(PATH_PTS)}" stroke="#86BF4E" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="2 26"/>
-        </svg>
-        <div class="path-nodes">
-          ${steps
-            .map((s, i) => {
-              const [x, y] = PATH_PTS[i];
-              return `<button class="path-node" style="left:${x / 10}%;top:${(y / 320) * 100}%" data-id="${s.id}" data-group="path">
-                <span class="badge"><img alt="" src="${artThumb(s.art)}"></span>
-                <span class="lvl">${s.label}</span><span class="name">${s.title}</span></button>`;
-            })
-            .join('')}
-        </div>
-      </div>
-
-      <div class="section-label">New prototypes</div>
-      <h2 class="section-title">From the new Figma assets</h2>
-      <div class="grid">
-        ${(index.prototypes || [])
+      <div class="section-label">${index.labels?.featured || 'Modules'}</div>
+      <h2 class="section-title">${index.labels?.featuredTitle || 'Play the modules'}</h2>
+      <div class="feature-grid">
+        ${(index.featured || [])
           .map(
-            (t) =>
-              // A prototype that lives on its own page (e.g. comic-to-checkin/) opens it directly
-              t.href
-                ? `<a class="tcard" style="background:${t.color};text-decoration:none" href="${t.href}">
-              <img alt="" src="${t.thumb || artThumb(t.art)}" style="padding:22px;box-sizing:border-box">
-              <span class="num">${t.world}</span><span class="label">${t.label}</span><span class="blurb">${t.blurb}</span></a>`
-                : `<button class="tcard" style="background:${t.color}" data-id="${t.id}" data-group="prototypes">
+            (t) => `<button class="fcard" style="background:${t.color}" data-id="${t.id}" data-group="featured">
               <img alt="" src="${artThumb(t.art)}">
-              <span class="num">${t.world}</span><span class="label">${t.label}</span><span class="blurb">${t.blurb}</span></button>`,
+              <span class="num">${t.world}</span><span class="label">${t.label}</span><span class="blurb">${t.blurb}</span>
+              <span class="play">Play</span></button>`,
           )
           .join('')}
       </div>
 
-      <div class="section-label">Templates</div>
-      <h2 class="section-title">The seven drag and drop types</h2>
-      <div class="grid">
-        ${index.templates
+      <div class="section-label">${index.labels?.wip || 'Work in progress'}</div>
+      <h2 class="section-title">${index.labels?.wipTitle || 'Still to refine'}</h2>
+      <div class="wip-grid">
+        ${wip
           .map(
-            (t, i) => `<button class="tcard" style="background:${t.color}" data-id="${t.id}" data-group="templates">
+            (t) => `<button class="wcard" style="background:${t.color || '#5B4B9A'}" data-id="${t.id}" data-group="${t.group}">
               <img alt="" src="${artThumb(t.art)}">
-              <span class="num">0${i + 1}</span><span class="label">${t.label}</span><span class="blurb">${t.blurb}</span></button>`,
+              <span class="num">${t.tag}</span><span class="label">${t.label}</span></button>`,
           )
           .join('')}
       </div>
@@ -102,4 +71,35 @@ export function renderHub(root, index, { onPlay }) {
   root.querySelectorAll('[data-a="tune"]').forEach((b) => b.addEventListener('click', () => panel.toggle()));
   root.querySelectorAll('[data-doc]').forEach((b) => b.addEventListener('click', () => openDoc(root.querySelector('.hub'), b.dataset.doc, b.dataset.title)));
   root.querySelectorAll('[data-id]').forEach((b) => b.addEventListener('click', () => onPlay(b.dataset.id, b.dataset.group)));
+}
+
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+
+/**
+ * A launch pad: a few versions of one flow side by side (index.json "<name>": { kicker, title, lede, versions }),
+ * styled like the Level Demo launchpad (css/level_demo.css).
+ */
+export function renderLaunchpad(root, pad, { onPlay, onBack = null }) {
+  root.innerHTML = `<div class="ld ld-launch">
+    <header class="ld-head">
+      ${onBack ? '<button class="ld-back" type="button">&larr; All drag and drops</button>' : ''}
+      <p class="ld-kicker">${esc(pad.kicker)}</p>
+      <h1>${esc(pad.title)}</h1>
+      <p class="ld-lede">${esc(pad.lede)}</p>
+    </header>
+    <div class="ld-cards">
+      ${pad.versions
+        .map(
+          (v) => `<button class="ld-card" data-id="${v.id}">
+            <span class="ld-card-label">${esc(v.label)}</span>
+            <span class="ld-card-name">${esc(v.name)}</span>
+            <span class="ld-card-about">${esc(v.about)}</span>
+            <span class="ld-card-go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg> Play</span>
+          </button>`,
+        )
+        .join('')}
+    </div>
+  </div>`;
+  root.querySelectorAll('[data-id]').forEach((b) => b.addEventListener('click', () => onPlay(b.dataset.id)));
+  root.querySelector('.ld-back')?.addEventListener('click', onBack);
 }

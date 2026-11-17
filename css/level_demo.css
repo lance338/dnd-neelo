@@ -1,0 +1,74 @@
+/* Level Demo: launchpad, module map and the placeholder screens between levels */
+.ld { --ld-ink: #2e2858; --ld-mute: #6b6690; --ld-acc: #5b4fd6; --ld-orange: #fc611f; --ld-card: #fff; --ld-line: #e3e0f0;
+  position: fixed; inset: 0; overflow: auto; font-family: "Fredoka", "Nunito", system-ui, sans-serif; color: var(--ld-ink);
+  background: radial-gradient(120% 90% at 50% 0%, #e9fbf3 0%, #c9efdf 55%, #9fdcc4 100%); }
+.ld button { font-family: inherit; color: inherit; }
+
+/* Launchpad */
+.ld-launch { padding: 40px 16px 56px; }
+.ld-head { max-width: 980px; margin: 0 auto 28px; }
+.ld-kicker { margin: 0 0 6px; font-weight: 600; color: var(--ld-acc); letter-spacing: 0.02em; }
+.ld-head h1 { margin: 0; font-size: clamp(30px, 5vw, 46px); line-height: 1.05; }
+.ld-lede { margin: 10px 0 0; color: var(--ld-mute); font-size: 18px; }
+.ld-cards { max-width: 980px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 18px; }
+.ld-card { text-align: left; display: flex; flex-direction: column; gap: 8px; padding: 22px 24px 20px; border: 0; border-radius: 28px; background: var(--ld-card); box-shadow: 0 8px 0 rgba(46, 40, 88, 0.14), 0 18px 40px rgba(46, 40, 88, 0.12); cursor: pointer; transition: transform 0.15s; }
+.ld-card:hover:not(:disabled) { transform: translateY(-3px); }
+.ld-card.is-soon { cursor: default; opacity: 0.6; box-shadow: 0 6px 0 rgba(46, 40, 88, 0.1); }
+.ld-card:active { transform: translateY(2px); box-shadow: 0 4px 0 rgba(46, 40, 88, 0.14); }
+.ld-card-label { font-weight: 600; color: var(--ld-acc); font-size: 15px; }
+.ld-card-name { font-size: 24px; font-weight: 700; line-height: 1.15; }
+.ld-card-about { color: var(--ld-mute); font-size: 16px; line-height: 1.4; flex: 1; }
+.ld-card-go { margin-top: 8px; align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 10px 18px 10px 14px; border-radius: 999px; background: var(--ld-orange); color: #fff; font-weight: 600; }
+.ld-card-go svg { width: 18px; height: 18px; }
+.ld-notes { max-width: 980px; margin: 18px auto 0; background: rgba(255, 255, 255, 0.7); border-radius: 20px; padding: 14px 20px; }
+.ld-notes summary { cursor: pointer; font-weight: 600; }
+.ld-notes ul { margin: 10px 0 2px; padding-left: 20px; color: var(--ld-mute); line-height: 1.5; }
+
+.ld-chip { display: inline-block; padding: 5px 12px; border-radius: 999px; background: var(--ld-acc); color: #fff; font-size: 13px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+
+/* Exit button (the app's), top left over the map */
+.ld-exit { position: absolute; z-index: 3; top: 20px; left: 20px; width: 64px; height: 64px; padding: 0; border: 0; background: none; cursor: pointer; filter: drop-shadow(0 4px 10px rgba(30, 18, 70, 0.2)); }
+.ld-exit img { display: block; width: 100%; height: 100%; }
+
+/* Module map: the art is 1800 x 834 and covers the screen; pins sit on it in map units */
+.ld-mapscreen { overflow: hidden; background: #8cc152; }
+.ld-mapscreen, .ld-donescreen { animation: ld-fade 0.45s ease both; }
+.ld-mapscreen.leaving { animation: ld-fade-out 0.4s ease forwards; }
+@keyframes ld-fade { from { opacity: 0; } }
+@keyframes ld-fade-out { to { opacity: 0; } }
+.ld-map-stage { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+.ld-map-art { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.ld-pin { position: absolute; transform: translate(-50%, -50%); padding: 0; border: 0; background: none; cursor: pointer; }
+.ld-pin img { display: block; width: 100%; height: 100%; pointer-events: none; }
+.ld-pin.is-open img { animation: ld-pin-bob 1.3s ease-in-out infinite; }
+.ld-pin.is-open::before { content: ""; position: absolute; left: 50%; top: 50%; width: 52%; height: 52%; border-radius: 50%; transform: translate(-50%, -50%); border: 5px solid #fff; animation: ld-ring 1.6s ease-out infinite; pointer-events: none; }
+.ld-pin.tapped img { animation: ld-pin-tap 0.35s ease; }
+@keyframes ld-pin-bob { 50% { transform: translateY(-9px); } }
+@keyframes ld-pin-tap { 40% { transform: scale(0.88); } }
+@keyframes ld-ring { from { opacity: 0.9; transform: translate(-50%, -50%) scale(1); } to { opacity: 0; transform: translate(-50%, -50%) scale(1.7); } }
+.ld-toast { position: absolute; z-index: 3; left: 50%; bottom: 28px; transform: translate(-50%, 20px); padding: 12px 20px; border-radius: 999px; background: var(--ld-ink); color: #fff; font-weight: 500; opacity: 0; pointer-events: none; max-width: calc(100% - 32px); text-align: center; }
+.ld-toast.show { animation: ld-toast 2.6s forwards; }
+@keyframes ld-toast { 0% { opacity: 0; transform: translate(-50%, 20px); } 10%, 80% { opacity: 1; transform: translate(-50%, 0); } 100% { opacity: 0; transform: translate(-50%, 0); } }
+
+/* Level complete: the 1194 x 834 Figma frame, scaled to cover */
+.ld-donescreen { overflow: hidden; background: #d7f8ea; }
+.ld-done-stage { position: absolute; left: 0; top: 0; width: 1194px; height: 834px; transform-origin: 0 0; }
+.ld-done-bg { position: absolute; left: -303px; top: 0; width: 1800px; height: 834px; }
+.ld-sunburst { position: absolute; left: calc(597px - 682px); top: calc(417px - 523px); width: 1364px; height: 1046px; opacity: 0.9; animation: ld-spin 40s linear infinite, ld-fade 0.8s ease both; }
+@keyframes ld-spin { to { rotate: 360deg; } }
+.ld-board { position: absolute; left: 197px; top: 132.6px; width: 801px; height: 542px; animation: ld-board-in 0.6s 0.15s cubic-bezier(.3, 1.5, .5, 1) both; }
+@keyframes ld-board-in { from { opacity: 0; transform: scale(0.6) translateY(40px); } }
+.ld-board-art { position: absolute; inset: 0; width: 100%; height: 100%; }
+.ld-star { position: absolute; height: auto; opacity: 0; transform: scale(0.2) rotate(-30deg); }
+.ld-star.in { animation: ld-star-in 0.55s cubic-bezier(.3, 1.6, .5, 1) forwards; }
+@keyframes ld-star-in { to { opacity: 1; transform: none; } }
+.ld-done-btns { position: absolute; width: 278px; height: 68px; animation: ld-fade 0.4s 1.6s ease both; }
+.ld-done-btns img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.ld-done-btns button { position: absolute; top: 6px; height: 56px; padding: 0; border: 0; background: none; cursor: pointer; border-radius: 14px; }
+.ld-done-btns button:active { transform: scale(0.95); }
+.ld-replay { left: 6px; width: 70px; }
+.ld-continue { left: 100px; width: 172px; }
+@media (prefers-reduced-motion: reduce) {
+  .ld-sunburst, .ld-pin.is-open img, .ld-pin.is-open::before { animation: none; }
+}
+.ld-back { margin: 0 0 18px; padding: 8px 16px; border: 0; border-radius: 999px; background: #fff; color: var(--ld-ink); font-weight: 600; font-size: 15px; cursor: pointer; box-shadow: 0 4px 0 rgba(46, 40, 88, 0.12); }

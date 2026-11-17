@@ -47,7 +47,8 @@ export class ItemComponent {
   }
 
   hits(px, py) {
-    if (!this.visible) return false;
+    // An item that hasn't appeared yet can't be picked up
+    if (!this.visible || this.appearDelay > 0) return false;
     if (!(this.state === 'home' || this.state === 'returning' || this.state === 'selected')) return false;
     return dist(px, py, this.x.value, this.y.value) <= this.hitRadius;
   }

@@ -1,0 +1,45 @@
+{
+  "id": "ld_lesson_1",
+  "world": 5,
+  "gameType": "drag_drop",
+  "kind": "comic",
+  "title": "Lesson 1",
+  "background": {
+    "color": "#FFFFFF"
+  },
+  "edgeColor": "#FFFFFF",
+  "meter": false,
+  "comic": {
+    "before": [
+      {
+        "img": "assets/comic/w5_r1_p1_l1_1.svg",
+        "who": "tremu",
+        "text": "Stress can show up in one of three ways."
+      },
+      {
+        "img": "assets/comic/w5_r1_p1_l1_2.svg",
+        "who": "tremu",
+        "text": "Sometimes it’s in our bodies, like your heart beating really fast."
+      },
+      {
+        "img": "assets/comic/w5_r1_p1_l1_3.svg",
+        "who": "tremu",
+        "text": "Or your stomach feeling fluttery or achy."
+      },
+      {
+        "img": "assets/comic/w5_r1_p1_l1_4.svg",
+        "who": "tremu",
+        "text": "You might even shake, feel hot, or get sweaty."
+      },
+      {
+        "img": "assets/comic/w5_r1_p1_l1_5.svg",
+        "who": "tremu",
+        "text": "These are body stress feelings. They mean your body is getting ready to do something important!"
+      }
+    ]
+  },
+  "guide": {},
+  "actors": [],
+  "zones": [],
+  "items": []
+}

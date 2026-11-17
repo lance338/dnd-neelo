@@ -42,15 +42,15 @@
       "accepts": [
         "plank"
       ],
-      "ghost": "img:plank",
-      "ghostSize": 200,
+      "ghost": "plank",
+      "ghostSize": 196,
       "hitRadius": 96,
       "snapSound": "plank",
       "slots": [
         {
           "dx": 0,
           "dy": 0,
-          "scale": 1.1111111111111112
+          "scale": 1.1529411764705881
         }
       ]
     },
@@ -62,15 +62,15 @@
       "accepts": [
         "plank"
       ],
-      "ghost": "img:plank",
-      "ghostSize": 200,
+      "ghost": "plank",
+      "ghostSize": 196,
       "hitRadius": 96,
       "snapSound": "plank",
       "slots": [
         {
           "dx": 0,
           "dy": 0,
-          "scale": 1.1111111111111112
+          "scale": 1.1529411764705881
         }
       ]
     },
@@ -82,15 +82,15 @@
       "accepts": [
         "plank"
       ],
-      "ghost": "img:plank",
-      "ghostSize": 200,
+      "ghost": "plank",
+      "ghostSize": 196,
       "hitRadius": 96,
       "snapSound": "plank",
       "slots": [
         {
           "dx": 0,
           "dy": 0,
-          "scale": 1.1111111111111112
+          "scale": 1.1529411764705881
         }
       ]
     }
@@ -98,10 +98,10 @@
   "items": [
     {
       "id": "plank_1",
-      "art": "img:plank",
+      "art": "plank",
       "x": 420,
       "y": 690,
-      "size": 180,
+      "size": 170,
       "rot": -0.08,
       "tags": [
         "plank"
@@ -109,10 +109,10 @@
     },
     {
       "id": "plank_2",
-      "art": "img:plank",
+      "art": "plank",
       "x": 640,
       "y": 690,
-      "size": 180,
+      "size": 170,
       "rot": 0.05,
       "tags": [
         "plank"
@@ -120,10 +120,10 @@
     },
     {
       "id": "plank_3",
-      "art": "img:plank",
+      "art": "plank",
       "x": 860,
       "y": 690,
-      "size": 180,
+      "size": 170,
       "rot": -0.04,
       "tags": [
         "plank"
