@@ -21,6 +21,8 @@ export function renderHub(root, index, { onPlay }) {
     ...(index.prototypes || []).map((t) => ({ ...t, tag: t.world, group: 'prototypes' })),
     ...index.templates.map((t, i) => ({ ...t, tag: `Template 0${i + 1}`, group: 'templates' })),
   ].filter((t) => !seen.has(t.id) && seen.add(t.id));
+  // Work in progress is hidden on the public GitHub Pages build until those templates are finalized
+  const showWip = !/\.github\.io$/i.test(location.hostname);
   root.innerHTML = `
   <div class="hub">
     ${starsSvg()}
@@ -43,7 +45,7 @@ export function renderHub(root, index, { onPlay }) {
           .join('')}
       </div>
 
-      <div class="section-label">${index.labels?.wip || 'Work in progress'}</div>
+      ${showWip ? `<div class="section-label">${index.labels?.wip || 'Work in progress'}</div>
       <h2 class="section-title">${index.labels?.wipTitle || 'Still to refine'}</h2>
       <div class="wip-grid">
         ${wip
@@ -53,7 +55,7 @@ export function renderHub(root, index, { onPlay }) {
               <span class="num">${t.tag}</span><span class="label">${t.label}</span></button>`,
           )
           .join('')}
-      </div>
+      </div>` : ''}
 
       <div class="dev-card">
         <h3>For the developer</h3>

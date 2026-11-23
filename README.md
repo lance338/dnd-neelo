@@ -21,7 +21,7 @@ Press **T** in any level (or the sliders button) for the Tuning panel.
 ## Current templates (top of the launch pad)
 
 These three are finalized and are the ones to build. Everything else on the launch pad is under
-**Work in progress**: earlier templates and prototypes kept for reference.
+**Work in progress**: earlier templates and prototypes kept for reference. That section is hidden on the GitHub Pages build until those templates are finalized; it still shows when you run the prototype locally.
 
 | Template | Level file | What it is |
 | --- | --- | --- |
